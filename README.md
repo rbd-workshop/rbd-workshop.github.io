@@ -2,7 +2,7 @@
 
 The NAACL 2027 workshop on **Capability Retrieval for Language Agents**.
 
-A static conference website using HTML, CSS, vanilla JavaScript, and a dependency-free Node.js generator. The layout uses a white background, Redwood-inspired red and dark neutral accents, visible top navigation, a Golden Gate Bridge banner, and photo biographies for speakers and organizers.
+A static conference website using HTML, CSS, vanilla JavaScript, and a dependency-free Node.js generator. The layout uses a white background, Redwood-inspired red and dark neutral accents, visible top navigation, a Golden Gate Bridge banner, and photographs with proposal biographies and research descriptions. On desktop, the overview and call for papers flow in one column alongside important dates, so sidebar height cannot create a blank gap between sections. At tablet and phone widths, the sections stack.
 
 ## Local preview
 
@@ -38,7 +38,7 @@ Set `submissionUrl` to the confirmed HTTPS portal to show a working submit butto
 
 The RBD wordmark uses original vector letterforms, with a red R and dark neutral B and D. The vector wordmark is `src/assets/rbd-logo.svg`; `rbd-logo.png` is a transparent raster export, and `rbd-icon.png` is a square icon. Red: `#c74634`. Dark neutral: `#312d2a`. Accessible link red: `#9e392c`. Background: white. The site uses native sans-serif fonts and makes no third-party font requests.
 
-Speaker and organizer portraits and the San Francisco banner are hosted locally as optimized WebP files. Sources and credits are recorded in [ASSET_CREDITS.md](ASSET_CREDITS.md), with visible credits in the site footer and banner.
+Speaker and organizer portraits and the San Francisco banner are hosted locally as optimized WebP files. Sources and credits are recorded in [ASSET_CREDITS.md](ASSET_CREDITS.md), without a visible photo-credit line in the footer.
 
 ## Git and publishing later
 
@@ -58,7 +58,7 @@ The workshop content comes from the user's `Retrieval_beyond_document.pdf`, down
 
 The [official NAACL 2027 website](https://2027.naacl.org/) confirms San Francisco and June 1–5, 2027 for the parent conference. The RBD workshop day, deadlines, portal, registration, paper limits, and session times remain forthcoming. Review routes, archival options, full-day format, and remote participation retain the proposal's conditional wording.
 
-The contact link uses Hitesh's correspondence address from the PDF until a workshop mailbox is ready. Organizer and speaker biographies use the proposal and current public profiles. Hitesh’s title is updated to Principal Applied Scientist from his current homepage. Seven organizer portraits are included; Zifei Wang’s photograph is pending user supply. Set his `image` in `content/workshop.json` after adding an approved photograph under `src/assets/people/`.
+The contact link uses Hitesh's correspondence address from the PDF until a workshop mailbox is ready. Organizer biographies and speaker research descriptions use the proposal, with PDF artifacts and prose hyphenation normalized. The proposal supplies full organizer biographies and short speaker descriptions. Hitesh’s title remains Senior Applied Scientist and Tech Lead, as in the proposal. All eight organizer portraits are included; Zifei Wang’s photograph was supplied by the user as `Downloads/pp.jpg`.
 
 ## Design references
 
