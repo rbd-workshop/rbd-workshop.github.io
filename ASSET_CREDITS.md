@@ -59,3 +59,5 @@ The four speaker biographies are original summaries based on the current profile
 ## Program committee additions
 
 Adam Jatowt and Abdelrahman Abdallah are listed with the University of Innsbruck affiliation, checked against the university’s [DiSC team directory](https://www.uibk.ac.at/en/disc/team/) on October 26, 2026. Abdelrahman Abdallah’s identity as Hitesh’s collaborator was checked against the author list of [RECOR: Reasoning-focused Multi-turn Conversational Retrieval Benchmark](https://aclanthology.org/2026.findings-acl.129/). Their inclusion in the program committee was directed by the user; the sources verify identity and affiliation.
+
+Hy Dang’s University of Notre Dame affiliation was checked against his [current homepage](https://hygiadang.com/) on October 26, 2026. It identifies him as a Ph.D. candidate in Computer Science and Engineering and distinguishes his current university affiliation from past Oracle and Amazon internships. He was added to the program committee at the user’s request.

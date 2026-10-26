@@ -1,0 +1,168 @@
+{
+  "site": "https://rbd-workshop.github.io/",
+  "checked_on": "2026-10-26",
+  "timezone": "America/Los_Angeles",
+  "tested_site_commit": "be5734c440a6325f123f1b001ef078035481b57e",
+  "measurement_type": "Google PageSpeed Insights lab runs; not real-user analytics",
+  "lighthouse_version": "13.5.0",
+  "mobile": {
+    "report_url": "https://pagespeed.web.dev/analysis/https-rbd-workshop-github-io/6kg52giufz?form_factor=mobile",
+    "captured_at_local": "2026-10-26 15:24:53 PDT",
+    "performance": 99,
+    "accessibility": 100,
+    "best_practices": 100,
+    "seo": 100,
+    "fcp_ms": 782,
+    "lcp_ms": 2102,
+    "total_blocking_time_ms": 0,
+    "cls": 0,
+    "speed_index_ms": 782,
+    "device": "Emulated Moto G Power",
+    "throttling": "Slow 4G"
+  },
+  "desktop": {
+    "report_url": "https://pagespeed.web.dev/analysis/https-rbd-workshop-github-io/2kf0t0izjs?form_factor=desktop",
+    "captured_at_local": "2026-10-26 15:26:08 PDT",
+    "performance": 100,
+    "accessibility": 100,
+    "best_practices": 100,
+    "seo": 100,
+    "fcp_ms": 244,
+    "lcp_ms": 464,
+    "total_blocking_time_ms": 0,
+    "cls": 0,
+    "speed_index_ms": 351,
+    "device": "Emulated Desktop",
+    "throttling": "Custom"
+  },
+  "field_data": {
+    "status": "No Data in both PageSpeed reports",
+    "inp": null,
+    "core_web_vitals_assessment": "Unavailable; lab LCP and CLS do not establish a field pass"
+  },
+  "analytics": {
+    "visitor_tracking": "Not installed; the only external script element is the local app.js navigation script",
+    "visitors": null,
+    "sessions": null,
+    "search_clicks": null,
+    "search_impressions": null,
+    "search_positions": null,
+    "indexation_status": "Not verified through Search Console",
+    "account_reports": "User explicitly deferred account reports; no account configuration or tracking was added"
+  },
+  "dom_evidence": {
+    "canonical": "https://rbd-workshop.github.io/",
+    "description": "RBD at NAACL 2027 explores capability retrieval for language agents: tools, skills, workflows, memory, models, and agents. Topics, submissions, and speakers.",
+    "h1Count": 1,
+    "imageCount": 14,
+    "imagesMissingAlt": 0,
+    "language": "en",
+    "metaTags": [],
+    "robots": "index, follow, max-image-preview:large",
+    "scripts": [
+      "https://rbd-workshop.github.io/assets/app.js"
+    ],
+    "structuredDataTypes": [
+      "WebSite",
+      "Organization",
+      "WebPage",
+      "Person",
+      "Person",
+      "Person",
+      "Person",
+      "Person",
+      "Person",
+      "Person",
+      "Person",
+      "Person",
+      "Person",
+      "Person",
+      "Person"
+    ],
+    "title": "Retrieval Beyond Documents (RBD) Workshop | NAACL 2027"
+  },
+  "http_evidence": [
+    {
+      "url": "https://rbd-workshop.github.io/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "location": null,
+      "cache_control": "max-age=600",
+      "x_robots_tag": null,
+      "hsts": "max-age=31556952"
+    },
+    {
+      "url": "http://rbd-workshop.github.io/",
+      "status": 301,
+      "content_type": "text/html",
+      "location": "https://rbd-workshop.github.io/",
+      "cache_control": null,
+      "x_robots_tag": null,
+      "hsts": null
+    },
+    {
+      "url": "https://rbd-workshop.github.io/robots.txt",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "location": null,
+      "cache_control": "max-age=600",
+      "x_robots_tag": null,
+      "hsts": "max-age=31556952",
+      "body": "User-agent: *\nAllow: /\n\nSitemap: https://rbd-workshop.github.io/sitemap.xml\n"
+    },
+    {
+      "url": "https://rbd-workshop.github.io/sitemap.xml",
+      "status": 200,
+      "content_type": "application/xml",
+      "location": null,
+      "cache_control": "max-age=600",
+      "x_robots_tag": null,
+      "hsts": "max-age=31556952",
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n  <url><loc>https://rbd-workshop.github.io/</loc><lastmod>2026-10-26</lastmod></url>\n</urlset>\n"
+    },
+    {
+      "url": "https://rbd-workshop.github.io/rbd-seo-missing-page",
+      "status": 404,
+      "content_type": "text/html; charset=utf-8",
+      "location": null,
+      "cache_control": null,
+      "x_robots_tag": null,
+      "hsts": "max-age=31556952"
+    }
+  ],
+  "opportunities": [
+    {
+      "priority": "Low",
+      "area": "Image delivery",
+      "mobile_estimated_savings_kib": 65,
+      "desktop_estimated_savings_kib": 288,
+      "action": "Consider responsive image sizes when updating assets; preserve visual quality. Current measured performance is already good."
+    },
+    {
+      "priority": "Low",
+      "area": "Cache lifetime",
+      "mobile_estimated_savings_kib": 260,
+      "desktop_estimated_savings_kib": 482,
+      "action": "GitHub Pages currently serves max-age=600; this is a hosting setting, not an HTML meta-tag fix."
+    },
+    {
+      "priority": "Low",
+      "area": "Render-blocking requests",
+      "mobile_estimated_savings_ms": 120,
+      "action": "Retain the small stylesheet unless further measurements justify critical CSS changes."
+    },
+    {
+      "priority": "Low",
+      "area": "Forced reflow",
+      "device": "desktop",
+      "action": "Lighthouse flagged this diagnostic; no performance score failure. Profile further only if interactions show a problem."
+    }
+  ],
+  "limitations": [
+    "Scores can vary across lab runs.",
+    "Lighthouse SEO 100 covers basic technical checks and is not a ranking or reach score.",
+    "Automated accessibility scores do not replace manual testing.",
+    "No traffic total is reported as zero: tracking is absent.",
+    "Hy Dang was added in a subsequent content-only update; the measured rendering assets are unchanged."
+  ]
+}

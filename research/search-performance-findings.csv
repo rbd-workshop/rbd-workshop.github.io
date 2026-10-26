@@ -1,0 +1,8 @@
+priority,area,evidence,impact,next_action,status
+P1,Visitor analytics,No tracking script installed,Cannot measure visits sessions or referrals,Choose and configure analytics when account work resumes,Not configured
+P1,Search reporting,Account reports deferred by the user,Search clicks impressions rankings and index status are unknown,Verify Search Console and submit sitemap when ready,Deferred
+P1,Final submission details,Portal deadlines and actual workshop date remain forthcoming,Prospective authors cannot yet act on the call,Publish confirmed details when available,Awaiting confirmed information
+P2,Real-user performance,PageSpeed reports No Data,No field Core Web Vitals or INP assessment is possible,Recheck once sufficient real-user samples exist,Unavailable
+P3,Images and caching,Image and cache lifetime opportunities appear in PageSpeed,Potential transfer savings; current performance scores 99 mobile and 100 desktop,Consider responsive assets during future updates; retain visual quality,Optional improvement
+Pass,Technical SEO,Both Lighthouse SEO scores are 100; metadata and crawl files verified,Basic crawler and on-page checks pass,Maintain canonical sitemap robots and accessible static content,Verified
+Pass,HTTPS and status codes,HTTP redirects 301 to HTTPS; homepage 200 and missing page 404,Canonical delivery and missing-page behavior are correct,Retain current Pages configuration,Verified

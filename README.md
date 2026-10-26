@@ -33,6 +33,12 @@ The full page is delivered as static HTML. Its text and navigation do not depend
 
 The natural search focus is the workshop's full name, **RBD at NAACL 2027**, and **capability retrieval for language agents**. The overview and topics also cover tools, skills, workflows, memory, models, and agents. These are descriptive query themes, not claims about measured search demand. Preserve readable academic prose and avoid repeating keywords or creating thin pages for each phrase.
 
+### Public performance and analytics report
+
+The October 26, 2026 Google PageSpeed Insights reports scored **99 performance on mobile** and **100 on desktop**, with **100 accessibility, best practices, and SEO on both**. Mobile LCP was 2.1 seconds; desktop LCP was 0.5 seconds. Both lab runs reported zero total blocking time and zero layout shift. [Mobile report](https://pagespeed.web.dev/analysis/https-rbd-workshop-github-io/6kg52giufz?form_factor=mobile) · [Desktop report](https://pagespeed.web.dev/analysis/https-rbd-workshop-github-io/2kf0t0izjs?form_factor=desktop) · [Saved measurements](research/search-performance-report.json) · [Prioritized findings](research/search-performance-findings.csv).
+
+These are lab results, not traffic analytics or a ranking guarantee. PageSpeed had no real-user data, so field Core Web Vitals and INP remain unassessed. No visitor analytics script is installed; visitor counts, sessions, referrals, search impressions, and clicks are unknown. The user deferred account reports, and no tracking or account configuration was added. Main next steps are search-property verification, analytics setup when desired, and confirmed submission information. Image delivery and cache lifetime are optional performance opportunities rather than failed SEO checks.
+
 ### Configuration
 
 - Set `siteUrl`, `seoTitle`, and `description` in `content/workshop.json`. The canonical target is `https://rbd-workshop.github.io/`, verified against the public deployment. All search URLs derive from this setting.
@@ -115,7 +121,7 @@ Feature branch: `codex/workshop-website`. The first design and the conference-st
 
 ## Content sources
 
-The workshop content comes from the user's `Retrieval_beyond_document.pdf`, downloaded October 26, 2026. The user confirmed NAACL as the conference. The PDF lists four confirmed speakers and eight organizers. The current program committee contains sixteen members. Amit Agarwal remains first, and affiliations are interleaved across the list. Adam Jatowt and Abdelrahman Abdallah were added at the user’s request; Srikant Panda remains removed. Hitesh Laxmichand Patel is the first organizer. It is not copied into the public website.
+The workshop content comes from the user's `Retrieval_beyond_document.pdf`, downloaded October 26, 2026. The user confirmed NAACL as the conference. The PDF lists four confirmed speakers and eight organizers. The current program committee contains seventeen members. Amit Agarwal remains first, and affiliations are interleaved across the list. Adam Jatowt and Abdelrahman Abdallah were added at the user’s request; Srikant Panda remains removed. Hitesh Laxmichand Patel is the first organizer. It is not copied into the public website.
 
 The overview and all five topic groups were rechecked against Sections 1 and 1.2 of the proposal on October 26, 2026. The overview explicitly defines capability retrieval using the natural language goal and the agent’s current state, and explains functional relevance, compatibility, and evaluation through downstream use. The topic descriptions preserve representation and indexing; retrieval, routing, and composition; retrieval during execution; evaluation; and deployment. The revised text restores dynamic indexes, ontologies, incorporation, and recovery where the earlier summaries omitted them, and explains completeness, dependency checks, freshness, and observability in plain language. The scope statement follows the proposal’s exclusion of work assuming a fixed, manually selected capability set.
 
