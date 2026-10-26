@@ -1,63 +1,69 @@
 :root {
   --ink: #312d2a;
-  --navy: #312d2a;
+  --surface: #f5f4f2;
   --link: #9e392c;
   --muted: #625d58;
   --line: #dedbd7;
   --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 * { box-sizing: border-box; }
-html { scroll-padding-top: 100px; }
+html { scroll-padding-top: 100px; color-scheme: light; -webkit-tap-highlight-color: rgba(158,57,44,.15); }
 body { margin: 0; background: #fff; color: var(--ink); font: 16px/1.75 var(--font); -webkit-font-smoothing: antialiased; }
 h1,h2,h3,h4,p { margin: 0; }
-a { color: var(--link); text-decoration: none; }
+a { color: var(--link); text-decoration: none; touch-action: manipulation; text-underline-offset: .2em; text-decoration-thickness: 1px; }
 a:hover { text-decoration: underline; }
-a:focus-visible { outline: 2px solid var(--link); outline-offset: 5px; }
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 4px; scroll-margin-block: 12px; }
 img { display: block; max-width: 100%; }
 p + p { margin-top: 16px; }
 strong { font-weight: 600; }
 .container { width: min(1120px, calc(100% - 80px)); margin-inline: auto; }
+h1,h2,h3 { text-wrap: balance; }
+main p a, .topics a, .submission-guidelines a { text-decoration: underline; }
+main p, .topics li, .biography { overflow-wrap: break-word; }
+.section > p { max-width: 76ch; }
 .skip-link { position: fixed; top: -80px; left: 20px; padding: 10px 16px; background: white; z-index: 100; }
 .skip-link:focus { top: 10px; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .site-header { position: sticky; top: 0; z-index: 20; background: white; border-bottom: 1px solid var(--line); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 25px; min-height: 72px; }
-.brand { display: flex; align-items: center; gap: 10px; color: var(--navy); flex-shrink: 0; font-size: 19px; font-weight: 450; letter-spacing: 0; }
+.brand { display: flex; align-items: center; gap: 10px; min-height: 44px; color: var(--ink); flex-shrink: 0; font-size: 19px; font-weight: 450; letter-spacing: 0; }
 .brand:hover { text-decoration: none; }
-.brand img { width: 100px; height: 40px; }
+.brand img { width: 100px; height: auto; }
 #main-nav { display: flex; align-items: center; gap: 27px; }
-#main-nav a { color: #45403b; font-size: 14px; white-space: nowrap; padding: 23px 0; }
+#main-nav a { display: inline-flex; justify-content: center; align-items: center; min-width: 44px; min-height: 44px; color: #45403b; font-size: 14px; white-space: nowrap; padding: 23px 0; }
+#main-nav a:hover { color: var(--link); }
 #main-nav a[aria-current='location'] { color: var(--link); text-decoration: underline; text-underline-offset: 6px; }
 .masthead { position: relative; isolation: isolate; background: #243d44 url('san-francisco.webp') center 48% / cover no-repeat; color: #fff; }
 .masthead::before { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg,rgba(21,37,42,.86),rgba(21,37,42,.73) 55%,rgba(21,37,42,.30)); }
 .masthead .container { padding-block: 60px 64px; }
 .conference-label { font-size: 17px; font-weight: 500; margin-bottom: 10px; }
 h1 { font-size: clamp(34px,3.6vw,47px); line-height: 1.22; letter-spacing: -1.2px; font-weight: 600; }
-.subtitle { font-size: 25px; line-height: 1.5; margin-top: 10px; color: #fff; }
+.subtitle { font-size: 25px; line-height: 1.5; margin-top: 10px; color: #fff; text-wrap: balance; }
 .event-location { color: #edf1f0; font-size: 14px; margin-top: 24px; }
 .event-location span { padding-inline: 8px; }
-h2 { font-size: 29px; line-height: 1.3; font-weight: 600; color: var(--navy); letter-spacing: -.45px; margin-bottom: 24px; }
-h3 { font-size: 20px; line-height: 1.4; font-weight: 600; color: var(--navy); }
+h2 { font-size: 29px; line-height: 1.3; font-weight: 600; color: var(--ink); letter-spacing: -.45px; margin-bottom: 24px; }
+h3 { font-size: 20px; line-height: 1.4; font-weight: 600; color: var(--ink); }
 .introduction-layout { display: grid; grid-template-columns: minmax(0,1fr) 290px; grid-template-areas: 'overview dates' 'cfp dates'; gap: 32px 65px; padding-block: 48px; align-items: start; }
 #about { grid-area: overview; }
+#about p { max-width: 76ch; }
 #cfp { grid-area: cfp; }
 .introduction-layout > .section { padding-block: 32px 0; }
 .dates { grid-area: dates; border-left: 1px solid var(--line); padding-left: 28px; }
 .dates h2 { font-size: 22px; margin-bottom: 18px; }
 .dates dl { margin: 0; }
-.date-row { padding-block: 11px; border-bottom: 1px solid #e2e7ea; }
-.date-row dt { font-size: 14px; font-weight: 550; }
-.date-row dd { font-size: 13px; color: var(--muted); margin: 1px 0 0; }
-.date-note { font-size: 12px; color: var(--muted); margin-top: 14px; line-height: 1.65; }
+.date-row { padding-block: 12px; border-bottom: 1px solid var(--line); }
+.date-row dt { font-size: 15px; font-weight: 550; }
+.date-row dd { font-size: 14px; color: var(--muted); margin: 2px 0 0; font-variant-numeric: tabular-nums; }
+.date-note { font-size: 13px; color: var(--muted); margin-top: 14px; line-height: 1.65; }
 .conference-details { margin-top: 26px; }
 .conference-details h3 { font-size: 18px; margin-bottom: 8px; }
-.conference-details p, .conference-details a { font-size: 13px; }
-.conference-details .date-note { font-size: 12px; }
-.conference-details a { display: inline-block; margin-top: 10px; }
+.conference-details p, .conference-details a { font-size: 14px; }
+.conference-details .date-note { font-size: 13px; }
+.conference-details a { display: inline-flex; align-items: center; min-height: 44px; margin-top: 8px; }
 .conference-details .conference-logo { display: block; width: 240px; max-width: 100%; margin: 0 0 16px; }
 .conference-logo img { width: 100%; height: auto; }
 .section { padding-block: 48px; border-top: 1px solid var(--line); }
-.prose { max-width: 1000px; }
+.prose { max-width: 76ch; }
 .prose h3 { margin: 27px 0 13px; }
 .prose h4 { font-size: 16px; line-height: 1.5; font-weight: 600; margin: 24px 0 12px; }
 .topics { padding-left: 22px; margin: 0; }
@@ -67,30 +73,32 @@ h3 { font-size: 20px; line-height: 1.4; font-weight: 600; color: var(--navy); }
 .submission-guidelines a { text-decoration: underline; text-underline-offset: 3px; }
 .section-note { color: var(--muted); font-size: 14px; }
 .people { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 44px 50px; margin-top: 28px; }
-.person { display: grid; grid-template-columns: 136px minmax(0,1fr); gap: 23px; align-items: start; }
+.person { display: grid; grid-template-columns: 136px minmax(0,1fr); gap: 23px; align-items: start; min-width: 0; }
+.person-copy { min-width: 0; }
 .person-photo { width: 136px; height: 163px; object-fit: cover; object-position: center 35%; background: #f3f1ee; }
 .person h3 { font-size: 20px; line-height: 1.4; letter-spacing: -.15px; }
-.person h3 a { color: var(--navy); }
-.affiliation { margin-top: 5px; color: #625d58; font-size: 13px; line-height: 1.55; }
-.biography { margin-top: 13px; font-size: 14px; line-height: 1.8; }
-.profile-link { display: inline-block; font-size: 13px; margin-top: 9px; text-decoration: underline; text-underline-offset: 3px; }
+.person h3 a { color: var(--ink); }
+.person h3 a:hover { color: var(--link); }
+.affiliation { margin-top: 5px; color: var(--muted); font-size: 14px; line-height: 1.55; }
+.biography { margin-top: 14px; font-size: 15px; line-height: 1.75; }
+.profile-link { display: inline-flex; align-items: center; min-width: 44px; min-height: 44px; font-size: 14px; margin-top: 4px; text-decoration: underline; text-underline-offset: 3px; }
 .photo-pending { display: flex; align-items: center; justify-content: center; width: 136px; height: 163px; padding: 20px; color: #65737b; background: #f3f1ee; font-size: 12px; line-height: 1.6; text-align: center; }
 .program-table { width: 100%; margin-block: 24px; border-collapse: collapse; text-align: left; font-size: 15px; }
 .program-table th, .program-table td { padding: 15px 18px; border-bottom: 1px solid var(--line); vertical-align: top; }
-.program-table thead { background: #f2f0ed; color: var(--navy); }
+.program-table thead { background: var(--surface); color: var(--ink); }
 .program-table tbody th { width: 27%; font-weight: 550; }
 .committee-list { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 22px 35px; list-style: none; padding: 0; margin: 0; }
 .committee-list li { display: flex; flex-direction: column; }
 .committee-list li span:first-child { font-size: 15px; font-weight: 550; }
-.committee-list li span + span { font-size: 13px; color: var(--muted); }
+.committee-list li span + span { font-size: 14px; color: var(--muted); }
 .contact { padding-bottom: 55px; }
 .contact a { overflow-wrap: anywhere; }
 .error-page { padding-block: 72px; }
 .error-page h1 { margin-bottom: 24px; }
 .error-page > p { max-width: 650px; }
-.site-footer { background: #f5f4f2; border-top: 1px solid var(--line); padding-block: 26px; font-size: 13px; color: var(--muted); }
+.site-footer { background: var(--surface); border-top: 1px solid var(--line); padding-block: 26px; font-size: 14px; color: var(--muted); }
 .site-footer .container { position: relative; padding-right: 120px; }
-.site-footer a { position: absolute; top: 0; right: 0; }
+.site-footer a { position: absolute; top: -10px; right: 0; display: inline-flex; align-items: center; min-height: 44px; }
 @media (max-width:1050px) {
   .container { width: calc(100% - 56px); }
   #main-nav { gap: 20px; }
@@ -105,7 +113,7 @@ h3 { font-size: 20px; line-height: 1.4; font-weight: 600; color: var(--navy); }
   html { scroll-padding-top: 130px; }
   .header-inner { flex-direction: column; gap: 0; padding-top: 11px; }
   .brand { font-size: 18px; }
-  .brand img { width: 90px; height: 36px; }
+  .brand img { width: 90px; }
   #main-nav { width: 100%; justify-content: space-between; gap: 12px; }
   #main-nav a { padding: 13px 0 16px; }
   .masthead .container { padding-block: 36px 38px; }
@@ -125,19 +133,20 @@ h3 { font-size: 20px; line-height: 1.4; font-weight: 600; color: var(--navy); }
 }
 @media (max-width:650px) {
   .dates dl { grid-template-columns: 1fr; }
+  .masthead::before { background: rgba(21,37,42,.73); }
 }
 @media (max-width:500px) {
   html { scroll-padding-top: 20px; }
-  body { font-size: 15px; line-height: 1.8; }
+  body { line-height: 1.75; }
   .container { width: calc(100% - 36px); }
   .site-header { position: relative; }
   #main-nav { display: grid; grid-template-columns: repeat(3,1fr); gap: 0 8px; padding-block: 7px 9px; }
-  #main-nav a { padding: 5px 0; font-size: 12px; text-align: center; }
+  #main-nav a { padding: 8px 0; font-size: 13px; text-align: center; }
   .masthead .container { padding-block: 30px 32px; }
   .conference-label { font-size: 14px; margin-bottom: 11px; }
   h1 { font-size: 34px; letter-spacing: -.8px; line-height: 1.2; }
   .subtitle { font-size: 19px; line-height: 1.5; margin-top: 14px; }
-  .event-location { font-size: 12px; margin-top: 18px; }
+  .event-location { font-size: 13px; margin-top: 18px; }
   .event-location span { display: block; height: 0; font-size: 0; }
   h2 { font-size: 26px; margin-bottom: 20px; }
   h3 { font-size: 19px; }
@@ -149,17 +158,17 @@ h3 { font-size: 20px; line-height: 1.4; font-weight: 600; color: var(--navy); }
   .person-copy { display: contents; }
   .person-heading { grid-column: 2; grid-row: 1; align-self: center; }
   .person h3 { font-size: 19px; }
-  .affiliation { font-size: 12px; }
-  .biography { grid-column: 1/-1; margin-top: 16px; font-size: 14px; line-height: 1.8; }
-  .profile-link { grid-column: 1/-1; justify-self: start; margin-top: 6px; font-size: 13px; }
+  .affiliation { font-size: 13px; }
+  .biography { grid-column: 1/-1; margin-top: 16px; }
+  .profile-link { grid-column: 1/-1; justify-self: start; margin-top: 4px; }
   .program-table { font-size: 13px; }
   .program-table th, .program-table td { padding: 12px 10px; }
   .program-table tbody th { width: 34%; }
   .committee-list { gap: 20px; }
   .committee-list li span:first-child { font-size: 14px; }
-  .committee-list li span + span { font-size: 12px; }
+  .committee-list li span + span { font-size: 13px; }
   .site-footer .container { padding-right: 0; }
-  .site-footer a { position: static; display: inline-block; margin-top: 12px; }
+  .site-footer a { position: static; margin-top: 8px; }
 }
 @media print {
   .site-header,.site-footer { display: none; }

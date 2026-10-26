@@ -1,0 +1,18 @@
+checked_on,area,file,issue_or_check,before,after,verification
+2026-10-26,Mobile navigation,src/style.css,Touch targets,Phone links about 32px tall,Minimum 44px width and height,Measured at nine widths from 320 to 2560px
+2026-10-26,Profile links,src/style.css,Touch targets,Links about 23px tall and narrower than 44px,Minimum 44x44px target,Measured in browser
+2026-10-26,Typography,src/style.css,Small supporting copy,14px bios and 12px date notes,15px bios and 13px date notes with 16px mobile body,Desktop and phone screenshots reviewed
+2026-10-26,Branding,src/style.css,Logo proportions,RBD image box used slightly different proportions,Automatic height follows intrinsic SVG ratio,Original letterforms and official NAACL logo unchanged
+2026-10-26,Color,src/style.css,Text contrast,Approved palette retained,Body 13.64:1 muted 6.51:1 links 6.83:1 footer 5.92:1,Calculated from sRGB luminance
+2026-10-26,Hero,src/style.css,Mobile photo contrast,Gradient allowed lighter image areas under full-width text,Consistent mobile overlay with worst-case muted text contrast 5.70:1,Calculated over white image pixel and visually inspected
+2026-10-26,Links,src/style.css,Color-only prose links,Some text links only distinguished by red,Inline prose links underlined,Visible in CFP and contact
+2026-10-26,Headings,src/style.css,Wrapping and reading measure,Default heading wrapping and wider prose,Balanced headings and 76ch maximum prose measure,No overflow at tested widths
+2026-10-26,Keyboard,src/index.html,Skip link focus,Activation scrolled but activeElement remained BODY,Main target accepts programmatic anchor focus,Enter on skip link sets activeElement.id to main
+2026-10-26,Navigation,src/index.html,Mobile Back to top,Home anchor left the header above viewport,Home anchor targets beginning of body,Back to top returns scrollY to 0 and shows navigation
+2026-10-26,Navigation,src/app.js,Initial active section,No active link before reaching overview,Overview active on landing page,Verified initial and all six section states
+2026-10-26,Keyboard,src/style.css,Focus visibility,Existing outline retained and spacing refined,Visible 2px red outline,Tab and Enter navigation checked below sticky header
+2026-10-26,Accessibility,scripts/build.mjs,Profile link names,Repeated Profile accessible names,Names identify each person and new-tab behavior,Generated HTML checked
+2026-10-26,Browser chrome,src/index.html,Theme color,Dark theme-color did not match white header,White theme-color and explicit light color-scheme,Generated source and rendered page checked
+2026-10-26,Responsive layout,src/style.css,Horizontal overflow,None found before changes,None found after refinements,320 390 650 768 850 1024 1440 1920 2560 CSS pixels
+2026-10-26,Images,src/index.html,Portrait and logo loading,Existing explicit image dimensions and lazy loading,Preserved and visually checked,Desktop and mobile organizer views
+2026-10-26,Scope,README.md,Review limitations,No formal accessibility certification,Physical devices screen readers and other browser engines not tested,Documented release checks

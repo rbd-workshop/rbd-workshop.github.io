@@ -11,7 +11,7 @@ function updateActiveSection() {
     .map(section => ({ id: section.id, top: section.getBoundingClientRect().top }))
     .filter(section => section.top <= marker)
     .sort((a, b) => b.top - a.top);
-  let active = candidates[0]?.id;
+  let active = candidates[0]?.id || 'about';
   if (document.querySelector('#contact').getBoundingClientRect().top <= marker) active = null;
   // The dates sidebar shares a row with the overview; an explicit anchor takes precedence.
   if (location.hash === '#dates' && Math.abs(document.querySelector('#dates').getBoundingClientRect().top - marker) < 130) active = 'dates';

@@ -13,7 +13,7 @@ const safeUrl = value => {
 };
 const person = p => `<article class="person${p.image ? '' : ' person-without-photo'}" id="${escape(p.id)}">
   ${p.image ? `<img class="person-photo" src="${escape(p.image)}" alt="${escape(p.name)}" width="300" height="360" loading="lazy">` : '<p class="photo-pending">Photograph forthcoming</p>'}
-  <div class="person-copy"><div class="person-heading"><h3>${p.url ? `<a href="${safeUrl(p.url)}" target="_blank" rel="noopener noreferrer">${escape(p.name)}</a>` : escape(p.name)}</h3><p class="affiliation">${escape(p.affiliation)}</p></div><p class="biography">${escape(p.bio)}</p>${p.url ? `<a class="profile-link" href="${safeUrl(p.url)}" target="_blank" rel="noopener noreferrer">Profile</a>` : ''}</div>
+  <div class="person-copy"><div class="person-heading"><h3>${p.url ? `<a href="${safeUrl(p.url)}" target="_blank" rel="noopener noreferrer">${escape(p.name)}</a>` : escape(p.name)}</h3><p class="affiliation">${escape(p.affiliation)}</p></div><p class="biography">${escape(p.bio)}</p>${p.url ? `<a class="profile-link" href="${safeUrl(p.url)}" target="_blank" rel="noopener noreferrer" aria-label="${escape(p.name)}’s profile (opens in a new tab)">Profile</a>` : ''}</div>
 </article>`;
 
 export async function build() {

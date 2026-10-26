@@ -70,6 +70,25 @@ Speaker and organizer portraits and the San Francisco banner are hosted locally 
 
 The official NAACL 2027 San Francisco logo is displayed in the parent-conference details and the social sharing card, using the original asset from the conference website. Its proportions and colors are preserved; the workshop's own RBD wordmark remains the primary identity.
 
+## UI review
+
+The October 26, 2026 UI pass applied [Anthropic's Frontend Design skill](https://github.com/anthropics/claude-code/tree/main/plugins/frontend-design/skills/frontend-design) and [Vercel's Web Design Guidelines skill](https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines), with the current [interface rules](https://github.com/vercel-labs/web-interface-guidelines/blob/main/command.md). Both skills were installed in the user's local Codex skill library. Findings and resolutions are recorded in [research/ui-review.csv](research/ui-review.csv).
+
+The direction remains a conventional academic workshop site: left-aligned research content, visible section navigation, substantial biographies, and the Golden Gate Bridge as the main visual. The palette retains white `#ffffff`, ink `#312d2a`, RBD red `#c74634`, accessible link red `#9e392c`, muted text `#625d58`, and warm rules `#dedbd7`. Native sans-serif type is intentional for familiar conference-page reading and fast loading. Main copy is 16px; biographies are 15px; supporting information is 13–14px. Longer prose has a 76ch maximum measure where space allows. Both logos retain their original artwork.
+
+```text
+Desktop                           Phone
+[RBD 2027 | six section links]     [RBD 2027]
+[Bridge, title, subtitle]          [six links across two rows]
+[Overview       | Dates]          [Bridge, title, subtitle]
+[Call for papers| NAACL]          [Overview, dates, NAACL, CFP]
+[Speakers and organizers]         [Portrait and name, full bio]
+```
+
+Verified in the in-app browser at 320, 390, 650, 768, 850, 1024, 1440, 1920, and 2560 CSS pixels: no horizontal content overflow; navigation and standalone profile links have at least 44 × 44px targets. The six desktop section links land below the sticky header and select the correct navigation item. Keyboard focus is visible; the skip link moves focus into `main`; Back to top restores the complete mobile header. Body, muted, link, and footer text contrast ratios are 13.64:1, 6.51:1, 6.83:1, and 5.92:1 respectively. The mobile hero overlay provides at least 5.70:1 contrast for its muted text even over a white image pixel. Desktop hero contrast was inspected visually. There are no autoplay or decorative animations.
+
+This is a local design and interaction review, not a complete accessibility certification. Physical-device, screen-reader, and cross-browser testing remain separate release checks. The public workshop content, conference information, and approved logo designs were preserved.
+
 ## Git and publishing later
 
 Feature branch: `codex/workshop-website`. The first design and the conference-style redesign are preserved in Git history. No remote or public deployment is configured.
