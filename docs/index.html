@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Retrieval Beyond Documents · NAACL 2027</title>
-  <meta name="description" content="A NAACL 2027 workshop on retrieving the tools, skills, workflows, memories, models, and agents that turn language into action.">
-  <meta name="theme-color" content="#15375b">
+  <meta name="description" content="Retrieval Beyond Documents (RBD), a NAACL 2027 workshop on capability retrieval for language agents. Overview, call for papers, speakers, program, and organizers.">
+  <meta name="theme-color" content="#312d2a">
   <meta property="og:title" content="Retrieval Beyond Documents · NAACL 2027">
-  <meta property="og:description" content="A NAACL 2027 workshop on retrieving the tools, skills, workflows, memories, models, and agents that turn language into action.">
+  <meta property="og:description" content="Retrieval Beyond Documents (RBD), a NAACL 2027 workshop on capability retrieval for language agents. Overview, call for papers, speakers, program, and organizers.">
   <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:card" content="summary">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="apple-touch-icon" href="assets/rbd-icon.png">
   <link rel="stylesheet" href="assets/style.css">
@@ -19,125 +19,125 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="header-inner container">
-      <a class="brand" href="#home" aria-label="RBD workshop home">
-        <img src="assets/rbd-mark.svg" width="45" height="45" alt="">
-        <span class="brand-text"><strong>RBD <span>2027</span></strong><span>Retrieval Beyond Documents</span></span>
-      </a>
+      <a class="brand" href="#home" aria-label="RBD workshop home"><img src="assets/rbd-mark.svg" width="100" height="40" alt="RBD"><span>2027</span></a>
       <nav id="main-nav" aria-label="Main navigation">
-        <a href="#about">Overview</a>
-        <a href="#cfp">Call for Papers</a>
-        <a href="#dates">Dates</a>
-        <a href="#speakers">Speakers</a>
-        <a href="#program">Program</a>
-        <a href="#organizers">Organizers</a>
+        <a href="#about">Overview</a><a href="#cfp">Call for Papers</a><a href="#dates">Dates</a><a href="#speakers">Speakers</a><a href="#program">Program</a><a href="#organizers">Organizers</a>
       </nav>
     </div>
   </header>
-
   <main id="main">
-    <section class="hero" id="home" aria-labelledby="hero-title">
-      <div class="container hero-inner">
-        <p class="conference-label">NAACL 2027 <span aria-hidden="true">|</span> Inaugural Workshop</p>
-        <h1 id="hero-title">Retrieval Beyond<br>Documents</h1>
-        <p class="hero-subtitle">Capability Retrieval for Language Agents</p>
-        <div class="hero-meta">
-          <span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>San Francisco, California</span>
-          <span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 2v6m10-6v6M3 11h18"/></svg>Workshop date: To be announced</span>
-        </div>
-        <div class="hero-actions">
-          <a class="button button-light" href="#cfp">Call for Papers</a>
-          <a class="button button-outline" href="#speakers">Invited Speakers</a>
-        </div>
+    <section class="masthead" id="home" aria-labelledby="hero-title">
+      <div class="container">
+        <p class="conference-label">First Workshop at NAACL 2027</p>
+        <h1 id="hero-title">Retrieval Beyond Documents</h1>
+        <p class="subtitle">Capability Retrieval for Language Agents</p>
+        <p class="event-location">San Francisco, California<span aria-hidden="true"> · </span>Workshop date to be announced</p>
       </div>
-      <a class="photo-credit" href="https://unsplash.com/photos/golden-gate-bridge-3YfSwCfJ6Do" target="_blank" rel="noopener noreferrer">San Francisco · Photo by Garth Pratt</a>
     </section>
-
-    <div class="announcement">
-      <div class="container"><strong>Workshop update</strong><p>The submission portal, deadlines, and workshop schedule will be announced here.</p><a href="#dates">Important dates <span aria-hidden="true">→</span></a></div>
-    </div>
-
     <div class="container introduction-layout">
-      <section class="overview" id="about" aria-labelledby="about-title">
-        <h2 id="about-title">About the workshop</h2>
-        <p><strong>Retrieval Beyond Documents (RBD)</strong> brings together researchers in natural language processing, information retrieval, and agent systems to study <strong>capability retrieval for language agents.</strong></p>
-        <p>Language agents must select tools, skills, workflows, memories, models, and other agents that determine how a task is carried out. Given a goal and the agent’s current state, how do we retrieve the right resource—or compatible set of resources—to use next?</p>
-        <p>The workshop focuses on representing and indexing capabilities, retrieving and composing them during execution, and evaluating their contribution to successful task completion.</p>
-        <p>We welcome perspectives from both academia and industry, including methods, benchmarks, systems, reproducibility studies, and diagnostic or negative results.</p>
-        <div class="scope-note"><h3>Workshop scope</h3><p>Tools and APIs · Skills · Workflows · Memories · Models · Agents</p></div>
+      <section id="about" aria-labelledby="about-title">
+        <h2 id="about-title">Overview</h2>
+        <p><strong>Retrieval Beyond Documents (RBD)</strong> brings together researchers in natural language processing, information retrieval, and agent systems to study capability retrieval for language agents.</p>
+        <p>Language agents increasingly need to retrieve tools, skills, workflows, memories, models, and other agents. These resources determine how a task is carried out. The central question is how to select a suitable capability, or a compatible set of capabilities, for an agent’s goal and current state.</p>
+        <p>The workshop examines how to represent and index capabilities, retrieve and compose them during execution, and evaluate their contribution to successful task completion. Contributions may include methods, benchmarks, systems, reproducibility studies, and diagnostic or negative results from academia and industry.</p>
       </section>
-      <aside class="dates-panel" id="dates" aria-labelledby="dates-title">
+      <aside id="dates" class="dates" aria-labelledby="dates-title">
         <h2 id="dates-title">Important dates</h2>
         <dl><div class="date-row"><dt>Paper submission</dt><dd>To be announced</dd></div>
 <div class="date-row"><dt>Author notification</dt><dd>To be announced</dd></div>
-<div class="date-row"><dt>Camera-ready papers</dt><dd>To be announced</dd></div>
+<div class="date-row"><dt>Camera ready papers</dt><dd>To be announced</dd></div>
 <div class="date-row"><dt>Workshop day</dt><dd>To be announced</dd></div></dl>
-        <p class="dates-note">All workshop deadlines are forthcoming.</p>
-        <div class="conference-details"><h3>At NAACL 2027</h3><p>San Francisco, California<br>June 1–5, 2027</p><p class="small-note">Conference dates are shown above. The RBD workshop day will be confirmed separately.</p><a href="https://2027.naacl.org/" target="_blank" rel="noopener noreferrer">NAACL 2027 website <span aria-hidden="true">↗</span></a></div>
+        <p class="date-note">Submission details and the workshop schedule are forthcoming.</p>
+        <div class="conference-details"><h3>NAACL 2027</h3><p>June 1 to 5, 2027<br>San Francisco, California</p><p class="date-note">These are the parent conference dates. The workshop day will be confirmed separately.</p><a href="https://2027.naacl.org/" target="_blank" rel="noopener noreferrer">Conference website</a></div>
       </aside>
     </div>
-
-    <section class="section section-tinted" id="speakers" aria-labelledby="speakers-title">
-      <div class="container">
-        <div class="section-heading"><h2 id="speakers-title">Invited speakers</h2><p>Talk titles and abstracts will be announced with the program.</p></div>
-        <div class="speakers-grid"><article class="speaker">
-    <a class="speaker-photo" href="https://www.informatik.tu-darmstadt.de/ukp/ukp_home/head_ukp/index.en.jsp" target="_blank" rel="noopener noreferrer" aria-label="Iryna Gurevych — profile (opens in new tab)"><img src="assets/people/iryna-gurevych.webp" alt="Iryna Gurevych" width="240" height="240" loading="lazy"></a>
-    <h3><a href="https://www.informatik.tu-darmstadt.de/ukp/ukp_home/head_ukp/index.en.jsp" target="_blank" rel="noopener noreferrer">Iryna Gurevych</a></h3><p class="affiliation">TU Darmstadt</p><p class="research-area">Semantic representations &amp; trustworthy NLP</p>
-  </article>
-<article class="speaker">
-    <a class="speaker-photo" href="https://www.lti.cs.cmu.edu/people/faculty/neubig-graham.html" target="_blank" rel="noopener noreferrer" aria-label="Graham Neubig — profile (opens in new tab)"><img src="assets/people/graham-neubig.webp" alt="Graham Neubig" width="240" height="240" loading="lazy"></a>
-    <h3><a href="https://www.lti.cs.cmu.edu/people/faculty/neubig-graham.html" target="_blank" rel="noopener noreferrer">Graham Neubig</a></h3><p class="affiliation">Carnegie Mellon University</p><p class="research-area">Language agents, code &amp; reusable abstractions</p>
-  </article>
-<article class="speaker">
-    <a class="speaker-photo" href="https://scottyih.org/" target="_blank" rel="noopener noreferrer" aria-label="Scott Wen-tau Yih — profile (opens in new tab)"><img src="assets/people/scott-yih.webp" alt="Scott Wen-tau Yih" width="240" height="240" loading="lazy"></a>
-    <h3><a href="https://scottyih.org/" target="_blank" rel="noopener noreferrer">Scott Wen-tau Yih</a></h3><p class="affiliation">Meta Fundamental AI Research</p><p class="research-area">Neural retrieval &amp; grounded language models</p>
-  </article>
-<article class="speaker">
-    <a class="speaker-photo" href="https://cs.uwaterloo.ca/~jimmylin/" target="_blank" rel="noopener noreferrer" aria-label="Jimmy Lin — profile (opens in new tab)"><img src="assets/people/jimmy-lin.webp" alt="Jimmy Lin" width="240" height="240" loading="lazy"></a>
-    <h3><a href="https://cs.uwaterloo.ca/~jimmylin/" target="_blank" rel="noopener noreferrer">Jimmy Lin</a></h3><p class="affiliation">University of Waterloo</p><p class="research-area">Information retrieval &amp; agentic search</p>
-  </article></div>
-      </div>
-    </section>
-
     <section class="section container" id="cfp" aria-labelledby="cfp-title">
       <h2 id="cfp-title">Call for papers</h2>
-      <div class="cfp-intro">
-        <div><p>We invite archival and non-archival submissions on capability retrieval, routing, and composition for language agents. Contributions may include research and position papers, benchmarks and datasets, reproducibility studies, demonstrations, and diagnostic or negative results.</p><p>RAG, memory, tool-use, deep-research, and multi-agent work is in scope when capability retrieval, routing, or composition is central.</p></div>
-        <aside class="submission-panel"><h3>Submission information</h3><p class="submission-status"><span class="status-dot" aria-hidden="true"></span> Submission link coming soon</p><p>Formatting requirements, page limits, and the submission portal will be published with the final call.</p></aside>
-      </div>
-      <h3 class="subsection-title" id="topics">Topics of interest</h3>
-      <div class="topics-list"><article class="topic"><h4>Representation &amp; indexing</h4><p>Represent tools, APIs, skills, workflows, memories, models, and agents through language, schemas, code, demonstrations, traces, graphs, and embeddings.</p></article>
-<article class="topic"><h4>Retrieval, routing &amp; composition</h4><p>Retrieve and route across capability types, accounting for dependencies, compatibility, permissions, reliability, and cost. Compose the right set for the task.</p></article>
-<article class="topic"><h4>Retrieval in the agent loop</h4><p>Condition retrieval on execution state, plans, and observations. Study reformulation, clarification, decomposition, invocation, delegation, replanning, recovery, and abstention.</p></article>
-<article class="topic"><h4>Action-grounded evaluation</h4><p>Evaluate retrieval, incorporation, invocation, composition, and execution. Develop complete-set and dependency-aware metrics, calibration, and resource-constrained evaluation.</p></article>
-<article class="topic"><h4>Ecosystems &amp; deployment</h4><p>Build dynamic, federated, and access-controlled registries. Explore Model Context Protocol ecosystems, provenance, permissions, freshness, observability, caching, and reliability.</p></article></div>
-      <div class="review-information"><h3>Submission and review process</h3><p>Direct submissions are planned to be reviewed double-blind through OpenReview. An ARR commitment route and archival or non-archival options are planned, subject to NAACL policy. Work assuming a fixed, manually selected capability set falls outside the workshop’s focus.</p></div>
-    </section>
-
-    <section class="section section-tinted" id="program" aria-labelledby="program-title">
-      <div class="container">
-        <div class="section-heading"><h2 id="program-title">Workshop program</h2><p>A full-day workshop is planned. Session times and the final schedule are forthcoming.</p></div>
-        <table class="program-table"><thead><tr><th scope="col">Session</th><th scope="col">Planned format</th></tr></thead><tbody>
-          <tr><th scope="row">Invited talks</th><td>Academic and industry perspectives on information retrieval, language agents, and orchestration.</td></tr>
-          <tr><th scope="row">Contributed presentations</th><td>Research talks, selected spotlights, poster presentations, and discussion.</td></tr>
-          <tr><th scope="row">Closing panel</th><td>Open research problems, evaluation priorities, and future community benchmarks.</td></tr>
-        </tbody></table>
-        <p class="participation-note">We aim to support remote presentations where venue facilities and policies allow. Registration, accessibility, and participation details will be announced when confirmed.</p>
+      <div class="prose">
+        <p>The workshop invites submissions on capability retrieval, routing, and composition for language agents. Contributions may include research and position papers, benchmarks and datasets, reproducibility studies, demonstrations, and diagnostic or negative results.</p>
+        <p>RAG, memory, tool use, deep research, and multiagent work is in scope when capability retrieval, routing, or composition is central.</p>
+        <h3>Topics of interest</h3>
+        <ul class="topics"><li><strong>Representation &amp; indexing.</strong> Represent tools, APIs, skills, workflows, memories, models, and agents through language, schemas, code, demonstrations, traces, graphs, and embeddings.</li>
+<li><strong>Retrieval, routing &amp; composition.</strong> Retrieve and route across capability types, accounting for dependencies, compatibility, permissions, reliability, and cost. Compose the right set for the task.</li>
+<li><strong>Retrieval in the agent loop.</strong> Condition retrieval on execution state, plans, and observations. Study reformulation, clarification, decomposition, invocation, delegation, replanning, recovery, and abstention.</li>
+<li><strong>Action grounded evaluation.</strong> Evaluate retrieval, incorporation, invocation, composition, and execution. Develop complete set and dependency aware metrics, calibration, and resource constrained evaluation.</li>
+<li><strong>Ecosystems &amp; deployment.</strong> Build dynamic, federated, and access controlled registries. Explore Model Context Protocol ecosystems, provenance, permissions, freshness, observability, caching, and reliability.</li></ul>
+        <h3>Submission and review</h3>
+        <p>The submission portal and paper deadlines will be announced here.</p>
+        <p>Formatting requirements and page limits will be published with the final call. Direct submissions are planned to receive double blind review through OpenReview. An ARR commitment route and archival or nonarchival options are planned, subject to NAACL policy.</p>
+        <p>Work assuming a fixed, manually selected capability set falls outside the workshop’s focus.</p>
       </div>
     </section>
-
+    <section class="section container" id="speakers" aria-labelledby="speakers-title">
+      <h2 id="speakers-title">Invited speakers</h2>
+      <p class="section-note">Talk titles and abstracts will be announced with the program.</p>
+      <div class="people"><article class="person" id="iryna-gurevych">
+  <img class="person-photo" src="assets/people/iryna-gurevych.webp" alt="Iryna Gurevych" width="300" height="360" loading="lazy">
+  <div class="person-copy"><div class="person-heading"><h3><a href="https://www.informatik.tu-darmstadt.de/ukp/ukp_home/head_ukp/index.en.jsp" target="_blank" rel="noopener noreferrer">Iryna Gurevych</a></h3><p class="affiliation">TU Darmstadt</p></div><p class="biography">Iryna Gurevych is a Professor of Computer Science at TU Darmstadt and head of the UKP Lab. Her research spans large language models, generative AI, AI safety, and AI for science, with a sustained interest in knowledge and semantic representations. She is a past President of the Association for Computational Linguistics and an ACL Fellow. She received the Royal Society’s Milner Award and Lecture in 2025.</p><a class="profile-link" href="https://www.informatik.tu-darmstadt.de/ukp/ukp_home/head_ukp/index.en.jsp" target="_blank" rel="noopener noreferrer">Profile</a></div>
+</article>
+<article class="person" id="graham-neubig">
+  <img class="person-photo" src="assets/people/graham-neubig.webp" alt="Graham Neubig" width="300" height="360" loading="lazy">
+  <div class="person-copy"><div class="person-heading"><h3><a href="https://www.lti.cs.cmu.edu/people/faculty/neubig-graham.html" target="_blank" rel="noopener noreferrer">Graham Neubig</a></h3><p class="affiliation">Carnegie Mellon University</p></div><p class="biography">Graham Neubig is an Associate Professor at the Language Technologies Institute of Carnegie Mellon University. His research advances natural language processing and large language models, including their application to software development. He studies how people can communicate with computers and with one another in their own languages. His work also supports open research through software, freely available teaching materials, and advanced NLP lectures.</p><a class="profile-link" href="https://www.lti.cs.cmu.edu/people/faculty/neubig-graham.html" target="_blank" rel="noopener noreferrer">Profile</a></div>
+</article>
+<article class="person" id="scott-yih">
+  <img class="person-photo" src="assets/people/scott-yih.webp" alt="Scott Wen-tau Yih" width="300" height="360" loading="lazy">
+  <div class="person-copy"><div class="person-heading"><h3><a href="https://scottyih.org/" target="_blank" rel="noopener noreferrer">Scott Wen-tau Yih</a></h3><p class="affiliation">Meta Fundamental AI Research</p></div><p class="biography">Scott Wen-tau Yih is a Research Scientist at Meta Fundamental AI Research. His work spans natural language processing, machine learning, and information retrieval, with a focus on neural retrieval and retrieval augmented generation for factual language and multimodal models. His contributions include WikiQA, DPR, and RAG. Previously, he worked at the Allen Institute for AI and Microsoft Research. He was named an ACL Fellow in 2024.</p><a class="profile-link" href="https://scottyih.org/" target="_blank" rel="noopener noreferrer">Profile</a></div>
+</article>
+<article class="person" id="jimmy-lin">
+  <img class="person-photo" src="assets/people/jimmy-lin.webp" alt="Jimmy Lin" width="300" height="360" loading="lazy">
+  <div class="person-copy"><div class="person-heading"><h3><a href="https://cs.uwaterloo.ca/~jimmylin/" target="_blank" rel="noopener noreferrer">Jimmy Lin</a></h3><p class="affiliation">University of Waterloo</p></div><p class="biography">Jimmy Lin is a Professor and holds the David R. Cheriton Chair in the School of Computer Science at the University of Waterloo. His research combines information retrieval, natural language processing, and data management to help people make sense of large collections of information. He received his Ph.D. from MIT in 2004. He is an ACM Fellow, an ACL Fellow, and a member of the SIGIR Academy.</p><a class="profile-link" href="https://cs.uwaterloo.ca/~jimmylin/" target="_blank" rel="noopener noreferrer">Profile</a></div>
+</article></div>
+    </section>
+    <section class="section container" id="program" aria-labelledby="program-title">
+      <h2 id="program-title">Program</h2>
+      <p>A full day workshop is planned, with invited talks, contributed presentations, and a closing panel. The final schedule and session times will be announced here.</p>
+      <table class="program-table"><caption class="sr-only">Planned workshop sessions</caption><thead><tr><th scope="col">Session</th><th scope="col">Planned format</th></tr></thead><tbody>
+        <tr><th scope="row">Invited talks</th><td>Academic and industry perspectives on retrieval, language agents, and orchestration.</td></tr>
+        <tr><th scope="row">Contributed presentations</th><td>Research talks, selected spotlights, poster presentations, and discussion.</td></tr>
+        <tr><th scope="row">Closing panel</th><td>Open research problems, evaluation priorities, and future community benchmarks.</td></tr>
+      </tbody></table>
+      <p class="section-note">Remote presentations are planned where venue facilities and policies allow. Registration and participation details will be announced when confirmed.</p>
+    </section>
     <section class="section container" id="organizers" aria-labelledby="organizers-title">
-      <h2 id="organizers-title">Organizing committee</h2>
-      <div class="organizers-grid"><article class="organizer"><h3><a href="https://akariasai.github.io/" target="_blank" rel="noopener noreferrer">Akari Asai</a></h3><p>Carnegie Mellon University</p></article>
-<article class="organizer"><h3><a href="https://omarkhattab.com/" target="_blank" rel="noopener noreferrer">Omar Khattab</a></h3><p>Massachusetts Institute of Technology</p></article>
-<article class="organizer"><h3><a href="https://www.cs.princeton.edu/~danqic/" target="_blank" rel="noopener noreferrer">Danqi Chen</a></h3><p>Princeton University</p></article>
-<article class="organizer"><h3><a href="https://scholar.google.com/citations?user=R3X_R9UAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Hitesh Laxmichand Patel</a></h3><p>Oracle AI</p></article>
-<article class="organizer"><h3>Zifei Wang</h3><p>Tencent IMA Product Center</p></article>
-<article class="organizer"><h3><a href="https://scholar.google.com/citations?user=RCuOya4AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Avi Sil</a></h3><p>Oracle</p></article>
-<article class="organizer"><h3><a href="https://scholar.google.com/citations?user=jU4IZs4AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Sewon Min</a></h3><p>University of California, Berkeley</p></article>
-<article class="organizer"><h3><a href="https://scholar.google.com/citations?user=YKuiy20AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Connor Shorten</a></h3><p>Weaviate</p></article></div>
-      <div class="committee"><h3>Program committee</h3><ul><li><span>Anushka Sivakumar</span><span>Oracle</span></li>
+      <h2 id="organizers-title">Organizers</h2>
+      <div class="people organizers"><article class="person" id="hitesh-patel">
+  <img class="person-photo" src="assets/people/hitesh-patel.webp" alt="Hitesh Laxmichand Patel" width="300" height="360" loading="lazy">
+  <div class="person-copy"><div class="person-heading"><h3><a href="https://hiteshlpatel.github.io/" target="_blank" rel="noopener noreferrer">Hitesh Laxmichand Patel</a></h3><p class="affiliation">Oracle AI</p></div><p class="biography">Hitesh Laxmichand Patel is a Principal Applied Scientist and Tech Lead at Oracle. His research focuses on multilingual and multimodal models, reasoning, and agents that retrieve knowledge, use tools, and collaborate over long horizons. He studies evaluation, safety, and fairness across languages and cultures. His work includes AccessEval, which received the EMNLP 2025 Best Social Impact Paper Award, and an ICML 2026 Spotlight paper on evaluating advanced mathematics. He received his M.S. from New York University, advised by Ralph Grishman.</p><a class="profile-link" href="https://hiteshlpatel.github.io/" target="_blank" rel="noopener noreferrer">Profile</a></div>
+</article>
+<article class="person" id="akari-asai">
+  <img class="person-photo" src="assets/people/akari-asai.webp" alt="Akari Asai" width="300" height="360" loading="lazy">
+  <div class="person-copy"><div class="person-heading"><h3><a href="https://akariasai.github.io/" target="_blank" rel="noopener noreferrer">Akari Asai</a></h3><p class="affiliation">Carnegie Mellon University</p></div><p class="biography">Akari Asai is an Assistant Professor at Carnegie Mellon University’s Language Technologies Institute and a Research Scientist at the Allen Institute for AI. She develops language models and agents that search for information, use tools, and synthesize evidence on open ended tasks. Her work includes Self-RAG, OpenScholar, and AgentIR. She received her Ph.D. from the University of Washington, where her dissertation examined the foundations of retrieval augmented language models.</p><a class="profile-link" href="https://akariasai.github.io/" target="_blank" rel="noopener noreferrer">Profile</a></div>
+</article>
+<article class="person" id="omar-khattab">
+  <img class="person-photo" src="assets/people/omar-khattab.webp" alt="Omar Khattab" width="300" height="360" loading="lazy">
+  <div class="person-copy"><div class="person-heading"><h3><a href="https://omarkhattab.com/" target="_blank" rel="noopener noreferrer">Omar Khattab</a></h3><p class="affiliation">Massachusetts Institute of Technology</p></div><p class="biography">Omar Khattab is an Assistant Professor in MIT EECS and a member of CSAIL, where he leads the OASYS lab. His research connects natural language processing with AI systems, including declarative AI programming, retrieval, reasoning, and learning from feedback. He created ColBERT, which introduced late interaction for neural retrieval, and DSPy, a framework for programming and optimizing language model systems. His work develops methods for composing reliable, efficient AI systems.</p><a class="profile-link" href="https://omarkhattab.com/" target="_blank" rel="noopener noreferrer">Profile</a></div>
+</article>
+<article class="person" id="danqi-chen">
+  <img class="person-photo" src="assets/people/danqi-chen.webp" alt="Danqi Chen" width="300" height="360" loading="lazy">
+  <div class="person-copy"><div class="person-heading"><h3><a href="https://www.cs.princeton.edu/~danqic/" target="_blank" rel="noopener noreferrer">Danqi Chen</a></h3><p class="affiliation">Princeton University</p></div><p class="biography">Danqi Chen is an Associate Professor of Computer Science at Princeton University, a leader of the Princeton NLP Group, and Associate Director of Princeton Language and Intelligence. Her research spans language understanding, knowledge representation, retrieval, reasoning, and question answering. Her recent work includes the BRIGHT benchmark for reasoning intensive retrieval and research on long horizon agentic search. She received her Ph.D. from Stanford University in 2018, advised by Christopher Manning.</p><a class="profile-link" href="https://www.cs.princeton.edu/~danqic/" target="_blank" rel="noopener noreferrer">Profile</a></div>
+</article>
+<article class="person person-without-photo" id="zifei-wang">
+  <p class="photo-pending">Photograph forthcoming</p>
+  <div class="person-copy"><div class="person-heading"><h3>Zifei Wang</h3><p class="affiliation">Tencent IMA Product Center</p></div><p class="biography">Zifei Wang is a researcher affiliated with the IMA Product Center at Tencent. His research focuses on multimodal information retrieval, ranking, and routing for language model agents. His recent work studies skill retrieval and capability selection, including query dependent benchmarks and retrieval methods for agent skill routing, as well as multimodal retrieval across images and text.</p></div>
+</article>
+<article class="person" id="avi-sil">
+  <img class="person-photo" src="assets/people/avi-sil.webp" alt="Avi Sil" width="300" height="360" loading="lazy">
+  <div class="person-copy"><div class="person-heading"><h3><a href="https://www.linkedin.com/in/avirupsil/" target="_blank" rel="noopener noreferrer">Avi Sil</a></h3><p class="affiliation">Oracle</p></div><p class="biography">Avi Sil is Senior Director of Applied Science at Oracle, where he leads teams developing AI agent technologies. His research covers retrieval augmented generation, agentic workflows, inference time methods, verification, and natural language to code systems. Previously, he was a Principal Research Scientist and research manager at IBM, working on natural language processing and multilingual question answering. He has served the ACL community as an area chair, track chair, and demonstration chair.</p><a class="profile-link" href="https://www.linkedin.com/in/avirupsil/" target="_blank" rel="noopener noreferrer">Profile</a></div>
+</article>
+<article class="person" id="sewon-min">
+  <img class="person-photo" src="assets/people/sewon-min.webp" alt="Sewon Min" width="300" height="360" loading="lazy">
+  <div class="person-copy"><div class="person-heading"><h3><a href="https://www.sewonmin.com/" target="_blank" rel="noopener noreferrer">Sewon Min</a></h3><p class="affiliation">University of California, Berkeley</p></div><p class="biography">Sewon Min is an Assistant Professor of EECS at the University of California, Berkeley, affiliated with Berkeley AI Research, and a Research Scientist at the Allen Institute for AI. She studies language models across their lifecycle, from data and pretraining to architectures and retrieval. Her work examines how models learn from and use data, particularly under resource constraints. She received her Ph.D. from the University of Washington and has received dissertation awards from ACM, ACL, and AAAI.</p><a class="profile-link" href="https://www.sewonmin.com/" target="_blank" rel="noopener noreferrer">Profile</a></div>
+</article>
+<article class="person" id="connor-shorten">
+  <img class="person-photo" src="assets/people/connor-shorten.webp" alt="Connor Shorten" width="300" height="360" loading="lazy">
+  <div class="person-copy"><div class="person-heading"><h3><a href="https://github.com/CShorten" target="_blank" rel="noopener noreferrer">Connor Shorten</a></h3><p class="affiliation">Weaviate</p></div><p class="biography">Connor Shorten is a researcher at Weaviate working at the intersection of AI and database systems. His research interests include vector search, retrieval augmented language models, and agents that query external data. His work includes IRPAPERS, which compares text  and image based retrieval and question answering, and studies of database querying through function calling. He hosts the Weaviate Podcast, where he discusses research and practical systems with the machine learning community.</p><a class="profile-link" href="https://github.com/CShorten" target="_blank" rel="noopener noreferrer">Profile</a></div>
+</article></div>
+    </section>
+    <section class="section container" id="committee" aria-labelledby="committee-title">
+      <h2 id="committee-title">Program committee</h2>
+      <ul class="committee-list"><li><span>Amit Agarwal</span><span>Oracle</span></li>
+<li><span>Anushka Sivakumar</span><span>Oracle</span></li>
 <li><span>Gargi Vyas</span><span>Oracle</span></li>
-<li><span>Srikant Panda</span><span>LAM Research</span></li>
 <li><span>Bhargava Kumar</span><span>TD Securities</span></li>
 <li><span>Tejaswini Kumar</span><span>Apple</span></li>
 <li><span>Monorama Swain</span><span>Johannes Kepler University Linz</span></li>
@@ -145,22 +145,18 @@
 <li><span>Biddut Sarker Bijoy</span><span>Stony Brook University</span></li>
 <li><span>Samuel Cahyawijaya</span><span>Cohere</span></li>
 <li><span>Genta Indra Winata</span><span>Capital One</span></li>
-<li><span>Amit Agarwal</span><span>Oracle</span></li>
 <li><span>Barry Menglong Yao</span><span>University of California, Davis</span></li>
 <li><span>Lifu Huang</span><span>University of California, Davis</span></li>
 <li><span>Dasol Choi</span><span>AIM Intelligence</span></li>
-<li><span>Guijin Son</span><span>Seoul National University</span></li></ul><p class="small-note">Additional committee members will be announced as the program develops.</p></div>
-      <p class="inclusion-note">We welcome contributions across institutions, regions, career stages, languages, and resource settings. Our aim is to support broad participation in the capability retrieval research community.</p>
+<li><span>Guijin Son</span><span>Seoul National University</span></li></ul>
     </section>
-
-    <section class="contact-section" id="contact" aria-labelledby="contact-title">
-      <div class="container contact-inner"><div><h2 id="contact-title">Contact</h2><p>For questions about submissions, workshop scope, or participation, contact the organizing team.</p></div><a href="mailto:hitesh.laxmichand.patel@oracle.com">hitesh.laxmichand.patel@oracle.com</a></div>
+    <section class="section container contact" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>For questions about submissions, scope, or participation, please contact <a href="mailto:hitesh.laxmichand.patel@oracle.com">hitesh.laxmichand.patel@oracle.com</a>.</p>
     </section>
   </main>
-
-  <footer class="site-footer container">
-    <div><strong>Retrieval Beyond Documents · NAACL 2027</strong><p>Capability Retrieval for Language Agents</p></div>
-    <div class="footer-links"><a href="#home">Back to top ↑</a><details class="credits"><summary>Photo credits</summary><p>San Francisco: <a href="https://unsplash.com/photos/golden-gate-bridge-3YfSwCfJ6Do">Garth Pratt</a>. Iryna Gurevych: TU Darmstadt / Rüdiger Dunker. Other speaker portraits: their linked institutional or personal pages.</p></details></div>
+  <footer class="site-footer">
+    <div class="container"><p>Retrieval Beyond Documents · NAACL 2027</p><p class="photo-credits">Golden Gate Bridge photograph by Garth Pratt. Portraits: the speakers’ and organizers’ linked profiles; Hitesh Patel: GRAIL-V; Avi Sil: ACM CAIS 2026; Connor Shorten: Weaviate; Iryna Gurevych: TU Darmstadt / Rüdiger Dunker.</p><a href="#home">Back to top</a></div>
   </footer>
 </body>
 </html>

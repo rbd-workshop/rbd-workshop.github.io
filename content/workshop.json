@@ -9,7 +9,7 @@
   "contactEmail": "hitesh.laxmichand.patel@oracle.com",
   "submissionUrl": null,
   "submissionStatus": "Submission details forthcoming",
-  "description": "A NAACL 2027 workshop on retrieving the tools, skills, workflows, memories, models, and agents that turn language into action.",
+  "description": "Retrieval Beyond Documents (RBD), a NAACL 2027 workshop on capability retrieval for language agents. Overview, call for papers, speakers, program, and organizers.",
   "dates": [
     {
       "label": "Paper submission",
@@ -20,7 +20,7 @@
       "value": "To be announced"
     },
     {
-      "label": "Camera-ready papers",
+      "label": "Camera ready papers",
       "value": "To be announced"
     },
     {
@@ -31,140 +31,134 @@
   "topics": [
     {
       "title": "Representation & indexing",
-      "question": "How do we represent what a capability can do?",
-      "description": "Represent tools, APIs, skills, workflows, memories, models, and agents through language, schemas, code, demonstrations, traces, graphs, and embeddings.",
-      "tags": [
-        "Capability representations",
-        "Dynamic indexes",
-        "Graphs & ontologies"
-      ]
+      "description": "Represent tools, APIs, skills, workflows, memories, models, and agents through language, schemas, code, demonstrations, traces, graphs, and embeddings."
     },
     {
       "title": "Retrieval, routing & composition",
-      "question": "Which capabilities work best together?",
-      "description": "Retrieve and route across capability types, accounting for dependencies, compatibility, permissions, reliability, and cost. Compose the right set for the task.",
-      "tags": [
-        "Joint retrieval",
-        "Agent routing",
-        "Compatibility"
-      ]
+      "description": "Retrieve and route across capability types, accounting for dependencies, compatibility, permissions, reliability, and cost. Compose the right set for the task."
     },
     {
       "title": "Retrieval in the agent loop",
-      "question": "What should an agent retrieve next?",
-      "description": "Condition retrieval on execution state, plans, and observations. Study reformulation, clarification, decomposition, invocation, delegation, replanning, recovery, and abstention.",
-      "tags": [
-        "State-aware retrieval",
-        "Planning",
-        "Recovery"
-      ]
+      "description": "Condition retrieval on execution state, plans, and observations. Study reformulation, clarification, decomposition, invocation, delegation, replanning, recovery, and abstention."
     },
     {
-      "title": "Action-grounded evaluation",
-      "question": "Did the retrieved capability actually help?",
-      "description": "Evaluate retrieval, incorporation, invocation, composition, and execution. Develop complete-set and dependency-aware metrics, calibration, and resource-constrained evaluation.",
-      "tags": [
-        "Downstream success",
-        "Benchmarks",
-        "Calibration"
-      ]
+      "title": "Action grounded evaluation",
+      "description": "Evaluate retrieval, incorporation, invocation, composition, and execution. Develop complete set and dependency aware metrics, calibration, and resource constrained evaluation."
     },
     {
       "title": "Ecosystems & deployment",
-      "question": "How does capability retrieval work in the wild?",
-      "description": "Build dynamic, federated, and access-controlled registries. Explore Model Context Protocol ecosystems, provenance, permissions, freshness, observability, caching, and reliability.",
-      "tags": [
-        "MCP ecosystems",
-        "Provenance",
-        "Production systems"
-      ]
+      "description": "Build dynamic, federated, and access controlled registries. Explore Model Context Protocol ecosystems, provenance, permissions, freshness, observability, caching, and reliability."
     }
   ],
   "speakers": [
     {
       "name": "Iryna Gurevych",
-      "initials": "IG",
       "affiliation": "TU Darmstadt",
       "area": "Semantic representations & trustworthy NLP",
       "url": "https://www.informatik.tu-darmstadt.de/ukp/ukp_home/head_ukp/index.en.jsp",
-      "image": "assets/people/iryna-gurevych.webp"
+      "image": "assets/people/iryna-gurevych.webp",
+      "id": "iryna-gurevych",
+      "bio": "Iryna Gurevych is a Professor of Computer Science at TU Darmstadt and head of the UKP Lab. Her research spans large language models, generative AI, AI safety, and AI for science, with a sustained interest in knowledge and semantic representations. She is a past President of the Association for Computational Linguistics and an ACL Fellow. She received the Royal Society’s Milner Award and Lecture in 2025."
     },
     {
       "name": "Graham Neubig",
-      "initials": "GN",
       "affiliation": "Carnegie Mellon University",
       "area": "Language agents, code & reusable abstractions",
       "url": "https://www.lti.cs.cmu.edu/people/faculty/neubig-graham.html",
-      "image": "assets/people/graham-neubig.webp"
+      "image": "assets/people/graham-neubig.webp",
+      "id": "graham-neubig",
+      "bio": "Graham Neubig is an Associate Professor at the Language Technologies Institute of Carnegie Mellon University. His research advances natural language processing and large language models, including their application to software development. He studies how people can communicate with computers and with one another in their own languages. His work also supports open research through software, freely available teaching materials, and advanced NLP lectures."
     },
     {
       "name": "Scott Wen-tau Yih",
-      "initials": "SY",
       "affiliation": "Meta Fundamental AI Research",
       "area": "Neural retrieval & grounded language models",
       "url": "https://scottyih.org/",
-      "image": "assets/people/scott-yih.webp"
+      "image": "assets/people/scott-yih.webp",
+      "id": "scott-yih",
+      "bio": "Scott Wen-tau Yih is a Research Scientist at Meta Fundamental AI Research. His work spans natural language processing, machine learning, and information retrieval, with a focus on neural retrieval and retrieval augmented generation for factual language and multimodal models. His contributions include WikiQA, DPR, and RAG. Previously, he worked at the Allen Institute for AI and Microsoft Research. He was named an ACL Fellow in 2024."
     },
     {
       "name": "Jimmy Lin",
-      "initials": "JL",
       "affiliation": "University of Waterloo",
       "area": "Information retrieval & agentic search",
       "url": "https://cs.uwaterloo.ca/~jimmylin/",
-      "image": "assets/people/jimmy-lin.webp"
+      "image": "assets/people/jimmy-lin.webp",
+      "id": "jimmy-lin",
+      "bio": "Jimmy Lin is a Professor and holds the David R. Cheriton Chair in the School of Computer Science at the University of Waterloo. His research combines information retrieval, natural language processing, and data management to help people make sense of large collections of information. He received his Ph.D. from MIT in 2004. He is an ACM Fellow, an ACL Fellow, and a member of the SIGIR Academy."
     }
   ],
   "organizers": [
     {
+      "name": "Hitesh Laxmichand Patel",
+      "affiliation": "Oracle AI",
+      "url": "https://hiteshlpatel.github.io/",
+      "id": "hitesh-patel",
+      "bio": "Hitesh Laxmichand Patel is a Principal Applied Scientist and Tech Lead at Oracle. His research focuses on multilingual and multimodal models, reasoning, and agents that retrieve knowledge, use tools, and collaborate over long horizons. He studies evaluation, safety, and fairness across languages and cultures. His work includes AccessEval, which received the EMNLP 2025 Best Social Impact Paper Award, and an ICML 2026 Spotlight paper on evaluating advanced mathematics. He received his M.S. from New York University, advised by Ralph Grishman.",
+      "image": "assets/people/hitesh-patel.webp"
+    },
+    {
       "name": "Akari Asai",
-      "initials": "AA",
       "affiliation": "Carnegie Mellon University",
-      "url": "https://akariasai.github.io/"
+      "url": "https://akariasai.github.io/",
+      "id": "akari-asai",
+      "bio": "Akari Asai is an Assistant Professor at Carnegie Mellon University’s Language Technologies Institute and a Research Scientist at the Allen Institute for AI. She develops language models and agents that search for information, use tools, and synthesize evidence on open ended tasks. Her work includes Self-RAG, OpenScholar, and AgentIR. She received her Ph.D. from the University of Washington, where her dissertation examined the foundations of retrieval augmented language models.",
+      "image": "assets/people/akari-asai.webp"
     },
     {
       "name": "Omar Khattab",
-      "initials": "OK",
       "affiliation": "Massachusetts Institute of Technology",
-      "url": "https://omarkhattab.com/"
+      "url": "https://omarkhattab.com/",
+      "id": "omar-khattab",
+      "bio": "Omar Khattab is an Assistant Professor in MIT EECS and a member of CSAIL, where he leads the OASYS lab. His research connects natural language processing with AI systems, including declarative AI programming, retrieval, reasoning, and learning from feedback. He created ColBERT, which introduced late interaction for neural retrieval, and DSPy, a framework for programming and optimizing language model systems. His work develops methods for composing reliable, efficient AI systems.",
+      "image": "assets/people/omar-khattab.webp"
     },
     {
       "name": "Danqi Chen",
-      "initials": "DC",
       "affiliation": "Princeton University",
-      "url": "https://www.cs.princeton.edu/~danqic/"
-    },
-    {
-      "name": "Hitesh Laxmichand Patel",
-      "initials": "HP",
-      "affiliation": "Oracle AI",
-      "url": "https://scholar.google.com/citations?user=R3X_R9UAAAAJ&hl=en"
+      "url": "https://www.cs.princeton.edu/~danqic/",
+      "id": "danqi-chen",
+      "bio": "Danqi Chen is an Associate Professor of Computer Science at Princeton University, a leader of the Princeton NLP Group, and Associate Director of Princeton Language and Intelligence. Her research spans language understanding, knowledge representation, retrieval, reasoning, and question answering. Her recent work includes the BRIGHT benchmark for reasoning intensive retrieval and research on long horizon agentic search. She received her Ph.D. from Stanford University in 2018, advised by Christopher Manning.",
+      "image": "assets/people/danqi-chen.webp"
     },
     {
       "name": "Zifei Wang",
-      "initials": "ZW",
       "affiliation": "Tencent IMA Product Center",
-      "url": null
+      "url": null,
+      "id": "zifei-wang",
+      "bio": "Zifei Wang is a researcher affiliated with the IMA Product Center at Tencent. His research focuses on multimodal information retrieval, ranking, and routing for language model agents. His recent work studies skill retrieval and capability selection, including query dependent benchmarks and retrieval methods for agent skill routing, as well as multimodal retrieval across images and text.",
+      "image": null
     },
     {
       "name": "Avi Sil",
-      "initials": "AS",
       "affiliation": "Oracle",
-      "url": "https://scholar.google.com/citations?user=RCuOya4AAAAJ&hl=en"
+      "url": "https://www.linkedin.com/in/avirupsil/",
+      "id": "avi-sil",
+      "bio": "Avi Sil is Senior Director of Applied Science at Oracle, where he leads teams developing AI agent technologies. His research covers retrieval augmented generation, agentic workflows, inference time methods, verification, and natural language to code systems. Previously, he was a Principal Research Scientist and research manager at IBM, working on natural language processing and multilingual question answering. He has served the ACL community as an area chair, track chair, and demonstration chair.",
+      "image": "assets/people/avi-sil.webp"
     },
     {
       "name": "Sewon Min",
-      "initials": "SM",
       "affiliation": "University of California, Berkeley",
-      "url": "https://scholar.google.com/citations?user=jU4IZs4AAAAJ&hl=en"
+      "url": "https://www.sewonmin.com/",
+      "id": "sewon-min",
+      "bio": "Sewon Min is an Assistant Professor of EECS at the University of California, Berkeley, affiliated with Berkeley AI Research, and a Research Scientist at the Allen Institute for AI. She studies language models across their lifecycle, from data and pretraining to architectures and retrieval. Her work examines how models learn from and use data, particularly under resource constraints. She received her Ph.D. from the University of Washington and has received dissertation awards from ACM, ACL, and AAAI.",
+      "image": "assets/people/sewon-min.webp"
     },
     {
       "name": "Connor Shorten",
-      "initials": "CS",
       "affiliation": "Weaviate",
-      "url": "https://scholar.google.com/citations?user=YKuiy20AAAAJ&hl=en"
+      "url": "https://github.com/CShorten",
+      "id": "connor-shorten",
+      "bio": "Connor Shorten is a researcher at Weaviate working at the intersection of AI and database systems. His research interests include vector search, retrieval augmented language models, and agents that query external data. His work includes IRPAPERS, which compares text  and image based retrieval and question answering, and studies of database querying through function calling. He hosts the Weaviate Podcast, where he discusses research and practical systems with the machine learning community.",
+      "image": "assets/people/connor-shorten.webp"
     }
   ],
   "committee": [
+    [
+      "Amit Agarwal",
+      "Oracle"
+    ],
     [
       "Anushka Sivakumar",
       "Oracle"
@@ -172,10 +166,6 @@
     [
       "Gargi Vyas",
       "Oracle"
-    ],
-    [
-      "Srikant Panda",
-      "LAM Research"
     ],
     [
       "Bhargava Kumar",
@@ -206,10 +196,6 @@
       "Capital One"
     ],
     [
-      "Amit Agarwal",
-      "Oracle"
-    ],
-    [
       "Barry Menglong Yao",
       "University of California, Davis"
     ],
@@ -226,5 +212,5 @@
       "Seoul National University"
     ]
   ],
-  "conferenceDates": "June 1–5, 2027"
+  "conferenceDates": "June 1 to 5, 2027"
 }

@@ -10,22 +10,22 @@ const safeUrl = value => {
   if (url.protocol !== 'https:') throw new Error('Profile and submission URLs must use HTTPS');
   return escape(url.href);
 };
-const arrow = '<span aria-hidden="true">↗</span>';
+const person = p => `<article class="person${p.image ? '' : ' person-without-photo'}" id="${escape(p.id)}">
+  ${p.image ? `<img class="person-photo" src="${escape(p.image)}" alt="${escape(p.name)}" width="300" height="360" loading="lazy">` : '<p class="photo-pending">Photograph forthcoming</p>'}
+  <div class="person-copy"><div class="person-heading"><h3>${p.url ? `<a href="${safeUrl(p.url)}" target="_blank" rel="noopener noreferrer">${escape(p.name)}</a>` : escape(p.name)}</h3><p class="affiliation">${escape(p.affiliation)}</p></div><p class="biography">${escape(p.bio)}</p>${p.url ? `<a class="profile-link" href="${safeUrl(p.url)}" target="_blank" rel="noopener noreferrer">Profile</a>` : ''}</div>
+</article>`;
 
 export async function build() {
   const data = JSON.parse(await readFile(path.join(root, 'content/workshop.json'), 'utf8'));
   if (!/^[^\s<>@]+@[^\s<>@]+\.[^\s<>@]+$/.test(data.contactEmail)) throw new Error('Invalid contact email');
-  const topics = data.topics.map(t => `<article class="topic"><h4>${escape(t.title)}</h4><p>${escape(t.description)}</p></article>`).join('\n');
-  const speakers = data.speakers.map(s => `<article class="speaker">
-    <a class="speaker-photo" href="${safeUrl(s.url)}" target="_blank" rel="noopener noreferrer" aria-label="${escape(s.name)} — profile (opens in new tab)"><img src="${escape(s.image)}" alt="${escape(s.name)}" width="240" height="240" loading="lazy"></a>
-    <h3><a href="${safeUrl(s.url)}" target="_blank" rel="noopener noreferrer">${escape(s.name)}</a></h3><p class="affiliation">${escape(s.affiliation)}</p><p class="research-area">${escape(s.area)}</p>
-  </article>`).join('\n');
-  const organizers = data.organizers.map(s => `<article class="organizer"><h3>${s.url ? `<a href="${safeUrl(s.url)}" target="_blank" rel="noopener noreferrer">${escape(s.name)}</a>` : escape(s.name)}</h3><p>${escape(s.affiliation)}</p></article>`).join('\n');
+  const topics = data.topics.map(t => `<li><strong>${escape(t.title)}.</strong> ${escape(t.description)}</li>`).join('\n');
+  const speakers = data.speakers.map(person).join('\n');
+  const organizers = data.organizers.map(person).join('\n');
   const committee = data.committee.map(([name, affiliation]) => `<li><span>${escape(name)}</span><span>${escape(affiliation)}</span></li>`).join('\n');
   const dates = data.dates.map(d => `<div class="date-row"><dt>${escape(d.label)}</dt><dd>${escape(d.value)}</dd></div>`).join('\n');
   const submission = data.submissionUrl
-    ? `<a class="button button-dark" href="${safeUrl(data.submissionUrl)}" target="_blank" rel="noopener noreferrer">Submit your paper ${arrow}</a>`
-    : '<p class="submission-status"><span class="status-dot" aria-hidden="true"></span> Submission link coming soon</p>';
+    ? `<p><a href="${safeUrl(data.submissionUrl)}" target="_blank" rel="noopener noreferrer">Submit your paper</a></p>`
+    : '<p>The submission portal and paper deadlines will be announced here.</p>';
   const variables = { ...Object.fromEntries(Object.entries(data).filter(([,v]) => typeof v === 'string').map(([k,v]) => [k,escape(v)])), topics, speakers, organizers, committee, dates, submission };
   let html = await readFile(path.join(root, 'src/index.html'), 'utf8');
   html = html.replace(/\{\{(\w+)\}\}/g, (_, key) => { if (!(key in variables)) throw new Error(`Missing template value: ${key}`); return variables[key]; });
