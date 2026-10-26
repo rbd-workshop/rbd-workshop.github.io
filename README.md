@@ -25,6 +25,8 @@ The scripts also work with `node scripts/serve.mjs`, `node scripts/build.mjs`, a
 
 ## Search visibility and launch priorities
 
+The [launch readiness review](research/launch-readiness.csv) separates remaining public launch tasks from information to add when confirmed. On October 26, 2026, the planned public homepage returned HTTP 404 and the repository had no Git remote. The current preview is local only. The review applied the installed `seo-audit`, `schema`, and `ai-seo` skills alongside Google Search Central guidance; UI work separately used `frontend-design` and `web-design-guidelines`. These provide review methods, not a guarantee of search rankings or a certification of design quality.
+
 The October 26, 2026 [SEO audit](research/seo-audit.csv) records implemented fixes and the remaining launch work. The site now generates a canonical URL, descriptive search and social metadata, a 1200 × 630 sharing image, `robots.txt`, a one-page XML sitemap, a custom 404 page, and JSON-LD for the website, workshop organization, page, and the twelve speakers and organizers. These describe the same content visitors can read. The Schema.org validator reported **0 errors and 0 warnings** for the generated graph. This validates the vocabulary; it does not establish Google rich-result eligibility or guarantee rankings.
 
 The full page is delivered as static HTML. Its text and navigation do not depend on JavaScript. Existing local WebP portraits are lazy loaded; the bridge banner is preloaded. The generated HTML is about 41 KB, CSS 11 KB, JavaScript 1.8 KB, and the banner 258 KB before transfer compression. These are file sizes, not measured Core Web Vitals. No analytics or third-party JavaScript was added.
