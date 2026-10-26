@@ -31,7 +31,7 @@ These are the photographs currently published at the cited sources, checked Octo
 
 Organizer biographies use Section 5 of the user’s `Retrieval_beyond_document.pdf`, with Hitesh’s title changed at his explicit request to **Principal Applied Scientist and Tech Lead**. PDF line breaks and ligatures are normalized, and prose hyphenation is simplified at the user’s request.
 
-The four speaker biographies are original summaries based on the current profiles and primary research sources below, checked October 26, 2026. They replace the proposal’s brief topic lists at the user’s request. Paper contributions are described without attributing joint work solely to one author. Numerical performance claims and citation counts are omitted from the bios.
+The four speaker biographies are original summaries based on the current profiles and primary research sources below, checked October 26, 2026. They replace the proposal’s brief topic lists at the user’s request. The public bios focus on broad research areas, roles, and professional recognition. Paper-specific explanations and selected-work links were removed at the user’s request; the research sources below are retained as background documentation. Numerical performance claims and citation counts are omitted from the bios.
 
 | Speaker | Role / background | Research sources |
 | --- | --- | --- |
