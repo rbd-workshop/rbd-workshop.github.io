@@ -2,7 +2,7 @@
 
 The NAACL 2027 workshop on **Capability Retrieval for Language Agents**.
 
-A static conference website using HTML, CSS, vanilla JavaScript, and a dependency-free Node.js generator. The layout uses a white background, Redwood-inspired red and dark neutral accents, visible top navigation, a Golden Gate Bridge banner, and photographs with proposal biographies and research descriptions. On desktop, the overview and call for papers flow in one column alongside important dates, so sidebar height cannot create a blank gap between sections. At tablet and phone widths, the sections stack.
+A static conference website using HTML, CSS, vanilla JavaScript, and a dependency-free Node.js generator. The layout uses a white background, Redwood-inspired red and dark neutral accents, visible top navigation, a Golden Gate Bridge banner, and photographs with organizer biographies and substantive speaker profiles linked to selected research. On desktop, the overview and call for papers flow in one column alongside important dates, so sidebar height cannot create a blank gap between sections. At tablet and phone widths, the sections stack.
 
 ## Local preview
 
@@ -36,7 +36,7 @@ Set `submissionUrl` to the confirmed HTTPS portal to show a working submit butto
 
 ## Identity and assets
 
-The RBD wordmark uses original vector letterforms, with a red R and dark neutral B and D. The vector wordmark is `src/assets/rbd-logo.svg`; `rbd-logo.png` is a transparent raster export, and `rbd-icon.png` is a square icon. Red: `#c74634`. Dark neutral: `#312d2a`. Accessible link red: `#9e392c`. Background: white. The site uses native sans-serif fonts and makes no third-party font requests.
+The RBD wordmark uses original vector letterforms, with a red R and dark neutral B and D. The B and D have refined bowl curves, larger interior counters, and balanced stroke weights; the approved R is preserved. The vector wordmark is `src/assets/rbd-logo.svg`; `rbd-logo.png` is a transparent raster export, and `rbd-icon.png` is a square icon. Red: `#c74634`. Dark neutral: `#312d2a`. Accessible link red: `#9e392c`. Background: white. The site uses native sans-serif fonts and makes no third-party font requests.
 
 Speaker and organizer portraits and the San Francisco banner are hosted locally as optimized WebP files. Sources and credits are recorded in [ASSET_CREDITS.md](ASSET_CREDITS.md), without a visible photo-credit line in the footer.
 
@@ -58,7 +58,7 @@ The workshop content comes from the user's `Retrieval_beyond_document.pdf`, down
 
 The [official NAACL 2027 website](https://2027.naacl.org/) confirms San Francisco and June 1–5, 2027 for the parent conference. The RBD workshop day, deadlines, portal, registration, paper limits, and session times remain forthcoming. Review routes, archival options, full-day format, and remote participation retain the proposal's conditional wording.
 
-The contact link uses Hitesh's correspondence address from the PDF until a workshop mailbox is ready. Organizer biographies and speaker research descriptions use the proposal, with PDF artifacts and prose hyphenation normalized. The proposal supplies full organizer biographies and short speaker descriptions. Hitesh’s title remains Senior Applied Scientist and Tech Lead, as in the proposal. All eight organizer portraits are included; Zifei Wang’s photograph was supplied by the user as `Downloads/pp.jpg`.
+The contact link uses Hitesh's correspondence address from the PDF until a workshop mailbox is ready. Organizer biographies follow the proposal, with Hitesh’s title updated at his request to Principal Applied Scientist and Tech Lead. Speaker biographies are original summaries of current institutional or personal profiles and selected research papers. Each speaker has links to the papers discussed. Source details are recorded in ASSET_CREDITS.md. All eight organizer portraits are included; Zifei Wang’s photograph was supplied by the user as `Downloads/pp.jpg`.
 
 ## Design references
 
@@ -67,3 +67,5 @@ The [ICLR 2026 conference](https://iclr.cc/Conferences/2026), [ACM SIGIR 2026 co
 Additional references reviewed for the current design include [DialDoc at ACL 2022](https://doc2dial.github.io/workshop2022/), [ClinicalNLP at ACL 2023](https://clinical-nlp.github.io/2023/), [KnowledgeNLP at ACL 2024](https://knowledge-nlp.github.io/acl2024/), [KnowFM at ACL 2025](https://knowledgeable-lm.github.io/acl25/), [KnowFM at ACL 2026](https://knowledgeable-lm.github.io/), [CustomNLP4U at EMNLP 2024](https://customnlp4u-24.github.io/), [Eval4NLP at AACL 2023](https://eval4nlp.github.io/2023/index.html), and [GRAIL-V’s people section](https://grailworkshops.github.io/speakers/). The reference set informs the overview, conventional navigation, restrained section formatting, and biographies. It is a representative review, not an exhaustive survey of all workshops.
 
 The user requested a palette inspired by [Oracle Redwood](https://static.oracle.com/cdn/apex/22.1.0/themes/theme_42/22.1/docs/Redwood.html). RBD’s artwork is original and uses no Oracle wordmark.
+
+The submission guidelines use the conventional paper format, direct review, ARR, and publication structure seen in [CustomNLP4U at EMNLP 2024](https://customnlp4u-24.github.io/), [CustomNLP4U at ACL 2026](https://customnlp4u.github.io/), and [KnowFM at ACL 2026](https://knowledgeable-lm.github.io/). RBD’s direct OpenReview route, three independent reviews, ARR commitments, and archival/nonarchival plans come from the proposal. The section is explicitly presented as planned: deadlines, page limits, eligible ARR cycles, and proceedings eligibility are not invented. Formatting points to the official ACL style repository.

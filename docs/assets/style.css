@@ -59,6 +59,9 @@ h3 { font-size: 20px; line-height: 1.4; font-weight: 600; color: var(--navy); }
 .prose h3 { margin: 27px 0 13px; }
 .topics { padding-left: 22px; margin: 0; }
 .topics li { padding-left: 5px; margin-bottom: 12px; }
+.submission-guidelines { padding-left: 22px; margin: 18px 0 22px; }
+.submission-guidelines li { padding-left: 5px; margin-bottom: 14px; }
+.submission-guidelines a { text-decoration: underline; text-underline-offset: 3px; }
 .section-note { color: var(--muted); font-size: 14px; }
 .people { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 44px 50px; margin-top: 28px; }
 .person { display: grid; grid-template-columns: 136px minmax(0,1fr); gap: 23px; align-items: start; }
@@ -68,6 +71,8 @@ h3 { font-size: 20px; line-height: 1.4; font-weight: 600; color: var(--navy); }
 .affiliation { margin-top: 5px; color: #625d58; font-size: 13px; line-height: 1.55; }
 .biography { margin-top: 13px; font-size: 14px; line-height: 1.8; }
 .profile-link { display: inline-block; font-size: 13px; margin-top: 9px; text-decoration: underline; text-underline-offset: 3px; }
+.selected-work { font-size: 13px; line-height: 1.8; margin-top: 12px; }
+.selected-work a { text-decoration: underline; text-underline-offset: 3px; }
 .photo-pending { display: flex; align-items: center; justify-content: center; width: 136px; height: 163px; padding: 20px; color: #65737b; background: #f3f1ee; font-size: 12px; line-height: 1.6; text-align: center; }
 .program-table { width: 100%; margin-block: 24px; border-collapse: collapse; text-align: left; font-size: 15px; }
 .program-table th, .program-table td { padding: 15px 18px; border-bottom: 1px solid var(--line); vertical-align: top; }
@@ -143,6 +148,7 @@ h3 { font-size: 20px; line-height: 1.4; font-weight: 600; color: var(--navy); }
   .affiliation { font-size: 12px; }
   .biography { grid-column: 1/-1; margin-top: 16px; font-size: 14px; line-height: 1.8; }
   .profile-link { grid-column: 1/-1; justify-self: start; margin-top: 6px; font-size: 13px; }
+  .selected-work { grid-column: 1/-1; margin-top: 10px; }
   .program-table { font-size: 13px; }
   .program-table th, .program-table td { padding: 12px 10px; }
   .program-table tbody th { width: 34%; }

@@ -58,16 +58,40 @@
       "url": "https://www.informatik.tu-darmstadt.de/ukp/ukp_home/head_ukp/index.en.jsp",
       "image": "assets/people/iryna-gurevych.webp",
       "id": "iryna-gurevych",
-      "bio": "NLP, semantic representations, evaluation, and trustworthy language technologies."
+      "bio": "Iryna Gurevych is a Professor of Computer Science at TU Darmstadt and heads the Ubiquitous Knowledge Processing Lab. Her research connects semantic representations, information retrieval, and the reliability of language models. She co-authored Sentence-BERT, which makes semantic similarity search practical through reusable sentence embeddings, and BEIR, a benchmark for testing retrieval systems across diverse tasks and domains. Her broader work spans generative AI, AI safety, and AI for science, including the InterText project on relationships across documents. She is an ACL Fellow and a past ACL President, and received the Royal Society’s Milner Award and Lecture in 2025.",
+      "works": [
+        {
+          "title": "Sentence-BERT",
+          "url": "https://aclanthology.org/D19-1410/"
+        },
+        {
+          "title": "BEIR",
+          "url": "https://arxiv.org/abs/2104.08663"
+        }
+      ]
     },
     {
       "name": "Graham Neubig",
       "affiliation": "Carnegie Mellon University",
       "area": "Language agents, code & reusable abstractions",
-      "url": "https://www.lti.cs.cmu.edu/people/faculty/neubig-graham.html",
+      "url": "https://www.phontron.com/",
       "image": "assets/people/graham-neubig.webp",
       "id": "graham-neubig",
-      "bio": "NLP, language agents, code, and learning reusable abstractions from prior experience."
+      "bio": "Graham Neubig is an Associate Professor at Carnegie Mellon University’s Language Technologies Institute, where he leads NeuLab, and Chief Scientist at OpenHands. His research spans language models, code generation, multilingual NLP, and agents that learn from experience. He co-authored OpenHands, an open platform for agents that write code, use the command line, and browse the web. His work on Agent Workflow Memory studies how agents can extract reusable workflows from past tasks and apply them to new problems. His later work on the OpenHands Software Agent SDK focuses on composable tools, memory, and sandboxed execution. He also develops open research software and freely available NLP teaching materials.",
+      "works": [
+        {
+          "title": "OpenHands",
+          "url": "https://arxiv.org/abs/2407.16741"
+        },
+        {
+          "title": "Agent Workflow Memory",
+          "url": "https://arxiv.org/abs/2409.07429"
+        },
+        {
+          "title": "Software Agent SDK",
+          "url": "https://arxiv.org/abs/2511.03690"
+        }
+      ]
     },
     {
       "name": "Scott Wen-tau Yih",
@@ -76,7 +100,21 @@
       "url": "https://scottyih.org/",
       "image": "assets/people/scott-yih.webp",
       "id": "scott-yih",
-      "bio": "Natural language processing, information retrieval, neural retrieval models, and retrieval augmented generation for more factual language and multimodal models."
+      "bio": "Scott Wen-tau Yih is a Research Scientist at Meta Fundamental AI Research, working on neural retrieval and language models grounded in external knowledge. He co-authored Dense Passage Retrieval, which learns representations of questions and passages for open domain question answering, and the original RAG paper, which combines neural retrieval with text generation. His recent work on Reasoning Memory retrieves reusable procedural knowledge from earlier reasoning trajectories to guide new problems in mathematics, science, and coding. Previously, he held research positions at the Allen Institute for AI and Microsoft Research. He is an ACL Fellow and served as a program co-chair of EMNLP 2021.",
+      "works": [
+        {
+          "title": "DPR",
+          "url": "https://aclanthology.org/2020.emnlp-main.550/"
+        },
+        {
+          "title": "RAG",
+          "url": "https://arxiv.org/abs/2005.11401"
+        },
+        {
+          "title": "Reasoning Memory",
+          "url": "https://arxiv.org/abs/2604.01348"
+        }
+      ]
     },
     {
       "name": "Jimmy Lin",
@@ -85,7 +123,21 @@
       "url": "https://cs.uwaterloo.ca/~jimmylin/",
       "image": "assets/people/jimmy-lin.webp",
       "id": "jimmy-lin",
-      "bio": "Information retrieval, NLP, RAG, and reasoning aware and agentic retrieval."
+      "bio": "Jimmy Lin is a Professor and holds the David R. Cheriton Chair in the School of Computer Science at the University of Waterloo. His research brings together information retrieval, natural language processing, and data management, with a strong emphasis on reproducible systems. His work includes Pyserini, a toolkit for sparse, dense, and hybrid retrieval, and RankZephyr, an open language model for reranking search results. More recently, he co-authored AgentIR, which uses an agent’s reasoning trace alongside its query to improve retrieval during deep research. He is an ACM Fellow, an ACL Fellow, and a member of the SIGIR Academy.",
+      "works": [
+        {
+          "title": "Pyserini",
+          "url": "https://arxiv.org/abs/2102.10073"
+        },
+        {
+          "title": "RankZephyr",
+          "url": "https://arxiv.org/abs/2312.02724"
+        },
+        {
+          "title": "AgentIR",
+          "url": "https://arxiv.org/abs/2603.04384"
+        }
+      ]
     }
   ],
   "organizers": [
@@ -94,7 +146,7 @@
       "affiliation": "Oracle AI",
       "url": "https://hiteshlpatel.github.io/",
       "id": "hitesh-patel",
-      "bio": "Hitesh Laxmichand Patel is a Senior Applied Scientist and Tech Lead at Oracle, where he leads research on agentic and knowledge grounded AI systems. His work spans agentic orchestration, Agentic RAG, tool retrieval, and skill discovery. He has organized workshops, serves in senior reviewing and Area Chair roles, and mentors emerging researchers.",
+      "bio": "Hitesh Laxmichand Patel is a Principal Applied Scientist and Tech Lead at Oracle, where he leads research on agentic and knowledge grounded AI systems. His work spans agentic orchestration, Agentic RAG, tool retrieval, and skill discovery. He has organized workshops, serves in senior reviewing and Area Chair roles, and mentors emerging researchers.",
       "image": "assets/people/hitesh-patel.webp"
     },
     {
