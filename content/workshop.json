@@ -94,7 +94,7 @@
       "affiliation": "Oracle AI",
       "url": "https://hiteshlpatel.github.io/",
       "id": "hitesh-patel",
-      "bio": "Hitesh Laxmichand Patel is a Principal Applied Scientist and Tech Lead at Oracle, where he leads research on agentic and knowledge grounded AI systems. His work spans agentic orchestration, Agentic RAG, tool retrieval, and skill discovery. He has organized workshops, serves in senior reviewing and Area Chair roles, and mentors emerging researchers.",
+      "bio": "Hitesh Laxmichand Patel is a Principal Applied Scientist and Tech Lead at Oracle. His research focuses on reliable AI agents, reasoning, and the use of external knowledge in language and vision models. He studies how agents gather information, interact with tools, and coordinate over extended tasks, alongside methods for training and evaluating multilingual and multimodal systems. His broader work addresses model alignment, safety, and robustness in practical applications. His research received the EMNLP 2025 Best Social Impact Paper Award. He co-organizes GRAIL-V at CVPR, serves in Area Chair roles, and contributes to open research communities.",
       "image": "assets/people/hitesh-patel.webp"
     },
     {
