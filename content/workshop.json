@@ -97,7 +97,7 @@
       "affiliation": "Oracle AI",
       "url": "https://hiteshlpatel.github.io/",
       "id": "hitesh-patel",
-      "bio": "Hitesh Laxmichand Patel is a Principal Applied Scientist and Tech Lead at Oracle. His research focuses on reliable AI agents, reasoning, and the use of external knowledge in language and vision models. He studies how agents gather information, interact with tools, and coordinate over extended tasks, alongside methods for training and evaluating multilingual and multimodal systems. His broader work addresses model alignment, safety, and robustness in practical applications. His research received the EMNLP 2025 Best Social Impact Paper Award. He co-organizes GRAIL-V at CVPR, serves in Area Chair roles, and contributes to open research communities.",
+      "bio": "Hitesh Laxmichand Patel is a Principal Applied Scientist and Tech Lead at Oracle. His research spans reliable AI agents, reasoning, and knowledge use in language and vision models. He develops methods for agents to gather evidence, use tools, and collaborate on extended tasks, alongside multilingual and multimodal model training and evaluation. His work received the EMNLP 2025 Best Social Impact Paper Award. He co-organizes GRAIL-V at CVPR, serves as an Area Chair, and contributes to open research communities.",
       "image": "assets/people/hitesh-patel.webp"
     },
     {
@@ -105,7 +105,7 @@
       "affiliation": "Carnegie Mellon University",
       "url": "https://akariasai.github.io/",
       "id": "akari-asai",
-      "bio": "Akari Asai is an Assistant Professor at Carnegie Mellon University and a Research Scientist at the Allen Institute for AI. Her research spans retrieval augmented and modular language models, adaptive retrieval, tools, and deep research agents, including recent reasoning aware retrieval work (Chen et al., 2026). She has organized workshops, tutorials, shared tasks, and competitions across major NLP/ML venues.",
+      "bio": "Akari Asai is an Assistant Professor at Carnegie Mellon University and a Research Scientist at the Allen Institute for AI. She develops language models and agents that search for information, combine evidence, and interact with tools and environments. Her research spans retrieval augmented models, reliable reasoning, scientific discovery, and information access across languages and cultures. She received her Ph.D. from the University of Washington and the AAAI/ACM SIGAI Doctoral Dissertation Award, and organizes workshops, tutorials, and research challenges.",
       "image": "assets/people/akari-asai.webp"
     },
     {
@@ -113,7 +113,7 @@
       "affiliation": "Massachusetts Institute of Technology",
       "url": "https://omarkhattab.com/",
       "id": "omar-khattab",
-      "bio": "Omar Khattab is an Assistant Professor and the TIBCO Founders’ Career Development Professor in MIT EECS. His research develops neural retrieval and reliable compositional language model systems. Recent work includes OBLIQ-Bench on latent and implicit retrieval needs (Tchuindjo et al., 2026). He has co-organized workshops on compound AI systems and late interaction retrieval.",
+      "bio": "Omar Khattab is an Assistant Professor in MIT EECS and a member of CSAIL, where he leads the OASYS Lab. His research connects natural language processing with the design of efficient AI systems. He develops methods for neural retrieval, compositional reasoning, and programming and optimizing systems built from language models. His work emphasizes learning from limited feedback and balancing quality with computational cost. He contributes open source research software and co-organizes workshops on compound AI systems and retrieval.",
       "image": "assets/people/omar-khattab.webp"
     },
     {
@@ -121,7 +121,7 @@
       "affiliation": "Princeton University",
       "url": "https://www.cs.princeton.edu/~danqic/",
       "id": "danqi-chen",
-      "bio": "Danqi Chen is an Associate Professor of Computer Science at Princeton University, co-leads the Princeton NLP Group, and is an Associate Director of Princeton Language and Intelligence. Her research spans text understanding, knowledge representation, retrieval, reasoning, and QA. Recent work includes BRIGHT (Su et al., 2025) and long horizon agentic search (Yen et al., 2025). She received her Ph.D. from Stanford in 2018.",
+      "bio": "Danqi Chen is an Associate Professor of Computer Science at Princeton University, co-leads the Princeton NLP Group, and is an Associate Director of Princeton Language and Intelligence. Her research spans language understanding, knowledge representation, retrieval, and reasoning. She studies how language models acquire and use knowledge, search over extended tasks, and learn to follow human preferences. Her work also develops efficient methods for adapting language models and evaluating their capabilities. She received her Ph.D. from Stanford University in 2018.",
       "image": "assets/people/danqi-chen.webp"
     },
     {
@@ -129,7 +129,7 @@
       "affiliation": "Tencent IMA Product Center",
       "url": null,
       "id": "zifei-wang",
-      "bio": "Zifei Wang is affiliated with the IMA Product Center at Tencent. His research focuses on multimodal information retrieval, ranking, and routing for Large Language Model agents. His recent work covers areas such as skill retrieval and capabilities (Wang et al., 2026), as well as multimodal image and text retrieval.",
+      "bio": "Zifei Wang is affiliated with the IMA Product Center at Tencent. His research connects multimodal information retrieval with the selection of resources for language model agents. He studies ranking, routing, and the retrieval of reusable skills, including how a capability’s suitability depends on the user’s query and its compatibility with other capabilities. His work also covers retrieval across images and text, with an emphasis on benchmarks and learned retrieval methods for matching requests to useful resources.",
       "image": "assets/people/zifei-wang.webp"
     },
     {
@@ -137,7 +137,7 @@
       "affiliation": "Oracle",
       "url": "https://www.linkedin.com/in/avirupsil/",
       "id": "avi-sil",
-      "bio": "Avi Sil is Senior Director of Applied Science at Oracle, where he leads teams developing AI agent technologies. His research spans RAG, agentic workflows, inference time methods, verification, and natural language to code systems. He has served the ACL community as area chair, track chair, and demonstration chair.",
+      "bio": "Avi Sil is Senior Director of Applied Science at Oracle, where he leads teams developing AI agents and applied language model technologies. His research spans retrieval augmented generation, agent workflows, reasoning and verification, and natural language interfaces to code. Previously, he was a Principal Research Scientist and Manager at IBM Research, working on natural language processing and multilingual question answering. He has served as an area chair, track chair, and demonstration chair, and co-chaired the ACM CAIS 2026 program.",
       "image": "assets/people/avi-sil.webp"
     },
     {
@@ -145,7 +145,7 @@
       "affiliation": "University of California, Berkeley",
       "url": "https://www.sewonmin.com/",
       "id": "sewon-min",
-      "bio": "Sewon Min is an Assistant Professor in EECS at UC Berkeley and a Research Scientist at the Allen Institute for AI. Her research focuses on understanding and advancing large language models, including their adaptability, factuality, reasoning, and use of large text corpora. She has organized workshops and tutorials on retrieval based language models and foundation models.",
+      "bio": "Sewon Min is an Assistant Professor in EECS at UC Berkeley and a Research Scientist at the Allen Institute for AI. Her research examines language models across data, pretraining, architectures, and retrieval, with a focus on how models learn from and use information under limited resources. Her broader interests include factuality, adaptability, and reasoning. She received her Ph.D. from the University of Washington, has earned dissertation and paper awards, and has organized workshops and tutorials on language models.",
       "image": "assets/people/sewon-min.webp"
     },
     {
@@ -153,7 +153,7 @@
       "affiliation": "Weaviate",
       "url": "https://github.com/CShorten",
       "id": "connor-shorten",
-      "bio": "Connor Shorten is a Research Scientist at Weaviate. His research focuses on the intersection of AI and Database Systems. His most recent work on IRPAPERS compares text and image based retrieval and question answering systems.",
+      "bio": "Connor Shorten is a Research Scientist at Weaviate, working at the intersection of AI and database systems. His research interests include neural search, language model applications, and retrieval and question answering across text and images. His work includes benchmarks that compare retrieval methods and study how visual information supports scientific search. He also hosts the Weaviate Podcast, where he discusses advances in machine learning, search, and AI databases with researchers, developers, and members of the open source community.",
       "image": "assets/people/connor-shorten.webp"
     }
   ],

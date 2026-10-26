@@ -1,0 +1,27 @@
+RBD identity exploration — October 26, 2026
+
+Mode: built-in ImageGen; transparent_background=true; one new original concept.
+
+Exact prompt:
+Use case: logo-brand. Create one original professional emblem for an academic NLP and information retrieval workshop named Retrieval Beyond Documents (RBD). Output only a single compact emblem, no text, on a genuinely transparent background. A precise geometric mark that expresses selecting and composing useful capabilities: three distinct solid geometric modules connected by one purposeful route, one selected module highlighted in muted Redwood red #B64034, the other modules and route in deep petrol teal #17474B. The overall silhouette should subtly suggest a forward-moving R without literally writing a letter. Strong simple silhouette, balanced square footprint, confident strokes, generous negative space, optically balanced, sharp flat vector-like edges. It must remain recognizable at 24 pixels and pair with an understated RBD wordmark on white. Calm academic identity, contemporary conference design, distinctive rather than a generic AI company logo. No gradients, no shadows, no glow, no 3D, no brain, no robot, no magnifying glass, no document sheet, no enclosing badge, no decorative dots, no background, no mockup, no thin circuit lines. Center emblem with modest even padding; use almost the full canvas.
+
+Original generated asset:
+/Users/hiteshlp/.codex/generated_images/01a17986-6ff8-7801-8e0d-3b53f431a7cd/exec-6c83993b-018d-4203-a54b-0cbf31c20352.png
+Retained unchanged at ../../work/branding/rbd-retrieval-concept.png relative to this repository.
+
+Implementation:
+The generated bitmap was a concept reference. The website uses a manually redrawn, simplified vector emblem: a circle and square joined to a selected red diamond by two teal routes. It is paired with the existing custom RBD letterforms recolored deep teal. No raster editing was used on the generated original.
+
+Final editable assets:
+src/assets/rbd-emblem.svg (standalone symbol)
+src/assets/rbd-mark.svg (header emblem and RBD)
+src/assets/rbd-logo.svg (full workshop identity)
+src/assets/favicon.svg
+src/assets/rbd-social.svg
+
+PNG exports of the final native SVG artwork:
+src/assets/rbd-logo.png (1200x460)
+src/assets/rbd-icon.png (512x512)
+src/assets/rbd-social.png (1200x630)
+
+The official NAACL logo remains unmodified. No third-party logo or trademark is used in the original RBD emblem.

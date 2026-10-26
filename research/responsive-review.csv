@@ -1,0 +1,27 @@
+checked_on,viewport,horizontal_overflow,minimum_nav_target_px,minimum_profile_target_px,people_columns,organizer_lines,organizer_pair_differences,speaker_pair_differences
+2026-10-26,320x568,False,44,44,1,14 / 16 / 15 / 15 / 14 / 15 / 14 / 15,not adjacent,not adjacent
+2026-10-26,360x800,False,44,44,1,12 / 13 / 13 / 14 / 12 / 13 / 12 / 13,not adjacent,not adjacent
+2026-10-26,375x812,False,44,44,1,12 / 13 / 12 / 13 / 12 / 13 / 12 / 12,not adjacent,not adjacent
+2026-10-26,390x844,False,44,44,1,11 / 13 / 12 / 12 / 11 / 12 / 11 / 12,not adjacent,not adjacent
+2026-10-26,414x896,False,44,44,1,10 / 11 / 11 / 12 / 10 / 11 / 10 / 11,not adjacent,not adjacent
+2026-10-26,430x932,False,44,44,1,10 / 11 / 11 / 11 / 10 / 11 / 10 / 11,not adjacent,not adjacent
+2026-10-26,480x800,False,44,44,1,9 / 10 / 10 / 10 / 9 / 10 / 9 / 9,not adjacent,not adjacent
+2026-10-26,500x900,False,44,44,1,9 / 9 / 9 / 10 / 9 / 9 / 9 / 9,not adjacent,not adjacent
+2026-10-26,501x900,False,44,44,1,9 / 10 / 10 / 10 / 9 / 10 / 9 / 9,not adjacent,not adjacent
+2026-10-26,650x900,False,44,44,1,7 / 7 / 7 / 7 / 7 / 7 / 7 / 7,not adjacent,not adjacent
+2026-10-26,651x900,False,44,44,1,9 / 10 / 10 / 10 / 9 / 10 / 9 / 10,not adjacent,not adjacent
+2026-10-26,768x1024,False,44,44,1,7 / 8 / 8 / 8 / 7 / 8 / 7 / 8,not adjacent,not adjacent
+2026-10-26,820x1180,False,44,44,1,7 / 7 / 7 / 8 / 7 / 7 / 7 / 7,not adjacent,not adjacent
+2026-10-26,844x390,False,44,44,1,6 / 7 / 7 / 7 / 6 / 7 / 7 / 7,not adjacent,not adjacent
+2026-10-26,850x900,False,44,44,1,6 / 7 / 7 / 7 / 6 / 7 / 7 / 7,not adjacent,not adjacent
+2026-10-26,851x900,False,44,44,1,6 / 7 / 7 / 7 / 6 / 7 / 7 / 7,not adjacent,not adjacent
+2026-10-26,900x700,False,44,44,1,6 / 7 / 6 / 6 / 6 / 6 / 6 / 6,not adjacent,not adjacent
+2026-10-26,1024x768,False,44,44,1,5 / 5 / 5 / 6 / 5 / 5 / 5 / 5,not adjacent,not adjacent
+2026-10-26,1050x900,False,44,44,1,5 / 5 / 5 / 5 / 5 / 5 / 5 / 5,not adjacent,not adjacent
+2026-10-26,1051x900,False,44,44,1,5 / 5 / 5 / 6 / 5 / 5 / 5 / 5,not adjacent,not adjacent
+2026-10-26,1100x900,False,44,44,1,5 / 5 / 5 / 5 / 5 / 5 / 5 / 5,not adjacent,not adjacent
+2026-10-26,1101x900,False,44,44,2,12 / 13 / 13 / 14 / 12 / 13 / 12 / 13,1 / 1 / 1 / 1,2 / 1
+2026-10-26,1280x800,False,44,44,2,11 / 11 / 11 / 12 / 10 / 11 / 11 / 11,0 / 1 / 1 / 0,1 / 0
+2026-10-26,1440x900,False,44,44,2,11 / 11 / 11 / 12 / 10 / 11 / 11 / 11,0 / 1 / 1 / 0,1 / 0
+2026-10-26,1920x1080,False,44,44,2,11 / 11 / 11 / 12 / 10 / 11 / 11 / 11,0 / 1 / 1 / 0,1 / 0
+2026-10-26,2560x1440,False,44,44,2,11 / 11 / 11 / 12 / 10 / 11 / 11 / 11,0 / 1 / 1 / 0,1 / 0

@@ -16,3 +16,8 @@ checked_on,area,file,issue_or_check,before,after,verification
 2026-10-26,Responsive layout,src/style.css,Horizontal overflow,None found before changes,None found after refinements,320 390 650 768 850 1024 1440 1920 2560 CSS pixels
 2026-10-26,Images,src/index.html,Portrait and logo loading,Existing explicit image dimensions and lazy loading,Preserved and visually checked,Desktop and mobile organizer views
 2026-10-26,Scope,README.md,Review limitations,No formal accessibility certification,Physical devices screen readers and other browser engines not tested,Documented release checks
+2026-10-26,Biographies,content/workshop.json,Uneven organizer biography length,Varied paragraph lengths,All eight organizers 76 to 79 words with broad verified summaries,At measured two-column widths paired organizers differ by zero or one line
+2026-10-26,Responsive people,src/style.css,Cramped medium-width biographies,Two columns above 850px,One column through 1100px; bio below portrait through 650px,26 viewport measurements plus phone tablet desktop screenshots
+2026-10-26,Landscape,src/style.css,Header consumed short-screen content space,Sticky 108px header at 844x390,Header scrolls away when viewport height is at most 500px,Program anchor at y20; no overflow at 844x390
+2026-10-26,Identity,src/assets/rbd-mark.svg,Requested stronger relevant RBD logo,RBD letters alone,Capability-retrieval emblem and deep teal wordmark with selected red resource,Vector header favicon square icon full logo and social preview inspected
+2026-10-26,Navigation,src/app.js,Recheck after logo and breakpoint changes,Existing six links,Correct section highlight and clear anchor positioning,All six destinations at 320 768 1101 and 1440px; keyboard skip and Back to top rechecked
