@@ -35,7 +35,7 @@ The natural search focus is the workshop's full name, **RBD at NAACL 2027**, and
 
 - Set `siteUrl`, `seoTitle`, and `description` in `content/workshop.json`. The current canonical target is `https://rbd-workshop.github.io/`; its ownership and public deployment must be confirmed before launch. All search URLs derive from this setting.
 - Update `lastUpdated` only when the page's content changes materially, using the actual date. The build does not silently advance it. This date is metadata and does not add another year to the visible footer.
-- The sharing image is `src/assets/rbd-social.png`, with its editable vector source beside it. Update both when the branding changes. The PNG is approximately 65 KB, including the official NAACL 2027 logo.
+- The sharing image is `src/assets/rbd-social.png`, with its editable vector source beside it. Update both when the branding changes. The PNG is approximately 64 KB, including the official NAACL 2027 logo.
 - No `Event` markup is emitted while the actual workshop day and venue are unconfirmed. Add it after those details are visible and final; never substitute the parent conference dates.
 - `llms.txt` is an optional navigation summary, not a ranking mechanism. Keep its draft-status text current as the CFP is finalized. [Google's guidance](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide) says normal SEO practices apply to AI search and that Google does not use `llms.txt`.
 - The local preview sends an `X-Robots-Tag: noindex, nofollow` header. This protects local previews and is not part of the static GitHub Pages output. The generated production homepage permits indexing. After deployment, check the actual public response for accidental `noindex` directives.
@@ -64,9 +64,9 @@ Set `submissionUrl` to the confirmed HTTPS portal to show a working submit butto
 
 ## Identity and assets
 
-The RBD identity pairs original vector letterforms with a compact capability-retrieval emblem: distinct resource shapes connect along a route, with the selected resource highlighted in red. The emblem and letters use deep teal `#17474b`; the selected diamond uses muted red `#b64034`. The site keeps dark neutral text `#312d2a`, accessible link red `#9e392c`, and a white background. Native sans-serif fonts make no third-party font requests.
+The RBD identity is a compact typographic wordmark. It retains the red R (`#c74634`) and uses revised B and D letterforms in charcoal (`#2c3035`), with consistent stroke weights, rounded bowls, and balanced spacing. The site keeps dark neutral text `#312d2a`, accessible link red `#9e392c`, and a white background. Native sans-serif fonts make no third-party font requests.
 
-`src/assets/rbd-emblem.svg` is the standalone symbol, `rbd-mark.svg` combines it with RBD for the header, and `rbd-logo.svg` includes the full workshop name. `rbd-logo.png` is the transparent 1200 × 460 export. The favicon, square icon, and sharing card use the same identity. Built-in image generation supplied an initial concept, which was redrawn as simple SVG paths for crisp rendering at small sizes. The unmodified generated concept remains in the task's `work/branding/rbd-retrieval-concept.png`; [research/branding-prompt.txt](research/branding-prompt.txt) records the exact prompt and final implementation.
+`src/assets/rbd-mark.svg` is the header wordmark, and `rbd-logo.svg` includes the full workshop name. `rbd-logo.png` is the transparent 1200 × 460 export. The favicon and square icon use the red R; the sharing card uses the complete RBD wordmark. The earlier generated connected-shapes emblem was rejected by the user and removed from the site. Its exploration record remains in [research/branding-prompt.txt](research/branding-prompt.txt) for provenance only.
 
 Speaker and organizer portraits and the San Francisco banner are hosted locally as optimized WebP files. Sources and credits are recorded in [ASSET_CREDITS.md](ASSET_CREDITS.md), without a visible photo-credit line in the footer.
 
@@ -76,7 +76,7 @@ The official NAACL 2027 San Francisco logo is displayed in the parent-conference
 
 The October 26, 2026 UI pass applied [Anthropic's Frontend Design skill](https://github.com/anthropics/claude-code/tree/main/plugins/frontend-design/skills/frontend-design) and [Vercel's Web Design Guidelines skill](https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines), with the current [interface rules](https://github.com/vercel-labs/web-interface-guidelines/blob/main/command.md). Both skills were installed in the user's local Codex skill library. Findings and resolutions are recorded in [research/ui-review.csv](research/ui-review.csv).
 
-The direction remains a conventional academic workshop site: left-aligned research content, visible section navigation, substantial biographies, and the Golden Gate Bridge as the main visual. The updated RBD emblem and teal wordmark sit within a white and dark neutral page palette; the official NAACL artwork remains unchanged. Native sans-serif type is intentional for familiar conference-page reading and fast loading. Main copy is 16px; biographies are 15px; supporting information is 13–14px. Longer prose has a 76ch maximum measure where space allows.
+The direction remains a conventional academic workshop site: left-aligned research content, visible section navigation, substantial biographies, and the Golden Gate Bridge as the main visual. The red and charcoal RBD wordmark sits within a white and dark neutral page palette; the official NAACL artwork remains unchanged. Native sans-serif type is intentional for familiar conference-page reading and fast loading. Main copy is 16px; biographies are 15px; supporting information is 13–14px. Longer prose has a 76ch maximum measure where space allows.
 
 ```text
 Desktop                           Phone

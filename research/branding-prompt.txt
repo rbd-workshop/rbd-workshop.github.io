@@ -1,3 +1,5 @@
+STATUS: RETIRED CONCEPT. The user rejected this emblem on October 26, 2026. The active website now uses a red-R and charcoal-BD typographic wordmark. The paths below describe the historical implementation, not the current assets. No generated image is used in the current logo.
+
 RBD identity exploration — October 26, 2026
 
 Mode: built-in ImageGen; transparent_background=true; one new original concept.

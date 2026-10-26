@@ -28,7 +28,7 @@ main p, .topics li, .biography { overflow-wrap: break-word; }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 25px; min-height: 72px; }
 .brand { display: flex; align-items: center; gap: 10px; min-height: 44px; color: var(--ink); flex-shrink: 0; font-size: 19px; font-weight: 450; letter-spacing: 0; }
 .brand:hover { text-decoration: none; }
-.brand img { width: 148px; height: auto; }
+.brand img { width: 120px; height: auto; }
 #main-nav { display: flex; align-items: center; gap: 27px; }
 #main-nav a { display: inline-flex; justify-content: center; align-items: center; min-width: 44px; min-height: 44px; color: #45403b; font-size: 14px; white-space: nowrap; padding: 23px 0; }
 #main-nav a:hover { color: var(--link); }
@@ -115,7 +115,7 @@ h3 { font-size: 20px; line-height: 1.4; font-weight: 600; color: var(--ink); }
   html { scroll-padding-top: 130px; }
   .header-inner { flex-direction: column; gap: 0; padding-top: 11px; }
   .brand { font-size: 18px; }
-  .brand img { width: 140px; }
+  .brand img { width: 110px; }
   #main-nav { width: 100%; justify-content: space-between; gap: 12px; }
   #main-nav a { padding: 13px 0 16px; }
   .masthead .container { padding-block: 36px 38px; }
