@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<title>Retrieval Beyond Documents, RBD Workshop at NAACL 2027</title>
+<rect width="1200" height="630" fill="#f7f5f2"/>
+<rect width="1200" height="9" fill="#c74634"/>
+<g transform="translate(72 58)"><title>RBD</title><path d="M4 6H30C46 6 55 14 55 27C55 36 50 43 42 46L60 70H43L26 48H18V70H4ZM18 18V36H29C37 36 41 33 41 27C41 21 37 18 29 18Z" fill="#c74634" fill-rule="evenodd"/><path d="M68 6H94C111 6 120 13 120 23C120 30 116 35 110 38C118 40 123 46 123 54C123 65 114 70 98 70H68ZM81 17V33H94C102 33 107 29 107 25C107 20 103 17 95 17ZM81 43V59H97C105 59 110 56 110 51C110 46 105 43 97 43Z" fill="#312d2a" fill-rule="evenodd"/><path d="M131 6H153C174 6 188 17 188 38C188 59 174 70 153 70H131ZM144 18V58H152C166 58 175 51 175 38C175 25 166 18 152 18Z" fill="#312d2a" fill-rule="evenodd"/></g>
+<g font-family="Arial, Helvetica, sans-serif" fill="#312d2a">
+<text x="1128" y="104" text-anchor="end" font-size="26" font-weight="600">NAACL 2027</text>
+<text x="72" y="255" font-size="72" font-weight="700" letter-spacing="-2">Retrieval Beyond</text>
+<text x="72" y="338" font-size="72" font-weight="700" letter-spacing="-2">Documents</text>
+<text x="75" y="402" font-size="31">Capability Retrieval for Language Agents</text>
+<path d="M75 492H1128" stroke="#d8d2cb"/>
+<text x="75" y="544" font-size="23">First Workshop · San Francisco, California</text>
+<text x="75" y="582" fill="#625d58" font-size="19">rbd-workshop.github.io</text>
+</g></svg>

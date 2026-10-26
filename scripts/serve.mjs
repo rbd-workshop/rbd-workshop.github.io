@@ -8,10 +8,12 @@ await build();
 const publicRoot = await realpath(path.join(root, 'docs'));
 const port = Number(process.env.PORT || 4173);
 if (!Number.isInteger(port) || port < 1024 || port > 65535) throw new Error('PORT must be between 1024 and 65535');
-const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.webp': 'image/webp', '.woff2': 'font/woff2', '.ico': 'image/x-icon' };
+const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.txt': 'text/plain; charset=utf-8', '.xml': 'application/xml; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.webp': 'image/webp', '.woff2': 'font/woff2', '.ico': 'image/x-icon' };
 const server = http.createServer(async (request, response) => {
   response.setHeader('Cache-Control', 'no-store');
   response.setHeader('X-Content-Type-Options', 'nosniff');
+  // Only the local development server sends this; generated production HTML is indexable.
+  response.setHeader('X-Robots-Tag', 'noindex, nofollow');
   if (!['GET', 'HEAD'].includes(request.method)) {
     response.writeHead(405, { Allow: 'GET, HEAD' }); response.end('Method not allowed'); return;
   }
@@ -35,8 +37,10 @@ const server = http.createServer(async (request, response) => {
     response.writeHead(200, { 'Content-Type': types[path.extname(target)] || 'application/octet-stream', 'Content-Length': data.length });
     response.end(request.method === 'HEAD' ? undefined : data);
   } catch (error) {
-    response.writeHead(error instanceof URIError ? 400 : 404, { 'Content-Type': 'text/plain; charset=utf-8' });
-    response.end(error instanceof URIError ? 'Invalid URL' : 'Page not found');
+    const invalid = error instanceof URIError;
+    const body = invalid ? 'Invalid URL' : await readFile(path.join(publicRoot, '404.html'));
+    response.writeHead(invalid ? 400 : 404, { 'Content-Type': invalid ? 'text/plain; charset=utf-8' : 'text/html; charset=utf-8' });
+    response.end(request.method === 'HEAD' ? undefined : body);
   }
 });
 server.on('error', error => { console.error(error.code === 'EADDRINUSE' ? `Port ${port} is in use. Start with PORT=4174 npm start.` : error.message); process.exit(1); });

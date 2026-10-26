@@ -2,6 +2,9 @@
   "title": "Retrieval Beyond Documents",
   "subtitle": "Capability Retrieval for Language Agents",
   "conference": "NAACL 2027",
+  "siteUrl": "https://rbd-workshop.github.io/",
+  "seoTitle": "Retrieval Beyond Documents (RBD) Workshop | NAACL 2027",
+  "lastUpdated": "2026-10-26",
   "edition": "The inaugural workshop",
   "date": "To be announced",
   "location": "San Francisco, California",
@@ -9,7 +12,7 @@
   "contactEmail": "hitesh.laxmichand.patel@oracle.com",
   "submissionUrl": null,
   "submissionStatus": "Submission details forthcoming",
-  "description": "Retrieval Beyond Documents (RBD), a NAACL 2027 workshop on capability retrieval for language agents. Overview, call for papers, speakers, program, and organizers.",
+  "description": "RBD at NAACL 2027 explores capability retrieval for language agents: tools, skills, workflows, memory, models, and agents. Topics, submissions, and speakers.",
   "dates": [
     {
       "label": "Paper submission",

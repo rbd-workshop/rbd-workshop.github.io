@@ -1,6 +1,7 @@
 import { readFile, writeFile, mkdir, cp, rm } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
+import { searchAssets } from './seo.mjs';
 
 export const root = fileURLToPath(new URL('../', import.meta.url));
 const escape = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -17,6 +18,7 @@ const person = p => `<article class="person${p.image ? '' : ' person-without-pho
 
 export async function build() {
   const data = JSON.parse(await readFile(path.join(root, 'content/workshop.json'), 'utf8'));
+  const seo = searchAssets(data);
   if (!/^[^\s<>@]+@[^\s<>@]+\.[^\s<>@]+$/.test(data.contactEmail)) throw new Error('Invalid contact email');
   const topics = data.topics.map(t => `<li><strong>${escape(t.title)}.</strong> ${escape(t.description)}</li>`).join('\n');
   const speakers = data.speakers.map(person).join('\n');
@@ -26,13 +28,18 @@ export async function build() {
   const submission = data.submissionUrl
     ? `<p><a href="${safeUrl(data.submissionUrl)}" target="_blank" rel="noopener noreferrer">Submit your paper</a></p>`
     : '<p>The submission portal and paper deadlines will be announced here.</p>';
-  const variables = { ...Object.fromEntries(Object.entries(data).filter(([,v]) => typeof v === 'string').map(([k,v]) => [k,escape(v)])), topics, speakers, organizers, committee, dates, submission };
-  let html = await readFile(path.join(root, 'src/index.html'), 'utf8');
-  html = html.replace(/\{\{(\w+)\}\}/g, (_, key) => { if (!(key in variables)) throw new Error(`Missing template value: ${key}`); return variables[key]; });
+  const variables = { ...Object.fromEntries(Object.entries(data).filter(([,v]) => typeof v === 'string').map(([k,v]) => [k,escape(v)])), siteUrl: escape(seo.siteUrl), siteRoot: escape(seo.siteRoot), socialImageUrl: escape(seo.socialImageUrl), structuredData: seo.structuredData, topics, speakers, organizers, committee, dates, submission };
+  const render = async file => (await readFile(path.join(root, 'src', file), 'utf8')).replace(/\{\{(\w+)\}\}/g, (_, key) => { if (!(key in variables)) throw new Error(`Missing template value: ${key}`); return variables[key]; });
+  const html = await render('index.html');
+  const notFound = await render('404.html');
   // assets/ is generated exclusively from src/assets plus the stylesheet and script.
   await rm(path.join(root, 'docs/assets'), { recursive: true, force: true });
   await mkdir(path.join(root, 'docs/assets'), { recursive: true });
   await writeFile(path.join(root, 'docs/index.html'), html);
+  await writeFile(path.join(root, 'docs/404.html'), notFound);
+  await writeFile(path.join(root, 'docs/robots.txt'), seo.robots);
+  await writeFile(path.join(root, 'docs/sitemap.xml'), seo.sitemap);
+  await writeFile(path.join(root, 'docs/llms.txt'), seo.llms);
   await cp(path.join(root, 'src/style.css'), path.join(root, 'docs/assets/style.css'));
   await cp(path.join(root, 'src/app.js'), path.join(root, 'docs/assets/app.js'));
   await cp(path.join(root, 'src/assets'), path.join(root, 'docs/assets'), { recursive: true });

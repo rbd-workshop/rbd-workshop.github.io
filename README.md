@@ -23,6 +23,34 @@ npm run check   # Check links, assets, IDs, headings, and content replacement
 
 The scripts also work with `node scripts/serve.mjs`, `node scripts/build.mjs`, and `node scripts/check.mjs`.
 
+## Search visibility and launch priorities
+
+The October 26, 2026 [SEO audit](research/seo-audit.csv) records implemented fixes and the remaining launch work. The site now generates a canonical URL, descriptive search and social metadata, a 1200 × 630 sharing image, `robots.txt`, a one-page XML sitemap, a custom 404 page, and JSON-LD for the website, workshop organization, page, and the twelve speakers and organizers. These describe the same content visitors can read. The Schema.org validator reported **0 errors and 0 warnings** for the generated graph. This validates the vocabulary; it does not establish Google rich-result eligibility or guarantee rankings.
+
+The full page is delivered as static HTML. Its text and navigation do not depend on JavaScript. Existing local WebP portraits are lazy loaded; the bridge banner is preloaded. The generated HTML is about 38 KB, CSS 10 KB, JavaScript 1.5 KB, and the banner 258 KB before transfer compression. These are file sizes, not measured Core Web Vitals. No analytics or third-party JavaScript was added.
+
+The natural search focus is the workshop's full name, **RBD at NAACL 2027**, and **capability retrieval for language agents**. The overview and topics also cover tools, skills, workflows, memory, models, and agents. These are descriptive query themes, not claims about measured search demand. Preserve readable academic prose and avoid repeating keywords or creating thin pages for each phrase.
+
+### Configuration
+
+- Set `siteUrl`, `seoTitle`, and `description` in `content/workshop.json`. The current canonical target is `https://rbd-workshop.github.io/`; its ownership and public deployment must be confirmed before launch. All search URLs derive from this setting.
+- Update `lastUpdated` only when the page's content changes materially, using the actual date. The build does not silently advance it. This date is metadata and does not add another year to the visible footer.
+- The sharing image is `src/assets/rbd-social.png`, with its editable vector source beside it. Update both when the branding changes. The PNG is approximately 57 KB.
+- No `Event` markup is emitted while the actual workshop day and venue are unconfirmed. Add it after those details are visible and final; never substitute the parent conference dates.
+- `llms.txt` is an optional navigation summary, not a ranking mechanism. Keep its draft-status text current as the CFP is finalized. [Google's guidance](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide) says normal SEO practices apply to AI search and that Google does not use `llms.txt`.
+- The local preview sends an `X-Robots-Tag: noindex, nofollow` header. This protects local previews and is not part of the static GitHub Pages output. The generated production homepage permits indexing. After deployment, check the actual public response for accidental `noindex` directives.
+- `npm run check` validates canonical URLs, crawler files, JSON-LD references, social image dimensions, date validity, and safe metadata serialization, as well as the existing page checks.
+
+### Launch sequence
+
+1. **Publish the confirmed site.** Follow the GitHub Pages steps below after ownership and the final public content are confirmed. Check that the homepage, sitemap, robots file, share image, and actual 404 responses work on the public HTTPS address. The current work remains local.
+2. **Verify search ownership and submit the sitemap.** Add `https://rbd-workshop.github.io/` as a URL-prefix property in [Google Search Console](https://search.google.com/search-console/). Use its exact HTML verification file or meta tag; URL-prefix verification avoids requiring control over `github.io` DNS. Preserve verification files in the generated `docs/` root or put a supplied meta tag in `src/index.html`. Follow [Google's ownership verification instructions](https://support.google.com/webmasters/answer/9008080). Add and verify the site in [Bing Webmaster Tools](https://www.bing.com/webmasters/), using the [official verification instructions](https://www.bing.com/webmasters/help/add-and-verify-site-12184f8b). Submit `https://rbd-workshop.github.io/sitemap.xml` in both tools, then inspect the homepage's index status. No verification codes or credentials are currently configured.
+3. **Build legitimate academic discovery.** Seek a link from the official NAACL workshop listing and the organizers' research homepages. Share the finalized CFP through relevant academic mailing lists, lab pages, and professional accounts using the canonical URL and new share image. These are outreach recommendations; no messages have been sent. Avoid bought links and mass directory submissions.
+4. **Measure the public site.** Record Search Console impressions, clicks, queries, and indexed status, plus Bing search performance. Compare branded queries with broader capability retrieval and language-agent queries over time. Run PageSpeed Insights on the deployed URL for a performance baseline. Referrals and submission-button conversions require a separately chosen analytics setup; none is installed. Do not invent a reach target before there is a baseline.
+5. **Maintain useful content.** Publish confirmed deadlines, the submission link, talk titles, the program, accepted papers, and slides when available. Keep expired calls accurate. Add stable individual pages when there is enough substantive material to justify them, preserving links from the workshop homepage.
+
+Further references: [Google sitemap guidance](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap), [site-name markup](https://developers.google.com/search/docs/appearance/site-names), [event requirements](https://developers.google.com/search/docs/appearance/structured-data/event), and [Bing sitemap guidance](https://www2.bing.com/webmasters/help/sitemaps-3b5cf6ed). Publishing and submission make the site discoverable; search engines still decide whether and how to index and rank it.
+
 ## Editing
 
 - `content/workshop.json`: event information, dates, contact address, submission URL, research themes, speakers, organizers, and committee.

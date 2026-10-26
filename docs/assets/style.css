@@ -83,6 +83,9 @@ h3 { font-size: 20px; line-height: 1.4; font-weight: 600; color: var(--navy); }
 .committee-list li span + span { font-size: 13px; color: var(--muted); }
 .contact { padding-bottom: 55px; }
 .contact a { overflow-wrap: anywhere; }
+.error-page { padding-block: 72px; }
+.error-page h1 { margin-bottom: 24px; }
+.error-page > p { max-width: 650px; }
 .site-footer { background: #f5f4f2; border-top: 1px solid var(--line); padding-block: 26px; font-size: 13px; color: var(--muted); }
 .site-footer .container { position: relative; padding-right: 120px; }
 .site-footer a { position: absolute; top: 0; right: 0; }

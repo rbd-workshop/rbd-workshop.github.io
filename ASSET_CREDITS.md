@@ -12,6 +12,8 @@ Public sources were consulted on October 26, 2026. Zifei Wang’s photograph was
 
 Speaker and organizer entries link to public profiles where available. The original vector letterforms, favicon, and wordmark were created for RBD and contain no third-party marks. No ICLR, ACM, or NAACL logo is copied into the site.
 
+The original social sharing card, `src/assets/rbd-social.svg` and its 1200 × 630 PNG export, uses the same approved RBD letterforms, colors, and workshop information. It contains no third-party imagery. It was created October 26, 2026 for Open Graph and large-image social previews.
+
 ## Organizer photographs
 
 These are the photographs currently published at the cited sources, checked October 26, 2026. Publication on a current page does not establish the date the photograph was taken. Images are locally resized and encoded, without synthesizing or altering anyone’s appearance.
