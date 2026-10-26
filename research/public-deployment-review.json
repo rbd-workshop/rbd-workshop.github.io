@@ -1,0 +1,308 @@
+{
+  "checked_at": "2026-10-26T22:18:10.250024+00:00",
+  "site": "https://rbd-workshop.github.io/",
+  "source_commit": "654bbab88e8798d8dd01528e57343d7afbf746a6",
+  "checks": [
+    {
+      "path": "404.html",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 939,
+      "sha256": "db0abcf92f6a1cc3195380974d59d9adfd6d404508d1720fd40d41a706749acb",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "assets/app.js",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 1829,
+      "sha256": "a5c3d8c3a61a3b4940e63cc1c10170ce2d33c6cf4594765d1c35e51e5d68ceea",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "assets/favicon.svg",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 342,
+      "sha256": "d179a0b8794a5296f65c651cad4c0bd1402acb14d3b79d15c0d1f073973b999f",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "assets/naacl-2027-logo.png",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 24674,
+      "sha256": "6a5be53255315dd359cb7197605a77a72adca9472f921e022416511d1d9acd92",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "assets/people/akari-asai.webp",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 57414,
+      "sha256": "c9735c3286494f6bfa34be1ec41d5c32d1fc04f6ace1e4548fde00723dfa9515",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "assets/people/avi-sil.webp",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 21610,
+      "sha256": "7a74aad715896e96e68ea1ffe81b5d8fb088e1ade5401bbf37162185f38935d9",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "assets/people/connor-shorten.webp",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 4228,
+      "sha256": "df7c885ea739bc4867cdfcff40891dd6ee8d5bf5747f6acc14bc9cc49d32cde7",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "assets/people/danqi-chen.webp",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 40974,
+      "sha256": "cc820152e45d10728d1a38b26fe3bc76d18bc7b679807da252b7b6a11b439c2f",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "assets/people/graham-neubig.webp",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 55546,
+      "sha256": "19d0c44acdb6a9f13a656d39dbed63651e9403cde3acbabce0246b66fc3aeb5a",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "assets/people/hitesh-patel.webp",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 42732,
+      "sha256": "a14000a10576c7cab80b4f1b6dec7420d6d5bb1626a3bc115601c3edc6e58340",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "assets/people/iryna-gurevych.webp",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 36566,
+      "sha256": "10f1070bc5136723aee2a5fa0a5f7b53555e687319a8afec4409689b3e68d0ba",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "assets/people/jimmy-lin.webp",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 65930,
+      "sha256": "c7770f9d8662113cd7155ff353ce29b39381619f051f39fe4b704dfa5e019faf",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "assets/people/omar-khattab.webp",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 29782,
+      "sha256": "f361fc62475001d71fd6b8d73dd30fe962bb27d4e29afe5fbf2ca4d49fd71286",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "assets/people/scott-yih.webp",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 87116,
+      "sha256": "e0ea45506e4273d97d2e0fdba7775f1f08c532e0678b82ff4105a12d1f8f0299",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "assets/people/sewon-min.webp",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 21804,
+      "sha256": "f342102798657b7bf2066bed463c81ada371628e3fe11418c3034acb2fb64804",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "assets/people/zifei-wang.webp",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 17674,
+      "sha256": "70d00509c1dd57d4b4305c22cbc263a20b61e98e4b1e6372610f303efe25b9d7",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "assets/rbd-icon.png",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 11200,
+      "sha256": "68a073c5cf44fadfbe02bcfc372eafa747902c3161c4ecb2ca255c63bb22e1b4",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "assets/rbd-logo.png",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 25279,
+      "sha256": "d39e8cb569d7c44e90198cd76d2dc2321dd4d83a65c3d4b4cfcc297c9ff1eada",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "assets/rbd-logo.svg",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 919,
+      "sha256": "7fcbce269750646fecfb90df73635c463c5756931ee85053b465f47af06f29d1",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "assets/rbd-mark-light.svg",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 657,
+      "sha256": "5d949fb74da5fa81ed8da75fb0926892c378097a8625740e753ead706c3d053b",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "assets/rbd-mark.svg",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 700,
+      "sha256": "43c097ed8a777ccdde6b8ffacae5bb2aac4370de972dcc0a5b8ed2eca0058b43",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "assets/rbd-social.png",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 65298,
+      "sha256": "7a4dd2b04893d9602ae392cec9fecabdd23fd95256f2a87bec764cfba657bfc1",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "assets/rbd-social.svg",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 34494,
+      "sha256": "b024b5394f15aaa25ce71b8bcc00c9bba022db5371d142aa3bfa8c4ad09542a4",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "assets/san-francisco.webp",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 257608,
+      "sha256": "eef5cb332750afed75e1ac86996d288cf22f6ffb2d9218b1c9253a71c795a311",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "assets/style.css",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 11615,
+      "sha256": "cfc83cf3064ed8a9dcee2eaa04ff92c9ac57f11a35a223ae9ad6c0b4cd255ea0",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 40907,
+      "sha256": "9cfba88297c6b6f3cf74f6de30aad32a5b81121e27edfc3549295e695b31a0bc",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "llms.txt",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 1038,
+      "sha256": "d99ceb64b9bb3dc222f0bf689f3df856acbe8ecd3013e6cc939f41406fed8c6f",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "robots.txt",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 76,
+      "sha256": "2ee37c3745ff74feedf955607bf0608ed4f139186452e0ded24fdbae8a2b9afe",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "sitemap.xml",
+      "status": 200,
+      "expected_status": 200,
+      "matches_local": true,
+      "bytes": 195,
+      "sha256": "af584fe2094339011eac9562b6cbf2c00dcf10f0bcec93a8d25162a6b8950b0d",
+      "noindex_header": false,
+      "pass": true
+    },
+    {
+      "path": "rbd-release-check-missing-page",
+      "status": 404,
+      "expected_status": 404,
+      "matches_local": true,
+      "bytes": 939,
+      "sha256": "db0abcf92f6a1cc3195380974d59d9adfd6d404508d1720fd40d41a706749acb",
+      "noindex_header": false,
+      "pass": true
+    }
+  ],
+  "all_passed": true
+}

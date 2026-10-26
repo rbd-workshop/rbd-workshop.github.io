@@ -25,7 +25,7 @@ The scripts also work with `node scripts/serve.mjs`, `node scripts/build.mjs`, a
 
 ## Search visibility and launch priorities
 
-The [launch readiness review](research/launch-readiness.csv) separates remaining public launch tasks from information to add when confirmed. On October 26, 2026, the planned public homepage returned HTTP 404 and the repository had no Git remote. The current preview is local only. The review applied the installed `seo-audit`, `schema`, and `ai-seo` skills alongside Google Search Central guidance; UI work separately used `frontend-design` and `web-design-guidelines`. These provide review methods, not a guarantee of search rankings or a certification of design quality.
+The site is live at **https://rbd-workshop.github.io/**. The [launch readiness review](research/launch-readiness.csv) records the remaining content and search tasks. On October 26, 2026, the [public deployment review](research/public-deployment-review.json) verified 30 public responses against the local build, including the homepage, assets, crawler files, and branded 404. The homepage returns HTTP 200 without a noindex header. The review applied the installed `seo-audit`, `schema`, and `ai-seo` skills alongside Google Search Central guidance; UI work separately used `frontend-design` and `web-design-guidelines`. These provide review methods, not a guarantee of search rankings or a certification of design quality.
 
 The October 26, 2026 [SEO audit](research/seo-audit.csv) records implemented fixes and the remaining launch work. The site now generates a canonical URL, descriptive search and social metadata, a 1200 × 630 sharing image, `robots.txt`, a one-page XML sitemap, a custom 404 page, and JSON-LD for the website, workshop organization, page, and the twelve speakers and organizers. These describe the same content visitors can read. The Schema.org validator reported **0 errors and 0 warnings** for the generated graph. This validates the vocabulary; it does not establish Google rich-result eligibility or guarantee rankings.
 
@@ -35,7 +35,7 @@ The natural search focus is the workshop's full name, **RBD at NAACL 2027**, and
 
 ### Configuration
 
-- Set `siteUrl`, `seoTitle`, and `description` in `content/workshop.json`. The current canonical target is `https://rbd-workshop.github.io/`; its ownership and public deployment must be confirmed before launch. All search URLs derive from this setting.
+- Set `siteUrl`, `seoTitle`, and `description` in `content/workshop.json`. The canonical target is `https://rbd-workshop.github.io/`, verified against the public deployment. All search URLs derive from this setting.
 - Update `lastUpdated` only when the page's content changes materially, using the actual date. The build does not silently advance it. This date is metadata and does not add another year to the visible footer.
 - The sharing image is `src/assets/rbd-social.png`, with its editable vector source beside it. Update both when the branding changes. The PNG is approximately 64 KB, including the official NAACL 2027 logo.
 - No `Event` markup is emitted while the actual workshop day and venue are unconfirmed. Add it after those details are visible and final; never substitute the parent conference dates.
@@ -45,7 +45,7 @@ The natural search focus is the workshop's full name, **RBD at NAACL 2027**, and
 
 ### Launch sequence
 
-1. **Publish the confirmed site.** Follow the GitHub Pages steps below after ownership and the final public content are confirmed. Check that the homepage, sitemap, robots file, share image, and actual 404 responses work on the public HTTPS address. The current work remains local.
+1. **Publication completed.** GitHub Pages serves `main` → `/docs` with HTTPS enforced. The public homepage, sitemap, robots file, assets, share image, and actual 404 response were verified. Unconfirmed workshop details remain explicitly forthcoming or draft.
 2. **Verify search ownership and submit the sitemap.** Add `https://rbd-workshop.github.io/` as a URL-prefix property in [Google Search Console](https://search.google.com/search-console/). Use its exact HTML verification file or meta tag; URL-prefix verification avoids requiring control over `github.io` DNS. Preserve verification files in the generated `docs/` root or put a supplied meta tag in `src/index.html`. Follow [Google's ownership verification instructions](https://support.google.com/webmasters/answer/9008080). Add and verify the site in [Bing Webmaster Tools](https://www.bing.com/webmasters/), using the [official verification instructions](https://www.bing.com/webmasters/help/add-and-verify-site-12184f8b). Submit `https://rbd-workshop.github.io/sitemap.xml` in both tools, then inspect the homepage's index status. No verification codes or credentials are currently configured.
 3. **Build legitimate academic discovery.** Seek a link from the official NAACL workshop listing and the organizers' research homepages. Share the finalized CFP through relevant academic mailing lists, lab pages, and professional accounts using the canonical URL and new share image. These are outreach recommendations; no messages have been sent. Avoid bought links and mass directory submissions.
 4. **Measure the public site.** Record Search Console impressions, clicks, queries, and indexed status, plus Bing search performance. Compare branded queries with broader capability retrieval and language-agent queries over time. Run PageSpeed Insights on the deployed URL for a performance baseline. Referrals and submission-button conversions require a separately chosen analytics setup; none is installed. Do not invent a reach target before there is a baseline.
@@ -101,15 +101,15 @@ The supplementary [quality review](research/quality-review.csv), with [detailed 
 
 Axe left the photo-backed hero contrast for manual review. A separate calculation used rendered text bounds, the actual local photo, its cover crop, and the CSS overlay; all sampled normal and enlarged-text regions passed, with a lowest ratio of 4.75:1. Raster rounding may differ slightly from browser interpolation. All fourteen page images loaded successfully, crawler files returned correctly, the missing-page route returned 404, and unsupported methods returned 405. The primary page resources total about 313 KB uncompressed. This is an agent-performed review using published guidance, not independent human certification, real-device testing, or a production Core Web Vitals measurement.
 
-## Git and publishing later
+## Git and publishing
 
 Feature branch: `codex/workshop-website`. The first design and the conference-style redesign are preserved in Git history. The public repository is [rbd-workshop/rbd-workshop.github.io](https://github.com/rbd-workshop/rbd-workshop.github.io), owned by the personal account `rbd-workshop`. No organization is used.
 
-1. Use the personal account `rbd-workshop` and its public repository **`rbd-workshop.github.io`**. Both names must match for the root GitHub Pages address.
-2. Run the build and checks, commit source and generated `docs/`, then merge the feature branch into `main`.
-3. Add the confirmed repository as `origin` and push `main`.
-4. Select **Settings → Pages → Deploy from a branch → main → /docs**.
-5. Wait for successful deployment before treating <https://rbd-workshop.github.io/> as live.
+1. The personal account `rbd-workshop` owns **`rbd-workshop.github.io`**. Both names match the root GitHub Pages address. `origin` points to this repository.
+2. For updates, run the build and checks, commit source and generated `docs/`, then merge the reviewed feature branch into `main`.
+3. Push `main` to `origin`.
+4. Keep **Settings → Pages → Deploy from a branch → main → /docs**. Publishing from the repository root would render the development README instead of the workshop website.
+5. Wait for the Pages deployment to succeed and verify the public homepage after each release. The first successful deployment of the actual site was [run 40411060893](https://github.com/rbd-workshop/rbd-workshop.github.io/actions/runs/40411060893).
 
 [Official GitHub Pages setup reference](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
