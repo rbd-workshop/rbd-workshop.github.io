@@ -103,9 +103,9 @@ Axe left the photo-backed hero contrast for manual review. A separate calculatio
 
 ## Git and publishing later
 
-Feature branch: `codex/workshop-website`. The first design and the conference-style redesign are preserved in Git history. No remote or public deployment is configured.
+Feature branch: `codex/workshop-website`. The first design and the conference-style redesign are preserved in Git history. The public repository is [rbd-workshop/rbd-workshop.github.io](https://github.com/rbd-workshop/rbd-workshop.github.io), owned by the personal account `rbd-workshop`. No organization is used.
 
-1. Create the GitHub organization `rbd-workshop` and its public repository **`rbd-workshop.github.io`**. Ownership and availability remain unverified.
+1. Use the personal account `rbd-workshop` and its public repository **`rbd-workshop.github.io`**. Both names must match for the root GitHub Pages address.
 2. Run the build and checks, commit source and generated `docs/`, then merge the feature branch into `main`.
 3. Add the confirmed repository as `origin` and push `main`.
 4. Select **Settings → Pages → Deploy from a branch → main → /docs**.
