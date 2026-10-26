@@ -1,0 +1,14 @@
+{
+  "name": "rbd-workshop-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Retrieval Beyond Documents — NAACL 2027 workshop website",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/serve.mjs",
+    "dev": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs"
+  }
+}

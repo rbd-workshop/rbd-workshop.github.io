@@ -1,0 +1,84 @@
+{
+  "title": "Retrieval Beyond Documents",
+  "subtitle": "Capability Retrieval for Language Agents",
+  "conference": "NAACL 2027",
+  "edition": "The inaugural workshop",
+  "date": "To be announced",
+  "location": "To be announced",
+  "format": "Full-day workshop planned",
+  "contactEmail": "hitesh.laxmichand.patel@oracle.com",
+  "submissionUrl": null,
+  "submissionStatus": "Submissions opening soon",
+  "description": "A NAACL 2027 workshop on retrieving the tools, skills, workflows, memories, models, and agents that turn language into action.",
+  "dates": [
+    { "label": "Paper submission", "value": "To be announced" },
+    { "label": "Author notification", "value": "To be announced" },
+    { "label": "Camera-ready papers", "value": "To be announced" },
+    { "label": "Workshop day", "value": "To be announced" }
+  ],
+  "topics": [
+    {
+      "title": "Representation & indexing",
+      "question": "How do we represent what a capability can do?",
+      "description": "Represent tools, APIs, skills, workflows, memories, models, and agents through language, schemas, code, demonstrations, traces, graphs, and embeddings.",
+      "tags": ["Capability representations", "Dynamic indexes", "Graphs & ontologies"]
+    },
+    {
+      "title": "Retrieval, routing & composition",
+      "question": "Which capabilities work best together?",
+      "description": "Retrieve and route across capability types, accounting for dependencies, compatibility, permissions, reliability, and cost. Compose the right set for the task.",
+      "tags": ["Joint retrieval", "Agent routing", "Compatibility"]
+    },
+    {
+      "title": "Retrieval in the agent loop",
+      "question": "What should an agent retrieve next?",
+      "description": "Condition retrieval on execution state, plans, and observations. Study reformulation, clarification, decomposition, invocation, delegation, replanning, recovery, and abstention.",
+      "tags": ["State-aware retrieval", "Planning", "Recovery"]
+    },
+    {
+      "title": "Action-grounded evaluation",
+      "question": "Did the retrieved capability actually help?",
+      "description": "Evaluate retrieval, incorporation, invocation, composition, and execution. Develop complete-set and dependency-aware metrics, calibration, and resource-constrained evaluation.",
+      "tags": ["Downstream success", "Benchmarks", "Calibration"]
+    },
+    {
+      "title": "Ecosystems & deployment",
+      "question": "How does capability retrieval work in the wild?",
+      "description": "Build dynamic, federated, and access-controlled registries. Explore Model Context Protocol ecosystems, provenance, permissions, freshness, observability, caching, and reliability.",
+      "tags": ["MCP ecosystems", "Provenance", "Production systems"]
+    }
+  ],
+  "speakers": [
+    { "name": "Iryna Gurevych", "initials": "IG", "affiliation": "TU Darmstadt", "area": "Semantic representations & trustworthy NLP", "url": "https://scholar.google.com/citations?user=t3A39e8AAAAJ&hl=en" },
+    { "name": "Graham Neubig", "initials": "GN", "affiliation": "Carnegie Mellon University", "area": "Language agents, code & reusable abstractions", "url": "https://scholar.google.com/citations?user=wlosgkoAAAAJ&hl=en" },
+    { "name": "Scott Wen-tau Yih", "initials": "SY", "affiliation": "Meta Fundamental AI Research", "area": "Neural retrieval & grounded language models", "url": "https://scholar.google.com/citations?user=8rDNIMsAAAAJ&hl=en" },
+    { "name": "Jimmy Lin", "initials": "JL", "affiliation": "University of Waterloo", "area": "Information retrieval & agentic search", "url": "https://scholar.google.com/citations?user=0EWw1z8AAAAJ&hl=en" }
+  ],
+  "organizers": [
+    { "name": "Akari Asai", "initials": "AA", "affiliation": "Carnegie Mellon University", "url": "https://akariasai.github.io/" },
+    { "name": "Omar Khattab", "initials": "OK", "affiliation": "Massachusetts Institute of Technology", "url": "https://omarkhattab.com/" },
+    { "name": "Danqi Chen", "initials": "DC", "affiliation": "Princeton University", "url": "https://www.cs.princeton.edu/~danqic/" },
+    { "name": "Hitesh Laxmichand Patel", "initials": "HP", "affiliation": "Oracle AI", "url": "https://scholar.google.com/citations?user=R3X_R9UAAAAJ&hl=en" },
+    { "name": "Zifei Wang", "initials": "ZW", "affiliation": "Tencent IMA Product Center", "url": null },
+    { "name": "Avi Sil", "initials": "AS", "affiliation": "Oracle", "url": "https://scholar.google.com/citations?user=RCuOya4AAAAJ&hl=en" },
+    { "name": "Sewon Min", "initials": "SM", "affiliation": "University of California, Berkeley", "url": "https://scholar.google.com/citations?user=jU4IZs4AAAAJ&hl=en" },
+    { "name": "Connor Shorten", "initials": "CS", "affiliation": "Weaviate", "url": "https://scholar.google.com/citations?user=YKuiy20AAAAJ&hl=en" }
+  ],
+  "committee": [
+    ["Anushka Sivakumar", "Oracle"],
+    ["Gargi Vyas", "Oracle"],
+    ["Srikant Panda", "LAM Research"],
+    ["Bhargava Kumar", "TD Securities"],
+    ["Tejaswini Kumar", "Apple"],
+    ["Monorama Swain", "Johannes Kepler University Linz"],
+    ["Bin Wu", "University College London"],
+    ["Biddut Sarker Bijoy", "Stony Brook University"],
+    ["Samuel Cahyawijaya", "Cohere"],
+    ["Genta Indra Winata", "Capital One"],
+    ["Amit Agarwal", "Oracle"],
+    ["Barry Menglong Yao", "University of California, Davis"],
+    ["Lifu Huang", "University of California, Davis"],
+    ["Dasol Choi", "AIM Intelligence"],
+    ["Guijin Son", "Seoul National University"]
+  ]
+}
