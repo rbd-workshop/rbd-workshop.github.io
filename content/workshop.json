@@ -30,24 +30,24 @@
   ],
   "topics": [
     {
-      "title": "Representation & indexing",
-      "description": "Represent tools, APIs, skills, workflows, memories, models, and agents through language, schemas, code, demonstrations, traces, graphs, and embeddings."
+      "title": "Representing and indexing capabilities",
+      "description": "Methods for describing and indexing tools, APIs, skills, workflows, memories, models, and agents using natural language, schemas, code, demonstrations, execution traces, graphs, ontologies, or embeddings. This includes indexes that change as capabilities are added or updated."
     },
     {
-      "title": "Retrieval, routing & composition",
-      "description": "Retrieve and route across capability types, accounting for dependencies, compatibility, permissions, reliability, and cost. Compose the right set for the task."
+      "title": "Retrieval, routing, and composition",
+      "description": "Selecting individual capabilities or compatible combinations for a task. Topics include joint retrieval, dependencies between resources, and selection that accounts for permissions, reliability, and cost."
     },
     {
-      "title": "Retrieval in the agent loop",
-      "description": "Condition retrieval on execution state, plans, and observations. Study reformulation, clarification, decomposition, invocation, delegation, replanning, recovery, and abstention."
+      "title": "Retrieval during agent execution",
+      "description": "Adapting retrieval to an agent’s state, plan, and observations. Topics include query reformulation, clarification, task decomposition, incorporating and invoking capabilities, delegation, replanning, recovery, and deciding when to abstain."
     },
     {
-      "title": "Action grounded evaluation",
-      "description": "Evaluate retrieval, incorporation, invocation, composition, and execution. Develop complete set and dependency aware metrics, calibration, and resource constrained evaluation."
+      "title": "Evaluating capability use",
+      "description": "Benchmarks and methods that distinguish errors in retrieval, incorporation, invocation, composition, and execution. Topics include whether a retrieved set contains all required capabilities, respects dependencies, and supports reliable task completion within resource constraints, as well as confidence calibration."
     },
     {
-      "title": "Ecosystems & deployment",
-      "description": "Build dynamic, federated, and access controlled registries. Explore Model Context Protocol ecosystems, provenance, permissions, freshness, observability, caching, and reliability."
+      "title": "Capability registries and deployment",
+      "description": "Dynamic and federated registries, access control, and Model Context Protocol ecosystems. Topics include provenance, permissions, keeping capability information current, monitoring system behavior, caching, reliability, and recovery."
     }
   ],
   "speakers": [

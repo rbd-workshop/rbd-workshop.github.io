@@ -37,9 +37,9 @@
     <div class="container introduction-layout">
       <section id="about" aria-labelledby="about-title">
         <h2 id="about-title">Overview</h2>
-        <p><strong>Retrieval Beyond Documents (RBD)</strong> brings together researchers in natural language processing, information retrieval, and agent systems to study capability retrieval for language agents.</p>
-        <p>Language agents increasingly need to retrieve tools, skills, workflows, memories, models, and other agents. These resources determine how a task is carried out. The central question is how to select a suitable capability, or a compatible set of capabilities, for an agent’s goal and current state.</p>
-        <p>The workshop examines how to represent and index capabilities, retrieve and compose them during execution, and evaluate their contribution to successful task completion. Contributions may include methods, benchmarks, systems, reproducibility studies, and diagnostic or negative results from academia and industry.</p>
+        <p><strong>Retrieval Beyond Documents (RBD)</strong> studies how language agents select the resources they need to carry out a task. Alongside documents and passages that supply information, agents may need tools, reusable skills and workflows, memories, models, or other agents. We call this <strong>capability retrieval</strong>: selecting a resource, or a compatible set of resources, for a goal expressed in natural language and the agent’s current state.</p>
+        <p>Relevance depends on what a resource can do, whether it is usable in the current context, and how it works with other resources. Interfaces, dependencies, permissions, cost, reliability, and execution history can all affect the choice. RBD brings together researchers in natural language processing, information retrieval, and agent systems to study how these choices should evolve as a task progresses.</p>
+        <p>The workshop covers capability representation and indexing, retrieval and routing, selection and composition, and evaluation through downstream use. We are interested in both successful task completion and understanding failures at each stage, from retrieving a capability to incorporating and executing it.</p>
       </section>
       <aside id="dates" class="dates" aria-labelledby="dates-title">
         <h2 id="dates-title">Important dates</h2>
@@ -54,14 +54,14 @@
       <h2 id="cfp-title">Call for papers</h2>
       <div class="prose">
         <p>The workshop invites submissions on capability retrieval, routing, and composition for language agents. Contributions may include research and position papers, benchmarks and datasets, reproducibility studies, demonstrations, and diagnostic or negative results.</p>
-        <p>RAG, memory, tool use, deep research, and multiagent work is in scope when capability retrieval, routing, or composition is central.</p>
+        <p>We welcome work on retrieval augmented generation, memory, tool use, deep research, and systems with multiple agents when capability retrieval, routing, or composition is central to the contribution.</p>
         <h3>Topics of interest</h3>
-        <ul class="topics"><li><strong>Representation &amp; indexing.</strong> Represent tools, APIs, skills, workflows, memories, models, and agents through language, schemas, code, demonstrations, traces, graphs, and embeddings.</li>
-<li><strong>Retrieval, routing &amp; composition.</strong> Retrieve and route across capability types, accounting for dependencies, compatibility, permissions, reliability, and cost. Compose the right set for the task.</li>
-<li><strong>Retrieval in the agent loop.</strong> Condition retrieval on execution state, plans, and observations. Study reformulation, clarification, decomposition, invocation, delegation, replanning, recovery, and abstention.</li>
-<li><strong>Action grounded evaluation.</strong> Evaluate retrieval, incorporation, invocation, composition, and execution. Develop complete set and dependency aware metrics, calibration, and resource constrained evaluation.</li>
-<li><strong>Ecosystems &amp; deployment.</strong> Build dynamic, federated, and access controlled registries. Explore Model Context Protocol ecosystems, provenance, permissions, freshness, observability, caching, and reliability.</li></ul>
-        <p class="section-note">Contributions should make capability retrieval, routing, or composition central. Work evaluating only a fixed, manually selected capability set falls outside the workshop’s scope.</p>
+        <ul class="topics"><li><strong>Representing and indexing capabilities.</strong> Methods for describing and indexing tools, APIs, skills, workflows, memories, models, and agents using natural language, schemas, code, demonstrations, execution traces, graphs, ontologies, or embeddings. This includes indexes that change as capabilities are added or updated.</li>
+<li><strong>Retrieval, routing, and composition.</strong> Selecting individual capabilities or compatible combinations for a task. Topics include joint retrieval, dependencies between resources, and selection that accounts for permissions, reliability, and cost.</li>
+<li><strong>Retrieval during agent execution.</strong> Adapting retrieval to an agent’s state, plan, and observations. Topics include query reformulation, clarification, task decomposition, incorporating and invoking capabilities, delegation, replanning, recovery, and deciding when to abstain.</li>
+<li><strong>Evaluating capability use.</strong> Benchmarks and methods that distinguish errors in retrieval, incorporation, invocation, composition, and execution. Topics include whether a retrieved set contains all required capabilities, respects dependencies, and supports reliable task completion within resource constraints, as well as confidence calibration.</li>
+<li><strong>Capability registries and deployment.</strong> Dynamic and federated registries, access control, and Model Context Protocol ecosystems. Topics include provenance, permissions, keeping capability information current, monitoring system behavior, caching, reliability, and recovery.</li></ul>
+        <p class="section-note">Work that assumes a fixed, manually selected capability set is outside the workshop’s scope.</p>
         <section id="guidelines" aria-labelledby="submission-guidelines">
         <h3 id="submission-guidelines">Submission guidelines</h3>
         <p class="section-note">Draft author guidelines. The proposed paper limits, submission routes, and publication arrangements will be confirmed in the final call.</p>
@@ -176,7 +176,7 @@
     </section>
   </main>
   <footer class="site-footer">
-    <div class="container"><p>© 2026 Retrieval Beyond Documents (RBD) Workshop @ NAACL 2027</p><a href="#home">Back to top</a></div>
+    <div class="container"><p>© Retrieval Beyond Documents (RBD) Workshop @ NAACL 2027</p><a href="#home">Back to top</a></div>
   </footer>
 </body>
 </html>

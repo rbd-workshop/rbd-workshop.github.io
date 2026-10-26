@@ -37,9 +37,9 @@
     <div class="container introduction-layout">
       <section id="about" aria-labelledby="about-title">
         <h2 id="about-title">Overview</h2>
-        <p><strong>Retrieval Beyond Documents (RBD)</strong> brings together researchers in natural language processing, information retrieval, and agent systems to study capability retrieval for language agents.</p>
-        <p>Language agents increasingly need to retrieve tools, skills, workflows, memories, models, and other agents. These resources determine how a task is carried out. The central question is how to select a suitable capability, or a compatible set of capabilities, for an agent’s goal and current state.</p>
-        <p>The workshop examines how to represent and index capabilities, retrieve and compose them during execution, and evaluate their contribution to successful task completion. Contributions may include methods, benchmarks, systems, reproducibility studies, and diagnostic or negative results from academia and industry.</p>
+        <p><strong>Retrieval Beyond Documents (RBD)</strong> studies how language agents select the resources they need to carry out a task. Alongside documents and passages that supply information, agents may need tools, reusable skills and workflows, memories, models, or other agents. We call this <strong>capability retrieval</strong>: selecting a resource, or a compatible set of resources, for a goal expressed in natural language and the agent’s current state.</p>
+        <p>Relevance depends on what a resource can do, whether it is usable in the current context, and how it works with other resources. Interfaces, dependencies, permissions, cost, reliability, and execution history can all affect the choice. RBD brings together researchers in natural language processing, information retrieval, and agent systems to study how these choices should evolve as a task progresses.</p>
+        <p>The workshop covers capability representation and indexing, retrieval and routing, selection and composition, and evaluation through downstream use. We are interested in both successful task completion and understanding failures at each stage, from retrieving a capability to incorporating and executing it.</p>
       </section>
       <aside id="dates" class="dates" aria-labelledby="dates-title">
         <h2 id="dates-title">Important dates</h2>
@@ -51,10 +51,10 @@
       <h2 id="cfp-title">Call for papers</h2>
       <div class="prose">
         <p>The workshop invites submissions on capability retrieval, routing, and composition for language agents. Contributions may include research and position papers, benchmarks and datasets, reproducibility studies, demonstrations, and diagnostic or negative results.</p>
-        <p>RAG, memory, tool use, deep research, and multiagent work is in scope when capability retrieval, routing, or composition is central.</p>
+        <p>We welcome work on retrieval augmented generation, memory, tool use, deep research, and systems with multiple agents when capability retrieval, routing, or composition is central to the contribution.</p>
         <h3>Topics of interest</h3>
         <ul class="topics">{{topics}}</ul>
-        <p class="section-note">Contributions should make capability retrieval, routing, or composition central. Work evaluating only a fixed, manually selected capability set falls outside the workshop’s scope.</p>
+        <p class="section-note">Work that assumes a fixed, manually selected capability set is outside the workshop’s scope.</p>
         <section id="guidelines" aria-labelledby="submission-guidelines">
         <h3 id="submission-guidelines">Submission guidelines</h3>
         <p class="section-note">Draft author guidelines. The proposed paper limits, submission routes, and publication arrangements will be confirmed in the final call.</p>
@@ -110,7 +110,7 @@
     </section>
   </main>
   <footer class="site-footer">
-    <div class="container"><p>© 2026 {{title}} (RBD) Workshop @ {{conference}}</p><a href="#home">Back to top</a></div>
+    <div class="container"><p>© {{title}} (RBD) Workshop @ {{conference}}</p><a href="#home">Back to top</a></div>
   </footer>
 </body>
 </html>
