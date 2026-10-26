@@ -2,70 +2,64 @@
 
 The NAACL 2027 workshop on **Capability Retrieval for Language Agents**.
 
-A responsive static website with an original RBD identity. Built with HTML, CSS, vanilla JavaScript, and a small dependency-free Node.js generator. No database, API keys, accounts, or package installation are required to run it.
+A static conference website using HTML, CSS, vanilla JavaScript, and a dependency-free Node.js generator. The layout uses a white background, navy and blue accents, visible top navigation, a San Francisco conference banner, and speaker portraits.
 
 ## Local preview
 
-Requires Node.js 20 or newer. In this folder:
+Requires Node.js 20 or newer. No package installation or account is needed.
 
 ```sh
 npm start
 ```
 
-Open <http://127.0.0.1:4173>. The server builds the site at startup and watches the source and content folders; refresh the browser after edits. It binds only to the local computer and serves only `docs/`. Stop it with Ctrl+C. Use `PORT=4174 npm start` if the default port is already occupied.
+Open <http://127.0.0.1:4173>. The server builds the site at startup and watches `src/` and `content/`; refresh the browser after edits. It binds only to the local computer and serves generated `docs/` files. Stop it with Ctrl+C. Use `PORT=4174 npm start` if port 4173 is occupied.
 
-The development-only [responsive preview](http://127.0.0.1:4173/__preview?width=390) shows the same website at phone and tablet widths. This preview tool is not part of the published `docs/` output.
+The development-only [responsive preview](http://127.0.0.1:4173/__preview?width=390) displays the same site at phone and tablet widths. This tool is not included in the published site. Restart the server after editing generator or server scripts.
 
 ```sh
-npm run build   # Generate the deployable docs/ folder
-npm run check   # Check internal links, assets, IDs, headings, and content replacement
+npm run build   # Generate docs/ for GitHub Pages
+npm run check   # Check links, assets, IDs, headings, and content replacement
 ```
 
-The scripts also work directly with `node scripts/serve.mjs`, `node scripts/build.mjs`, and `node scripts/check.mjs`.
+The scripts also work with `node scripts/serve.mjs`, `node scripts/build.mjs`, and `node scripts/check.mjs`.
 
-## Editing the website
+## Editing
 
-- `content/workshop.json`: conference, event dates, contact address, submission URL, research themes, speakers, organizers, and committee.
-- `src/index.html`: page structure and editorial copy.
-- `src/style.css`: layout, responsive styles, colors, and typography.
-- `src/app.js`: mobile navigation, capability explorer, and section highlighting.
-- `src/assets/`: original vector mark, light mark, wordmark, and favicon.
-- `docs/`: generated static files, tracked for GitHub Pages. Edit the source and run the build rather than editing generated files.
+- `content/workshop.json`: event information, dates, contact address, submission URL, research themes, speakers, organizers, and committee.
+- `src/index.html`: page structure and workshop text.
+- `src/style.css`: styling and responsive layouts.
+- `src/app.js`: current-section navigation highlighting. Navigation and content also work without JavaScript.
+- `src/assets/`: original RBD identity and locally hosted photographs.
+- `docs/`: generated static website, tracked for GitHub Pages. Its `assets/` directory is regenerated at build time.
 
-Set `submissionUrl` to the confirmed HTTPS submission portal to replace the forthcoming notice with a working submit button. Do not invent dates or submission requirements. Add confirmed dates to `dates` and update `date` for the hero metadata.
+Set `submissionUrl` to the confirmed HTTPS portal to show a working submit button. Update the workshop-specific deadlines in `dates` and the workshop day in `date`. `conferenceDates` describes the parent conference and should not be used as a workshop deadline.
 
-## Brand
+## Identity and assets
 
-The mark combines three retrieval paths into a forward arrow: heterogeneous resources converging into an action. The standalone mark is designed to remain legible at favicon size. The full wordmark is `src/assets/rbd-logo.svg`, with a transparent PNG export at `src/assets/rbd-logo.png` and a square icon at `src/assets/rbd-icon.png`.
+The RBD mark connects a document with branching capability nodes. The vector wordmark is `src/assets/rbd-logo.svg`; `rbd-logo.png` is a transparent raster export, and `rbd-icon.png` is a square icon. Navy: `#15375b`. Blue: `#1269a7`. Body text: `#293542`. Background: white. The site uses native sans-serif fonts and makes no third-party font requests.
 
-Colors: burnt orange `#bc4425`, ink `#242820`, warm ivory `#f7f6f0`, and soft sage `#e9ecdf`. Typography uses local system fonts, so the website works without external font requests. Speaker cards currently use intentional typographic monograms rather than third-party photographs.
+Speaker images and the San Francisco banner are hosted locally as optimized WebP files. Sources and credits are recorded in [ASSET_CREDITS.md](ASSET_CREDITS.md), with visible credits in the site footer and banner.
 
 ## Git and publishing later
 
-Local feature branch: `codex/workshop-website`. `main` contains the initial repository baseline. No remote or deployment has been configured.
+Feature branch: `codex/workshop-website`. The first design and the conference-style redesign are preserved in Git history. No remote or public deployment is configured.
 
-When the local version is approved:
-
-1. Create the GitHub organization `rbd-workshop` and a public repository named **`rbd-workshop.github.io`** in that organization. The account and repository names determine the requested URL. Availability and ownership have not been checked.
-2. Run the build and checks, then commit the generated `docs/` files with the source. Merge `codex/workshop-website` into `main`.
+1. Create the GitHub organization `rbd-workshop` and its public repository **`rbd-workshop.github.io`**. Ownership and availability remain unverified.
+2. Run the build and checks, commit source and generated `docs/`, then merge the feature branch into `main`.
 3. Add the confirmed repository as `origin` and push `main`.
-4. In the repository, choose **Settings → Pages → Deploy from a branch → main → /docs**.
-5. GitHub Pages will publish to <https://rbd-workshop.github.io/> once deployment succeeds.
+4. Select **Settings → Pages → Deploy from a branch → main → /docs**.
+5. Wait for successful deployment before treating <https://rbd-workshop.github.io/> as live.
 
-Official setup reference: [GitHub Pages publishing sources](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+[Official GitHub Pages setup reference](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
-## Content provenance and pending details
+## Content sources
 
-The content was adapted from the user's `Retrieval_beyond_document.pdf` downloaded October 26, 2026. The source PDF is not copied into the public site. The user's later confirmation of **NAACL** takes precedence over the proposal's venue preferences. The year 2027 comes from the proposal.
+The workshop content comes from the user's `Retrieval_beyond_document.pdf`, downloaded October 26, 2026. The user confirmed NAACL as the conference. The PDF lists four confirmed speakers, eight organizers, and fifteen confirmed program committee members. It is not copied into the public website.
 
-The PDF lists four confirmed invited speakers, eight organizers, and fifteen confirmed committee members. Their names, affiliations, and available research/profile links are reproduced here. This is not an independent check of participation. Dates, city, submission portal, page limits, registration, and final session times remain unannounced. Direct/ARR submission routes, archival status, full-day format, and remote participation retain their proposed or conditional wording.
+The [official NAACL 2027 website](https://2027.naacl.org/) confirms San Francisco and June 1–5, 2027 for the parent conference. The RBD workshop day, deadlines, portal, registration, paper limits, and session times remain forthcoming. Review routes, archival options, full-day format, and remote participation retain the proposal's conditional wording.
 
-The contact link uses Hitesh's correspondence address from the PDF until the workshop mailbox is created. Replace it in `content/workshop.json` when ready.
+The contact link uses Hitesh's correspondence address from the PDF until a workshop mailbox is ready.
 
-## Reference sites reviewed
+## Design references
 
-- [Agent Skills 2026](https://www.agentskills-workshop.org/): concise overview, author information, program and people sections.
-- [MemAgents 2026](https://sites.google.com/view/memagent-iclr26/): workshop scope and program organization.
-- [AgentSearch 2026](https://agent-search.github.io/agentsearch-sigir26/): information architecture only. The user rejected its visual style; this site uses an original editorial design and capability diagram.
-
-No third-party site code, imagery, or branding was copied.
+The [ICLR 2026 conference](https://iclr.cc/Conferences/2026), [ACM SIGIR 2026 conference](https://sigir2026.org/), and [NAACL 2027 conference](https://2027.naacl.org/) were reviewed for visible top navigation, conference identity, readable typography, and conventional dates, program, and people sections. The page implementation and RBD logo are original.

@@ -18,5 +18,10 @@ for (const [, url] of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
   checked++;
 }
 for (const [tag] of html.matchAll(/<img\b[^>]*>/g)) assert(/\balt="[^"]*"/.test(tag), `Image missing alt attribute: ${tag}`);
+const css = await readFile(path.join(root, 'docs/assets/style.css'), 'utf8');
+for (const [, url] of css.matchAll(/url\(['"]?([^)'"\s]+)['"]?\)/g)) {
+  assert((await stat(path.join(root, 'docs/assets', url))).isFile(), `Missing stylesheet asset: ${url}`);
+  checked++;
+}
 assert(!html.includes('href="#"'), 'Empty placeholder links are not allowed');
 console.log(`Passed: ${checked} local links/assets, unique IDs, main heading, image alternatives, and complete template content.`);
