@@ -1,0 +1,931 @@
+{
+  "checkedOn": "2026-10-26",
+  "reviewType": "Agent-performed review using published expert guidance and an automated checker; not an independent human review or accessibility certification.",
+  "sources": [
+    "https://raw.githubusercontent.com/vercel-labs/web-interface-guidelines/main/command.md",
+    "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html",
+    "https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html"
+  ],
+  "automatedAccessibility": {
+    "engine": "axe-core 4.10.3",
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21aa",
+      "wcag22aa",
+      "best-practice"
+    ],
+    "runs": [
+      {
+        "profile": "baseline",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "violations": 0,
+        "passedRules": 46,
+        "manualChecks": [
+          "color-contrast"
+        ]
+      },
+      {
+        "profile": "baseline",
+        "viewport": {
+          "width": 320,
+          "height": 900
+        },
+        "violations": 0,
+        "passedRules": 46,
+        "manualChecks": [
+          "color-contrast"
+        ]
+      },
+      {
+        "profile": "spacing",
+        "viewport": {
+          "width": 320,
+          "height": 900
+        },
+        "violations": 0,
+        "passedRules": 46,
+        "manualChecks": [
+          "color-contrast"
+        ]
+      },
+      {
+        "profile": "spacing",
+        "viewport": {
+          "width": 851,
+          "height": 900
+        },
+        "violations": 0,
+        "passedRules": 46,
+        "manualChecks": [
+          "color-contrast"
+        ]
+      },
+      {
+        "profile": "spacing",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "violations": 0,
+        "passedRules": 46,
+        "manualChecks": [
+          "color-contrast"
+        ]
+      },
+      {
+        "profile": "text200",
+        "viewport": {
+          "width": 320,
+          "height": 900
+        },
+        "violations": 0,
+        "passedRules": 46,
+        "manualChecks": [
+          "color-contrast"
+        ]
+      },
+      {
+        "profile": "text200",
+        "viewport": {
+          "width": 851,
+          "height": 900
+        },
+        "violations": 0,
+        "passedRules": 46,
+        "manualChecks": [
+          "color-contrast"
+        ]
+      },
+      {
+        "profile": "text200",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "violations": 0,
+        "passedRules": 46,
+        "manualChecks": [
+          "color-contrast"
+        ]
+      },
+      {
+        "profile": "nojs",
+        "viewport": {
+          "width": 390,
+          "height": 900
+        },
+        "violations": 0,
+        "passedRules": 46,
+        "manualChecks": [
+          "color-contrast"
+        ]
+      }
+    ]
+  },
+  "stressMethod": "A local copy of the generated page doubled every computed font size for text200; spacing overrides used 1.5 line height, 2em paragraph spacing, .12em letter spacing and .16em word spacing. The nojs profile omits the site script but keeps the audit runner; it checks the static-content fallback, not a browser with JavaScript disabled globally.",
+  "keyboard": [
+    {
+      "width": 320,
+      "tabStops": 36,
+      "hiddenFocus": false,
+      "visibleOutlines": true
+    },
+    {
+      "width": 1440,
+      "tabStops": 36,
+      "hiddenFocus": false,
+      "visibleOutlines": true
+    }
+  ],
+  "anchors": {
+    "checks": 42,
+    "obscuredTargets": 0,
+    "incorrectActiveState": 0,
+    "runs": [
+      [
+        "baseline",
+        320
+      ],
+      [
+        "baseline",
+        851
+      ],
+      [
+        "baseline",
+        1440
+      ],
+      [
+        "nojs",
+        390
+      ],
+      [
+        "text200",
+        320
+      ],
+      [
+        "text200",
+        851
+      ],
+      [
+        "text200",
+        1440
+      ]
+    ]
+  },
+  "responsive": [
+    {
+      "clipped": [],
+      "height": 568,
+      "overflow": false,
+      "target": 44,
+      "width": 320,
+      "expectedWidth": 320,
+      "expectedHeight": 568
+    },
+    {
+      "clipped": [],
+      "height": 800,
+      "overflow": false,
+      "target": 44,
+      "width": 360,
+      "expectedWidth": 360,
+      "expectedHeight": 800
+    },
+    {
+      "clipped": [],
+      "height": 812,
+      "overflow": false,
+      "target": 44,
+      "width": 375,
+      "expectedWidth": 375,
+      "expectedHeight": 812
+    },
+    {
+      "clipped": [],
+      "height": 844,
+      "overflow": false,
+      "target": 44,
+      "width": 390,
+      "expectedWidth": 390,
+      "expectedHeight": 844
+    },
+    {
+      "clipped": [],
+      "height": 896,
+      "overflow": false,
+      "target": 44,
+      "width": 414,
+      "expectedWidth": 414,
+      "expectedHeight": 896
+    },
+    {
+      "clipped": [],
+      "height": 932,
+      "overflow": false,
+      "target": 44,
+      "width": 430,
+      "expectedWidth": 430,
+      "expectedHeight": 932
+    },
+    {
+      "clipped": [],
+      "height": 800,
+      "overflow": false,
+      "target": 44,
+      "width": 480,
+      "expectedWidth": 480,
+      "expectedHeight": 800
+    },
+    {
+      "clipped": [],
+      "height": 900,
+      "overflow": false,
+      "target": 44,
+      "width": 500,
+      "expectedWidth": 500,
+      "expectedHeight": 900
+    },
+    {
+      "clipped": [],
+      "height": 900,
+      "overflow": false,
+      "target": 44,
+      "width": 501,
+      "expectedWidth": 501,
+      "expectedHeight": 900
+    },
+    {
+      "clipped": [],
+      "height": 900,
+      "overflow": false,
+      "target": 44,
+      "width": 650,
+      "expectedWidth": 650,
+      "expectedHeight": 900
+    },
+    {
+      "clipped": [],
+      "height": 900,
+      "overflow": false,
+      "target": 44,
+      "width": 651,
+      "expectedWidth": 651,
+      "expectedHeight": 900
+    },
+    {
+      "clipped": [],
+      "height": 1024,
+      "overflow": false,
+      "target": 44,
+      "width": 768,
+      "expectedWidth": 768,
+      "expectedHeight": 1024
+    },
+    {
+      "clipped": [],
+      "height": 1180,
+      "overflow": false,
+      "target": 44,
+      "width": 820,
+      "expectedWidth": 820,
+      "expectedHeight": 1180
+    },
+    {
+      "clipped": [],
+      "height": 390,
+      "overflow": false,
+      "target": 44,
+      "width": 844,
+      "expectedWidth": 844,
+      "expectedHeight": 390
+    },
+    {
+      "clipped": [],
+      "height": 900,
+      "overflow": false,
+      "target": 44,
+      "width": 850,
+      "expectedWidth": 850,
+      "expectedHeight": 900
+    },
+    {
+      "clipped": [],
+      "height": 900,
+      "overflow": false,
+      "target": 44,
+      "width": 851,
+      "expectedWidth": 851,
+      "expectedHeight": 900
+    },
+    {
+      "clipped": [],
+      "height": 700,
+      "overflow": false,
+      "target": 44,
+      "width": 900,
+      "expectedWidth": 900,
+      "expectedHeight": 700
+    },
+    {
+      "clipped": [],
+      "height": 768,
+      "overflow": false,
+      "target": 44,
+      "width": 1024,
+      "expectedWidth": 1024,
+      "expectedHeight": 768
+    },
+    {
+      "clipped": [],
+      "height": 900,
+      "overflow": false,
+      "target": 44,
+      "width": 1050,
+      "expectedWidth": 1050,
+      "expectedHeight": 900
+    },
+    {
+      "clipped": [],
+      "height": 900,
+      "overflow": false,
+      "target": 44,
+      "width": 1051,
+      "expectedWidth": 1051,
+      "expectedHeight": 900
+    },
+    {
+      "clipped": [],
+      "height": 900,
+      "overflow": false,
+      "target": 44,
+      "width": 1100,
+      "expectedWidth": 1100,
+      "expectedHeight": 900
+    },
+    {
+      "clipped": [],
+      "height": 900,
+      "overflow": false,
+      "target": 44,
+      "width": 1101,
+      "expectedWidth": 1101,
+      "expectedHeight": 900
+    },
+    {
+      "clipped": [],
+      "height": 800,
+      "overflow": false,
+      "target": 44,
+      "width": 1280,
+      "expectedWidth": 1280,
+      "expectedHeight": 800
+    },
+    {
+      "clipped": [],
+      "height": 900,
+      "overflow": false,
+      "target": 44,
+      "width": 1440,
+      "expectedWidth": 1440,
+      "expectedHeight": 900
+    },
+    {
+      "clipped": [],
+      "height": 1080,
+      "overflow": false,
+      "target": 44,
+      "width": 1920,
+      "expectedWidth": 1920,
+      "expectedHeight": 1080
+    },
+    {
+      "clipped": [],
+      "height": 1440,
+      "overflow": false,
+      "target": 44,
+      "width": 2560,
+      "expectedWidth": 2560,
+      "expectedHeight": 1440
+    }
+  ],
+  "bannerContrast": {
+    "method": "Read rendered text rectangles from DOM Range. Reconstruct the local WebP cover crop and CSS gradient, and calculate the lowest sRGB contrast within each rectangle. Rounded raster geometry can differ slightly from browser interpolation. This is a supplementary calculation, not an axe pass for image backgrounds.",
+    "minimumRatio": 4.75,
+    "allSampledRegionsPass": true,
+    "samples": [
+      {
+        "profile": "baseline",
+        "width": 320,
+        "texts": [
+          {
+            "text": "First Workshop at NAACL 2027",
+            "font": "14px",
+            "minContrast": 7.71,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "text": "Retrieval Beyond Documents",
+            "font": "34px",
+            "minContrast": 7.32,
+            "required": 3,
+            "pass": true
+          },
+          {
+            "text": "Capability Retrieval for Language Agents",
+            "font": "19px",
+            "minContrast": 7.22,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "text": "San Francisco, California \u00b7 Workshop dat",
+            "font": "13px",
+            "minContrast": 7.94,
+            "required": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      {
+        "profile": "baseline",
+        "width": 851,
+        "texts": [
+          {
+            "text": "First Workshop at NAACL 2027",
+            "font": "17px",
+            "minContrast": 8.63,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "text": "Retrieval Beyond Documents",
+            "font": "34px",
+            "minContrast": 7.91,
+            "required": 3,
+            "pass": true
+          },
+          {
+            "text": "Capability Retrieval for Language Agents",
+            "font": "25px",
+            "minContrast": 7.53,
+            "required": 3,
+            "pass": true
+          },
+          {
+            "text": "San Francisco, California \u00b7 Workshop dat",
+            "font": "14px",
+            "minContrast": 7.57,
+            "required": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      {
+        "profile": "baseline",
+        "width": 1440,
+        "texts": [
+          {
+            "text": "First Workshop at NAACL 2027",
+            "font": "17px",
+            "minContrast": 9.16,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "text": "Retrieval Beyond Documents",
+            "font": "47px",
+            "minContrast": 7.7,
+            "required": 3,
+            "pass": true
+          },
+          {
+            "text": "Capability Retrieval for Language Agents",
+            "font": "25px",
+            "minContrast": 8.02,
+            "required": 3,
+            "pass": true
+          },
+          {
+            "text": "San Francisco, California \u00b7 Workshop dat",
+            "font": "14px",
+            "minContrast": 10.13,
+            "required": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      {
+        "profile": "baseline",
+        "width": 2560,
+        "texts": [
+          {
+            "text": "First Workshop at NAACL 2027",
+            "font": "17px",
+            "minContrast": 8.37,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "text": "Retrieval Beyond Documents",
+            "font": "47px",
+            "minContrast": 7.52,
+            "required": 3,
+            "pass": true
+          },
+          {
+            "text": "Capability Retrieval for Language Agents",
+            "font": "25px",
+            "minContrast": 7.8,
+            "required": 3,
+            "pass": true
+          },
+          {
+            "text": "San Francisco, California \u00b7 Workshop dat",
+            "font": "14px",
+            "minContrast": 6.81,
+            "required": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      {
+        "profile": "text200",
+        "width": 320,
+        "texts": [
+          {
+            "text": "First Workshop at NAACL 2027",
+            "font": "28px",
+            "minContrast": 7.71,
+            "required": 3,
+            "pass": true
+          },
+          {
+            "text": "Retrieval Beyond Documents",
+            "font": "68px",
+            "minContrast": 6.96,
+            "required": 3,
+            "pass": true
+          },
+          {
+            "text": "Capability Retrieval for Language Agents",
+            "font": "38px",
+            "minContrast": 6.9,
+            "required": 3,
+            "pass": true
+          },
+          {
+            "text": "San Francisco, California \u00b7 Workshop dat",
+            "font": "26px",
+            "minContrast": 8.24,
+            "required": 3,
+            "pass": true
+          }
+        ]
+      },
+      {
+        "profile": "text200",
+        "width": 851,
+        "texts": [
+          {
+            "text": "First Workshop at NAACL 2027",
+            "font": "34px",
+            "minContrast": 7.4,
+            "required": 3,
+            "pass": true
+          },
+          {
+            "text": "Retrieval Beyond Documents",
+            "font": "68px",
+            "minContrast": 6.65,
+            "required": 3,
+            "pass": true
+          },
+          {
+            "text": "Capability Retrieval for Language Agents",
+            "font": "50px",
+            "minContrast": 7.84,
+            "required": 3,
+            "pass": true
+          },
+          {
+            "text": "San Francisco, California \u00b7 Workshop dat",
+            "font": "28px",
+            "minContrast": 4.75,
+            "required": 3,
+            "pass": true
+          }
+        ]
+      },
+      {
+        "profile": "text200",
+        "width": 1440,
+        "texts": [
+          {
+            "text": "First Workshop at NAACL 2027",
+            "font": "34px",
+            "minContrast": 8.38,
+            "required": 3,
+            "pass": true
+          },
+          {
+            "text": "Retrieval Beyond Documents",
+            "font": "94px",
+            "minContrast": 7,
+            "required": 3,
+            "pass": true
+          },
+          {
+            "text": "Capability Retrieval for Language Agents",
+            "font": "50px",
+            "minContrast": 5.8,
+            "required": 3,
+            "pass": true
+          },
+          {
+            "text": "San Francisco, California \u00b7 Workshop dat",
+            "font": "28px",
+            "minContrast": 8.2,
+            "required": 3,
+            "pass": true
+          }
+        ]
+      }
+    ]
+  },
+  "delivery": [
+    {
+      "path": "/",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "noindex": "noindex, nofollow",
+      "bytes": 40907,
+      "custom404": false
+    },
+    {
+      "path": "/assets/style.css",
+      "status": 200,
+      "type": "text/css; charset=utf-8",
+      "noindex": "noindex, nofollow",
+      "bytes": 11615,
+      "custom404": false
+    },
+    {
+      "path": "/assets/app.js",
+      "status": 200,
+      "type": "text/javascript; charset=utf-8",
+      "noindex": "noindex, nofollow",
+      "bytes": 1829,
+      "custom404": false
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "type": "text/plain; charset=utf-8",
+      "noindex": "noindex, nofollow",
+      "bytes": 76,
+      "custom404": false
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "type": "application/xml; charset=utf-8",
+      "noindex": "noindex, nofollow",
+      "bytes": 195,
+      "custom404": false
+    },
+    {
+      "path": "/llms.txt",
+      "status": 200,
+      "type": "text/plain; charset=utf-8",
+      "noindex": "noindex, nofollow",
+      "bytes": 1038,
+      "custom404": false
+    },
+    {
+      "path": "/assets/rbd-mark.svg",
+      "status": 200,
+      "type": "image/svg+xml",
+      "noindex": "noindex, nofollow",
+      "bytes": 700,
+      "custom404": false
+    },
+    {
+      "path": "/assets/rbd-social.png",
+      "status": 200,
+      "type": "image/png",
+      "noindex": "noindex, nofollow",
+      "bytes": 65298,
+      "custom404": false
+    },
+    {
+      "path": "/missing-page",
+      "status": 404,
+      "type": "text/html; charset=utf-8",
+      "noindex": "noindex, nofollow",
+      "bytes": 939,
+      "custom404": true
+    },
+    {
+      "path": "/.git/config",
+      "status": 404,
+      "type": null,
+      "noindex": "noindex, nofollow",
+      "bytes": 9,
+      "custom404": false
+    },
+    {
+      "path": "/%ZZ",
+      "status": 400,
+      "type": "text/plain; charset=utf-8",
+      "noindex": "noindex, nofollow",
+      "bytes": 11,
+      "custom404": false
+    },
+    {
+      "method": "HEAD",
+      "status": 200,
+      "bodyLength": 0
+    },
+    {
+      "method": "POST",
+      "status": 405,
+      "allow": "GET, HEAD"
+    }
+  ],
+  "images": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "image": "assets/rbd-mark.svg",
+        "status": 200,
+        "bytes": 700,
+        "type": "image/svg+xml"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "image": "assets/naacl-2027-logo.png",
+        "status": 200,
+        "bytes": 24674,
+        "type": "image/png"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "image": "assets/people/iryna-gurevych.webp",
+        "status": 200,
+        "bytes": 36566,
+        "type": "image/webp"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "image": "assets/people/graham-neubig.webp",
+        "status": 200,
+        "bytes": 55546,
+        "type": "image/webp"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "image": "assets/people/scott-yih.webp",
+        "status": 200,
+        "bytes": 87116,
+        "type": "image/webp"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "image": "assets/people/jimmy-lin.webp",
+        "status": 200,
+        "bytes": 65930,
+        "type": "image/webp"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "image": "assets/people/hitesh-patel.webp",
+        "status": 200,
+        "bytes": 42732,
+        "type": "image/webp"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "image": "assets/people/akari-asai.webp",
+        "status": 200,
+        "bytes": 57414,
+        "type": "image/webp"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "image": "assets/people/omar-khattab.webp",
+        "status": 200,
+        "bytes": 29782,
+        "type": "image/webp"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "image": "assets/people/danqi-chen.webp",
+        "status": 200,
+        "bytes": 40974,
+        "type": "image/webp"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "image": "assets/people/zifei-wang.webp",
+        "status": 200,
+        "bytes": 17674,
+        "type": "image/webp"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "image": "assets/people/avi-sil.webp",
+        "status": 200,
+        "bytes": 21610,
+        "type": "image/webp"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "image": "assets/people/sewon-min.webp",
+        "status": 200,
+        "bytes": 21804,
+        "type": "image/webp"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "image": "assets/people/connor-shorten.webp",
+        "status": 200,
+        "bytes": 4228,
+        "type": "image/webp"
+      }
+    }
+  ],
+  "performance": {
+    "criticalUncompressedFiles": [
+      {
+        "file": "index.html",
+        "bytes": 40907
+      },
+      {
+        "file": "assets/style.css",
+        "bytes": 11615
+      },
+      {
+        "file": "assets/app.js",
+        "bytes": 1829
+      },
+      {
+        "file": "assets/rbd-mark.svg",
+        "bytes": 700
+      },
+      {
+        "file": "assets/san-francisco.webp",
+        "bytes": 257608
+      }
+    ],
+    "criticalUncompressedBytes": 312659,
+    "images": 14,
+    "externalScripts": [],
+    "siteScriptBytes": 1829,
+    "scope": "Static file budget. Not a production Core Web Vitals measurement."
+  },
+  "fixed": [
+    "Medium-width navigation overflow and phone label overlap when text is doubled.",
+    "Oversized phone content columns, dates and headings when text is doubled.",
+    "Anchor offsets now track the actual header height after text reflow.",
+    "404 logo intrinsic dimensions now match the current wordmark."
+  ],
+  "limitations": [
+    "Only the available in-app browser was used; physical phones and other browser engines were not tested.",
+    "No real screen-reader session was run.",
+    "Text enlargement used a controlled font-size override, not an actual browser zoom command.",
+    "No production Core Web Vitals, Lighthouse score or ranking claim is made.",
+    "Public deployment, confirmed workshop deadlines and submission URL remain launch work."
+  ],
+  "localReproduction": "The temporary fixture and pinned axe script are retained outside the public site under work/qa in the task workspace. The fixture serves generated docs on localhost:4174 only and supports ?profile=baseline, spacing, text200, or nojs."
+}

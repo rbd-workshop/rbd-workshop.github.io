@@ -1,0 +1,11 @@
+file_line,status,check,change_or_method,result
+src/style.css:33,Fixed,Navigation at 200% text,Allowed wrapping; mobile links adapt to text width,No overlapping or clipped labels in 320px and 851px stress views
+src/style.css:21,Fixed,Long headings and date labels at 200% text,Allowed emergency word breaks and flexible date rows,No clipping in 320px stress view
+src/style.css:48,Fixed,Intrinsic grid width on small phones,Used zero minimum width for introductory children and grid track,No horizontal overflow with enlarged text
+src/app.js:35,Fixed,Header height can change after text enlargement,ResizeObserver updates native anchor offset,42 section-link checks passed
+src/404.html:12,Fixed,Outdated wordmark intrinsic dimensions,Matched homepage 200x76 dimensions,Build and 404 response checks passed
+docs/index.html,Passed,Automated accessibility,9 axe runs; 46 rules passed per run,0 detected violations; banner photo contrast required separate calculation
+src/style.css,Passed,Keyboard and responsive layout,36 stops at each of 320px and 1440px; 26 viewport configurations,Visible keyboard focus and no layout overflow
+src/style.css:38,Passed with method limits,Banner contrast,Sampled rendered text regions over reconstructed photo and overlay,Lowest sampled ratio 4.75:1; not an automated certification
+docs/,Passed,Assets and local HTTP handling,14 images; crawler files; 404; HEAD; invalid paths and methods,All expected responses
+docs/,Measured,Loading budget,313 KB critical uncompressed assets; 1.8 KB site JavaScript,No third-party scripts or fonts; production metrics remain unmeasured
