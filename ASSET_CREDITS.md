@@ -10,9 +10,11 @@ Public sources were consulted on October 26, 2026. Zifei Wang’s photograph was
 | `src/assets/people/scott-yih.webp` | [Personal website](https://scottyih.org/), [portrait](https://scottyih.org/images/Scott%20Yih_FB%20Small.jpg) | Portrait from Scott Wen-tau Yih's personal research page. |
 | `src/assets/people/jimmy-lin.webp` | [University of Waterloo homepage](https://cs.uwaterloo.ca/~jimmylin/), [portrait](https://cs.uwaterloo.ca/~jimmylin/images/lin-fullres-cropped-scaled640.jpg) | Portrait from Jimmy Lin's university homepage. |
 
-Speaker and organizer entries link to public profiles where available. The original vector letterforms, favicon, and wordmark were created for RBD and contain no third-party marks. No ICLR, ACM, or NAACL logo is copied into the site.
+Speaker and organizer entries link to public profiles where available. The original RBD vector letterforms, favicon, and wordmark were created for RBD and contain no third-party marks. No ICLR or ACM logo is copied into the site.
 
-The original social sharing card, `src/assets/rbd-social.svg` and its 1200 × 630 PNG export, uses the same approved RBD letterforms, colors, and workshop information. It contains no third-party imagery. It was created October 26, 2026 for Open Graph and large-image social previews.
+The original social sharing card, `src/assets/rbd-social.svg` and its 1200 × 630 PNG export, uses the same approved RBD letterforms, colors, and workshop information. It was created October 26, 2026 for Open Graph and large-image social previews. The official NAACL 2027 conference logo appears at the top right.
+
+`src/assets/naacl-2027-logo.png` is the unmodified 921 × 200 logo served by the [official NAACL 2027 website](https://2027.naacl.org/) at [this source URL](https://2027.naacl.org/assets/images/logos/acl-logo.png), retrieved October 26, 2026. It is displayed proportionally in the parent-conference details and embedded in the social sharing SVG and PNG. The conference mark belongs to its respective owner; it is not original RBD artwork.
 
 ## Organizer photographs
 

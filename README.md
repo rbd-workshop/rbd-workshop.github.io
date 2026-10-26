@@ -35,7 +35,7 @@ The natural search focus is the workshop's full name, **RBD at NAACL 2027**, and
 
 - Set `siteUrl`, `seoTitle`, and `description` in `content/workshop.json`. The current canonical target is `https://rbd-workshop.github.io/`; its ownership and public deployment must be confirmed before launch. All search URLs derive from this setting.
 - Update `lastUpdated` only when the page's content changes materially, using the actual date. The build does not silently advance it. This date is metadata and does not add another year to the visible footer.
-- The sharing image is `src/assets/rbd-social.png`, with its editable vector source beside it. Update both when the branding changes. The PNG is approximately 57 KB.
+- The sharing image is `src/assets/rbd-social.png`, with its editable vector source beside it. Update both when the branding changes. The PNG is approximately 65 KB, including the official NAACL 2027 logo.
 - No `Event` markup is emitted while the actual workshop day and venue are unconfirmed. Add it after those details are visible and final; never substitute the parent conference dates.
 - `llms.txt` is an optional navigation summary, not a ranking mechanism. Keep its draft-status text current as the CFP is finalized. [Google's guidance](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide) says normal SEO practices apply to AI search and that Google does not use `llms.txt`.
 - The local preview sends an `X-Robots-Tag: noindex, nofollow` header. This protects local previews and is not part of the static GitHub Pages output. The generated production homepage permits indexing. After deployment, check the actual public response for accidental `noindex` directives.
@@ -67,6 +67,8 @@ Set `submissionUrl` to the confirmed HTTPS portal to show a working submit butto
 The RBD wordmark uses original vector letterforms, with a red R and dark neutral B and D. The B and D have refined bowl curves, larger interior counters, and balanced stroke weights; the approved R is preserved. The vector wordmark is `src/assets/rbd-logo.svg`; `rbd-logo.png` is a transparent raster export, and `rbd-icon.png` is a square icon. Red: `#c74634`. Dark neutral: `#312d2a`. Accessible link red: `#9e392c`. Background: white. The site uses native sans-serif fonts and makes no third-party font requests.
 
 Speaker and organizer portraits and the San Francisco banner are hosted locally as optimized WebP files. Sources and credits are recorded in [ASSET_CREDITS.md](ASSET_CREDITS.md), without a visible photo-credit line in the footer.
+
+The official NAACL 2027 San Francisco logo is displayed in the parent-conference details and the social sharing card, using the original asset from the conference website. Its proportions and colors are preserved; the workshop's own RBD wordmark remains the primary identity.
 
 ## Git and publishing later
 

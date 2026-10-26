@@ -54,6 +54,8 @@ h3 { font-size: 20px; line-height: 1.4; font-weight: 600; color: var(--navy); }
 .conference-details p, .conference-details a { font-size: 13px; }
 .conference-details .date-note { font-size: 12px; }
 .conference-details a { display: inline-block; margin-top: 10px; }
+.conference-details .conference-logo { display: block; width: 240px; max-width: 100%; margin: 0 0 16px; }
+.conference-logo img { width: 100%; height: auto; }
 .section { padding-block: 48px; border-top: 1px solid var(--line); }
 .prose { max-width: 1000px; }
 .prose h3 { margin: 27px 0 13px; }
