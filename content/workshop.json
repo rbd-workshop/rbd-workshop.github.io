@@ -34,23 +34,23 @@
   "topics": [
     {
       "title": "Representing and indexing capabilities",
-      "description": "Methods for describing and indexing tools, APIs, skills, workflows, memories, models, and agents using natural language, schemas, code, demonstrations, execution traces, graphs, ontologies, or embeddings. This includes indexes that change as capabilities are added or updated."
+      "description": "Methods for representing and indexing tools, APIs, skills, workflows, memories, models, and agents using natural language, schemas, code, demonstrations, execution traces, graphs, ontologies, or embeddings. Topics include learning representations that connect user requests with resource functionality, description and metadata enrichment using usage examples and observed behavior to improve retrieval, and updating indexes as resources change."
     },
     {
       "title": "Retrieval, routing, and composition",
-      "description": "Selecting individual capabilities or compatible combinations for a task. Topics include joint retrieval, dependencies between resources, and selection that accounts for permissions, reliability, and cost."
+      "description": "Methods for retrieving and ranking individual resources or compatible combinations for a task, including sparse, dense, hybrid, and generative retrieval, reranking, and joint retrieval. Topics include dependencies between resources and selection that accounts for permissions, reliability, and cost, alongside tradeoffs between retrieval quality, latency, and context budgets."
     },
     {
       "title": "Retrieval during agent execution",
-      "description": "Adapting retrieval to an agent’s state, plan, and observations. Topics include query reformulation, clarification, task decomposition, incorporating and invoking capabilities, delegation, replanning, recovery, and deciding when to abstain."
+      "description": "Adapting retrieval to an agent’s state, plan, observations, and previous tool calls. Topics include query reformulation, clarification, task decomposition, retrieval from interaction histories, and learning from execution feedback to improve subsequent retrieval decisions. This includes how retrieved resources are incorporated, invoked, and combined, and how delegation, replanning, recovery, and abstention inform further retrieval."
     },
     {
       "title": "Evaluating capability use",
-      "description": "Benchmarks and methods that distinguish errors in retrieval, incorporation, invocation, composition, and execution. Topics include whether a retrieved set contains all required capabilities, respects dependencies, and supports reliable task completion within resource constraints, as well as confidence calibration."
+      "description": "Benchmarks and methods that distinguish errors in retrieval, incorporation, invocation, composition, and execution. Topics include whether retrieved sets contain the required resources, respect dependencies, and support reliable task completion within resource constraints, as well as confidence calibration. We also welcome studies of generalization to unfamiliar resources, retrieval for tools and skills with little usage history, and robustness across languages, domains, and noisy candidate collections."
     },
     {
       "title": "Capability registries and deployment",
-      "description": "Dynamic and federated registries, access control, and Model Context Protocol ecosystems. Topics include provenance, permissions, keeping capability information current, monitoring system behavior, caching, reliability, and recovery."
+      "description": "Retrieval in dynamic, federated, and access controlled registries, including Model Context Protocol ecosystems. Topics include provenance, permissions, freshness, monitoring, and caching, with an emphasis on maintaining retrieval quality as resources change or become unavailable. This includes ranking under changing reliability and handling misleading or malicious descriptions that affect retrieval and resource selection."
     }
   ],
   "speakers": [
