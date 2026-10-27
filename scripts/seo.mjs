@@ -64,5 +64,39 @@ export function searchAssets(data, page = pages[0]) {
     ['Organizers and program committee', 'organizers/']
   ];
   const llms = `# ${data.title} (RBD) Workshop\n\n> ${data.subtitle}. Workshop at ${data.conference} in ${data.location}.\n\n${data.description}\n\nThe workshop day, submission deadlines, and submission portal are to be announced. Author guidelines are a draft; proposed limits and submission arrangements await the final call. Parent conference dates are not workshop dates.\n\n## Website pages\n\n${links.map(([label, anchor]) => `- [${label}](${absolute(anchor)})`).join('\n')}\n\n## Contact\n\n${data.contactEmail}\n`;
-  return { siteUrl: canonical, pageUrl, seoTitle, description, siteRoot: site.pathname, socialImageUrl, structuredData, sitemap, robots, llms };
+  const machineLinks = `\n## Machine-readable content\n\n- [Workshop data](${absolute('workshop.json')}): Topics, organizer roles, biographies, and source-page links.\n- [Full workshop text](${absolute('llms-full.txt')}): The overview, research topics, and people from the public website.\n`;
+  const workshopData = JSON.stringify({
+    '@context': 'https://schema.org', '@type': 'CollectionPage',
+    '@id': absolute('workshop.json'), url: canonical,
+    name: data.seoTitle, description: data.description,
+    inLanguage: 'en', dateModified: updated,
+    about: { '@type': 'Thing', name: data.subtitle },
+    keywords: data.topics.map(topic => topic.title),
+    publisher: {
+      '@type': 'Organization', '@id': orgId,
+      name: `${data.title} (RBD) Workshop`, url: canonical,
+      member: data.organizers.map(person => ({
+        '@type': 'Role', roleName: 'Workshop Organizer',
+        member: {
+          '@type': 'Person', '@id': absolute(`organizers/#${person.id}`),
+          name: person.name, description: person.bio,
+          affiliation: { '@type': 'Organization', name: person.affiliation },
+          ...(person.url ? { url: person.url, sameAs: person.url } : {})
+        }
+      }))
+    },
+    hasPart: data.topics.map(topic => ({
+      '@type': 'CreativeWork', name: topic.title,
+      description: topic.description, url: absolute('cfp/')
+    })),
+    mentions: data.speakers.map(person => ({
+      '@type': 'Person', '@id': absolute(`speakers/#${person.id}`),
+      name: person.name, description: person.bio,
+      affiliation: { '@type': 'Organization', name: person.affiliation },
+      ...(person.url ? { url: person.url, sameAs: person.url } : {})
+    }))
+  }, null, 2) + '\n';
+  const peopleText = people => people.map(person => `### ${person.name}\n\nAffiliation: ${person.affiliation}.\n${person.url ? `Profile: ${person.url}\n` : ''}\n${person.bio}\n`).join('\n');
+  const llmsFull = `${llms}${machineLinks}\n## Research topics\n\nSource: ${absolute('cfp/')}\n\n${data.topics.map(topic => `### ${topic.title}\n\n${topic.description}\n`).join('\n')}\n## Workshop organizers\n\nSource: ${absolute('organizers/')}\n\n${peopleText(data.organizers)}\n## Invited speakers\n\nSource: ${absolute('speakers/')}\n\n${peopleText(data.speakers)}`;
+  return { siteUrl: canonical, pageUrl, seoTitle, description, siteRoot: site.pathname, socialImageUrl, structuredData, sitemap, robots, llms: llms + machineLinks, llmsFull, workshopData };
 }

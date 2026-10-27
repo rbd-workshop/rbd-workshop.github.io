@@ -71,6 +71,8 @@ export async function build() {
   await writeFile(path.join(root, 'docs/robots.txt'), seo.robots);
   await writeFile(path.join(root, 'docs/sitemap.xml'), seo.sitemap);
   await writeFile(path.join(root, 'docs/llms.txt'), seo.llms);
+  await writeFile(path.join(root, 'docs/llms-full.txt'), seo.llmsFull);
+  await writeFile(path.join(root, 'docs/workshop.json'), seo.workshopData);
   await cp(path.join(root, 'src/style.css'), path.join(root, 'docs/assets/style.css'));
   await cp(path.join(root, 'src/app.js'), path.join(root, 'docs/assets/app.js'));
   await cp(path.join(root, 'src/assets'), path.join(root, 'docs/assets'), { recursive: true });

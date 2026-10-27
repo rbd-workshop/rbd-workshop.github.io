@@ -1,0 +1,237 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "https://rbd-workshop.github.io/workshop.json",
+  "url": "https://rbd-workshop.github.io/",
+  "name": "Retrieval Beyond Documents (RBD) Workshop | NAACL 2027",
+  "description": "RBD at NAACL 2027 explores capability retrieval for language agents: tools, skills, workflows, memory, models, and agents. Topics, submissions, and speakers.",
+  "inLanguage": "en",
+  "dateModified": "2026-10-27",
+  "about": {
+    "@type": "Thing",
+    "name": "Capability Retrieval for Language Agents"
+  },
+  "keywords": [
+    "Representing and indexing capabilities",
+    "Retrieval, routing, and composition",
+    "Retrieval during agent execution",
+    "Evaluating capability use",
+    "Capability registries and deployment"
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://rbd-workshop.github.io/#organization",
+    "name": "Retrieval Beyond Documents (RBD) Workshop",
+    "url": "https://rbd-workshop.github.io/",
+    "member": [
+      {
+        "@type": "Role",
+        "roleName": "Workshop Organizer",
+        "member": {
+          "@type": "Person",
+          "@id": "https://rbd-workshop.github.io/organizers/#hitesh-patel",
+          "name": "Hitesh Laxmichand Patel",
+          "description": "Hitesh Laxmichand Patel is a Principal Applied Scientist and Tech Lead at Oracle. His research spans reliable AI agents, reasoning, and knowledge use in language and vision models. He develops methods for agents to gather evidence, use tools, and collaborate on extended tasks, alongside multilingual and multimodal model training and evaluation. His work received the EMNLP 2025 Best Social Impact Paper Award. He co-organizes GRAIL-V at CVPR, serves as an Area Chair, and contributes to open research communities.",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "Oracle AI"
+          },
+          "url": "https://hiteshlpatel.github.io/",
+          "sameAs": "https://hiteshlpatel.github.io/"
+        }
+      },
+      {
+        "@type": "Role",
+        "roleName": "Workshop Organizer",
+        "member": {
+          "@type": "Person",
+          "@id": "https://rbd-workshop.github.io/organizers/#akari-asai",
+          "name": "Akari Asai",
+          "description": "Akari Asai is an Assistant Professor at Carnegie Mellon University and a Research Scientist at the Allen Institute for AI. She develops language models and agents that search for information, combine evidence, and interact with tools and environments. Her research spans retrieval augmented models, reliable reasoning, scientific discovery, and information access across languages and cultures. She received her Ph.D. from the University of Washington and the AAAI/ACM SIGAI Doctoral Dissertation Award, and organizes workshops, tutorials, and research challenges.",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "Carnegie Mellon University"
+          },
+          "url": "https://akariasai.github.io/",
+          "sameAs": "https://akariasai.github.io/"
+        }
+      },
+      {
+        "@type": "Role",
+        "roleName": "Workshop Organizer",
+        "member": {
+          "@type": "Person",
+          "@id": "https://rbd-workshop.github.io/organizers/#omar-khattab",
+          "name": "Omar Khattab",
+          "description": "Omar Khattab is an Assistant Professor in MIT EECS and a member of CSAIL, where he leads the OASYS Lab. His research connects natural language processing with the design of efficient AI systems. He develops methods for neural retrieval, compositional reasoning, and programming and optimizing systems built from language models. His work emphasizes learning from limited feedback and balancing quality with computational cost. He contributes open source research software and co-organizes workshops on compound AI systems and retrieval.",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "Massachusetts Institute of Technology"
+          },
+          "url": "https://omarkhattab.com/",
+          "sameAs": "https://omarkhattab.com/"
+        }
+      },
+      {
+        "@type": "Role",
+        "roleName": "Workshop Organizer",
+        "member": {
+          "@type": "Person",
+          "@id": "https://rbd-workshop.github.io/organizers/#danqi-chen",
+          "name": "Danqi Chen",
+          "description": "Danqi Chen is an Associate Professor of Computer Science at Princeton University, co-leads the Princeton NLP Group, and is an Associate Director of Princeton Language and Intelligence. Her research spans language understanding, knowledge representation, retrieval, and reasoning. She studies how language models acquire and use knowledge, search over extended tasks, and learn to follow human preferences. Her work also develops efficient methods for adapting language models and evaluating their capabilities. She received her Ph.D. from Stanford University in 2018.",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "Princeton University"
+          },
+          "url": "https://www.cs.princeton.edu/~danqic/",
+          "sameAs": "https://www.cs.princeton.edu/~danqic/"
+        }
+      },
+      {
+        "@type": "Role",
+        "roleName": "Workshop Organizer",
+        "member": {
+          "@type": "Person",
+          "@id": "https://rbd-workshop.github.io/organizers/#zifei-wang",
+          "name": "Zifei Wang",
+          "description": "Zifei Wang is affiliated with the IMA Product Center at Tencent. His research connects multimodal information retrieval with the selection of resources for language model agents. He studies ranking, routing, and the retrieval of reusable skills, including how a capability’s suitability depends on the user’s query and its compatibility with other capabilities. His work also covers retrieval across images and text, with an emphasis on benchmarks and learned retrieval methods for matching requests to useful resources.",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "Tencent IMA Product Center"
+          }
+        }
+      },
+      {
+        "@type": "Role",
+        "roleName": "Workshop Organizer",
+        "member": {
+          "@type": "Person",
+          "@id": "https://rbd-workshop.github.io/organizers/#avi-sil",
+          "name": "Avi Sil",
+          "description": "Avi Sil is Senior Director of Applied Science at Oracle, where he leads teams developing AI agents and applied language model technologies. His research spans retrieval augmented generation, agent workflows, reasoning and verification, and natural language interfaces to code. Previously, he was a Principal Research Scientist and Manager at IBM Research, working on natural language processing and multilingual question answering. He has served as an area chair, track chair, and demonstration chair, and co-chaired the ACM CAIS 2026 program.",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "Oracle"
+          },
+          "url": "https://www.linkedin.com/in/avirupsil/",
+          "sameAs": "https://www.linkedin.com/in/avirupsil/"
+        }
+      },
+      {
+        "@type": "Role",
+        "roleName": "Workshop Organizer",
+        "member": {
+          "@type": "Person",
+          "@id": "https://rbd-workshop.github.io/organizers/#sewon-min",
+          "name": "Sewon Min",
+          "description": "Sewon Min is an Assistant Professor in EECS at UC Berkeley and a Research Scientist at the Allen Institute for AI. Her research examines language models across data, pretraining, architectures, and retrieval, with a focus on how models learn from and use information under limited resources. Her broader interests include factuality, adaptability, and reasoning. She received her Ph.D. from the University of Washington, has earned dissertation and paper awards, and has organized workshops and tutorials on language models.",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "University of California, Berkeley"
+          },
+          "url": "https://www.sewonmin.com/",
+          "sameAs": "https://www.sewonmin.com/"
+        }
+      },
+      {
+        "@type": "Role",
+        "roleName": "Workshop Organizer",
+        "member": {
+          "@type": "Person",
+          "@id": "https://rbd-workshop.github.io/organizers/#connor-shorten",
+          "name": "Connor Shorten",
+          "description": "Connor Shorten is a Research Scientist at Weaviate, working at the intersection of AI and database systems. His research interests include neural search, language model applications, and retrieval and question answering across text and images. His work includes benchmarks that compare retrieval methods and study how visual information supports scientific search. He also hosts the Weaviate Podcast, where he discusses advances in machine learning, search, and AI databases with researchers, developers, and members of the open source community.",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "Weaviate"
+          },
+          "url": "https://github.com/CShorten",
+          "sameAs": "https://github.com/CShorten"
+        }
+      }
+    ]
+  },
+  "hasPart": [
+    {
+      "@type": "CreativeWork",
+      "name": "Representing and indexing capabilities",
+      "description": "Methods for representing and indexing tools, APIs, skills, workflows, memories, models, and agents using natural language, schemas, code, demonstrations, execution traces, graphs, ontologies, or embeddings. Topics include learning representations that connect user requests with resource functionality, description and metadata enrichment using usage examples and observed behavior to improve retrieval, and updating indexes as resources change.",
+      "url": "https://rbd-workshop.github.io/cfp/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Retrieval, routing, and composition",
+      "description": "Methods for retrieving and ranking individual resources or compatible combinations for a task, including sparse, dense, hybrid, and generative retrieval, reranking, and joint retrieval. Topics include dependencies between resources and selection that accounts for permissions, reliability, and cost, alongside tradeoffs between retrieval quality, latency, and context budgets.",
+      "url": "https://rbd-workshop.github.io/cfp/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Retrieval during agent execution",
+      "description": "Adapting retrieval to an agent’s state, plan, observations, and previous tool calls. Topics include query reformulation, clarification, task decomposition, retrieval from interaction histories, and learning from execution feedback to improve subsequent retrieval decisions. This includes how retrieved resources are incorporated, invoked, and combined, and how delegation, replanning, recovery, and abstention inform further retrieval.",
+      "url": "https://rbd-workshop.github.io/cfp/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Evaluating capability use",
+      "description": "Benchmarks and methods that distinguish errors in retrieval, incorporation, invocation, composition, and execution. Topics include whether retrieved sets contain the required resources, respect dependencies, and support reliable task completion within resource constraints, as well as confidence calibration. We also welcome studies of generalization to unfamiliar resources, retrieval for tools and skills with little usage history, and robustness across languages, domains, and noisy candidate collections.",
+      "url": "https://rbd-workshop.github.io/cfp/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Capability registries and deployment",
+      "description": "Retrieval in dynamic, federated, and access controlled registries, including Model Context Protocol ecosystems. Topics include provenance, permissions, freshness, monitoring, and caching, with an emphasis on maintaining retrieval quality as resources change or become unavailable. This includes ranking under changing reliability and handling misleading or malicious descriptions that affect retrieval and resource selection.",
+      "url": "https://rbd-workshop.github.io/cfp/"
+    }
+  ],
+  "mentions": [
+    {
+      "@type": "Person",
+      "@id": "https://rbd-workshop.github.io/speakers/#iryna-gurevych",
+      "name": "Iryna Gurevych",
+      "description": "Iryna Gurevych is a Professor of Computer Science at TU Darmstadt and heads the Ubiquitous Knowledge Processing Lab. Her research spans natural language processing, semantic representations, information retrieval, and trustworthy AI. She studies how language technologies can work reliably with knowledge and support scientific research, with broader interests in generative AI, evaluation, and AI safety. She is an ACL Fellow and a past President of the Association for Computational Linguistics. Her honors include an ERC Advanced Grant and the Royal Society’s Milner Award and Lecture in 2025.",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "TU Darmstadt"
+      },
+      "url": "https://www.informatik.tu-darmstadt.de/ukp/ukp_home/head_ukp/index.en.jsp",
+      "sameAs": "https://www.informatik.tu-darmstadt.de/ukp/ukp_home/head_ukp/index.en.jsp"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://rbd-workshop.github.io/speakers/#graham-neubig",
+      "name": "Graham Neubig",
+      "description": "Graham Neubig is an Associate Professor at Carnegie Mellon University’s Language Technologies Institute, where he leads NeuLab, and Chief Scientist at OpenHands. His research spans natural language processing and machine learning, including language models, multilingual communication, question answering, and code generation. He studies how AI agents can use tools, learn from experience, and carry out complex tasks, with a particular interest in software development. Alongside his research, he develops open source software and freely available courses and lectures that make advances in NLP accessible to researchers, students, and practitioners.",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Carnegie Mellon University"
+      },
+      "url": "https://www.phontron.com/",
+      "sameAs": "https://www.phontron.com/"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://rbd-workshop.github.io/speakers/#scott-yih",
+      "name": "Scott Wen-tau Yih",
+      "description": "Scott Wen-tau Yih is a Research Scientist at Meta Fundamental AI Research. His research connects natural language processing, machine learning, and information retrieval, with a focus on neural search, question answering, and language models grounded in external knowledge. His recent interests include factuality in text and multimodal systems, retrieval augmented generation, and reasoning. Previously, he held research positions at the Allen Institute for AI and Microsoft Research. He is an ACL Fellow, has received paper awards at CoNLL and ACL, and served as a program co-chair of EMNLP 2021.",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Meta Fundamental AI Research"
+      },
+      "url": "https://scottyih.org/",
+      "sameAs": "https://scottyih.org/"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://rbd-workshop.github.io/speakers/#jimmy-lin",
+      "name": "Jimmy Lin",
+      "description": "Jimmy Lin is a Professor and holds the David R. Cheriton Chair in the School of Computer Science at the University of Waterloo. He works at the intersection of information retrieval, natural language processing, and data management, developing systems that help people make sense of large collections of information. His research spans neural search, question answering, language models, and agentic retrieval, with a sustained emphasis on reproducibility and open source software. He is an ACM Fellow, an ACL Fellow, and a member of the SIGIR Academy.",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "University of Waterloo"
+      },
+      "url": "https://cs.uwaterloo.ca/~jimmylin/",
+      "sameAs": "https://cs.uwaterloo.ca/~jimmylin/"
+    }
+  ]
+}

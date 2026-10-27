@@ -19,3 +19,8 @@ The workshop day, submission deadlines, and submission portal are to be announce
 ## Contact
 
 hitesh.laxmichand.patel@oracle.com
+
+## Machine-readable content
+
+- [Workshop data](https://rbd-workshop.github.io/workshop.json): Topics, organizer roles, biographies, and source-page links.
+- [Full workshop text](https://rbd-workshop.github.io/llms-full.txt): The overview, research topics, and people from the public website.
