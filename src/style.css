@@ -63,7 +63,6 @@ h3 { font-size: 20px; line-height: 1.4; font-weight: 600; color: var(--ink); }
 .conference-details .conference-logo { display: block; width: 240px; max-width: 100%; margin: 0 0 16px; }
 .conference-logo img { width: 100%; height: auto; }
 .section { padding-block: 48px; border-top: 1px solid var(--line); }
-.prose { max-width: 76ch; }
 .prose h3 { margin: 27px 0 13px; }
 .prose h4 { font-size: 16px; line-height: 1.5; font-weight: 600; margin: 24px 0 12px; }
 .topics { padding-left: 22px; margin: 0; }
@@ -196,5 +195,3 @@ h3 { font-size: 20px; line-height: 1.4; font-weight: 600; color: var(--ink); }
 @media (max-width:500px) {
   .page-content { padding-block: 32px; }
 }
-
-.reading-page { max-width: 76ch; }
