@@ -97,8 +97,10 @@ h3 { font-size: 20px; line-height: 1.4; font-weight: 600; color: var(--ink); }
 .error-page h1 { margin-bottom: 24px; }
 .error-page > p { max-width: 650px; }
 .site-footer { background: var(--surface); border-top: 1px solid var(--line); padding-block: 26px; font-size: 14px; color: var(--muted); }
-.site-footer .container { position: relative; padding-right: 120px; }
-.site-footer a { position: absolute; top: -10px; right: 0; display: inline-flex; align-items: center; min-height: 44px; }
+.site-footer .container { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 24px; }
+.site-footer p { margin: 0; }
+.footer-links { display: flex; align-items: center; flex-wrap: wrap; gap: 0 24px; }
+.site-footer a { display: inline-flex; align-items: center; min-height: 44px; }
 @media (max-width:1050px) {
   .container { width: calc(100% - 56px); }
   #main-nav { gap: 0 20px; }
@@ -164,8 +166,6 @@ h3 { font-size: 20px; line-height: 1.4; font-weight: 600; color: var(--ink); }
   .committee-list { gap: 20px; }
   .committee-list li span:first-child { font-size: 14px; }
   .committee-list li span + span { font-size: 13px; }
-  .site-footer .container { padding-right: 0; }
-  .site-footer a { position: static; margin-top: 8px; }
 }
 @media (max-height:500px) {
   html { scroll-padding-top: var(--anchor-offset, 20px); }

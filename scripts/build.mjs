@@ -52,6 +52,7 @@ export async function build() {
     const pageVariables = {
       ...variables, datesId: 'dates', datesTitleId: 'dates-title', pageId: page.id, pageUrl: escape(pageSeo.pageUrl), seoTitle: escape(pageSeo.seoTitle),
       description: escape(pageSeo.description), structuredData: pageSeo.structuredData,
+      footerContact: page.id === 'home' ? '' : `<a href="${escape(siteRoot)}#contact">Contact</a>`,
       navigation: nav.map(item => `<a href="${escape(siteRoot + item.path)}"${item.id === page.id ? ' aria-current="page"' : ''}>${item.label}</a>`).join(''),
       heroPreload: page.id === 'home' ? `<link rel="preload" as="image" href="${escape(siteRoot)}assets/san-francisco.webp" fetchpriority="high">` : '',
       legacyLinks: hasLegacyRoutes ? `<div class="legacy-links container">${Object.entries(routes).map(([id, target]) => `<p id="${escape(id)}">This section has its own page. <a href="${escape(localTarget(target))}">Continue to ${target.endsWith('#dates') ? 'the important dates on Home' : target.startsWith('cfp') ? 'the call for papers' : target.startsWith('organizers') ? 'the organizers and program committee' : target.startsWith('speakers') ? 'the invited speakers' : 'the program'}</a>.</p>`).join('')}</div>` : '',

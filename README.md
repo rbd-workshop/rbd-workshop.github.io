@@ -14,7 +14,7 @@ A static conference website using HTML, CSS, vanilla JavaScript, and a dependenc
 | Program | `src/pages/program.html` | `/program/` |
 | Organizers and program committee | `src/pages/organizers.html` and people data | `/organizers/` |
 
-`src/layout.html` supplies the shared header, navigation, contact section, and footer. `src/partials/dates.html` displays the Important dates and NAACL sidebar on Home. Edit dates, topics, names, affiliations, and biographies once in `content/workshop.json`. `scripts/pages.mjs` defines routes, navigation labels, and page descriptions.
+`src/layout.html` supplies the shared header, navigation, and footer. The full Contact section lives on Home; other pages link to it from the footer. `src/partials/dates.html` displays the Important dates and NAACL sidebar on Home. Edit dates, topics, names, affiliations, and biographies once in `content/workshop.json`. `scripts/pages.mjs` defines routes, navigation labels, and page descriptions.
 
 The homepage contains the workshop overview, important dates, and parent-conference information. It does not repeat CFP, speaker, or program sections. Full biographies and author instructions have dedicated pages. Guidelines remain inside the CFP. All five pages have distinct titles, descriptions, self-referencing canonical URLs, and page-specific structured data. The sitemap lists the five canonical URLs. No framework, client-side router, or external script is required to read the content or navigate between pages.
 
