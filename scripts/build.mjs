@@ -1,6 +1,7 @@
 import { readFile, writeFile, mkdir, cp, rm } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 import { searchAssets } from './seo.mjs';
 import { pages, legacyRoutes } from './pages.mjs';
 
@@ -26,9 +27,11 @@ export async function build() {
   const seo = searchAssets(data);
   if (!/^[^\s<>@]+@[^\s<>@]+\.[^\s<>@]+$/.test(data.contactEmail)) throw new Error('Invalid contact email');
   const siteRoot = seo.siteRoot;
+  const assetVersion = async filename => createHash('sha256').update(await readFile(path.join(root, 'src', filename))).digest('hex').slice(0, 12);
   const variables = {
     ...Object.fromEntries(Object.entries(data).filter(([,v]) => typeof v === 'string').map(([k,v]) => [k,escape(v)])),
     siteRoot: escape(siteRoot), siteUrl: escape(seo.siteUrl), socialImageUrl: escape(seo.socialImageUrl),
+    styleVersion: await assetVersion('style.css'), scriptVersion: await assetVersion('app.js'),
     topics: data.topics.map(t => `<li><strong>${escape(t.title)}.</strong> ${escape(t.description)}</li>`).join('\n'),
     speakers: data.speakers.map(p => person(p, siteRoot)).join('\n'),
     organizers: data.organizers.map(p => person(p, siteRoot)).join('\n'),
