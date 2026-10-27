@@ -11,7 +11,7 @@ The workshop day, submission deadlines, and submission portal are to be announce
 - [Overview](https://rbd-workshop.github.io/)
 - [Call for papers and topics](https://rbd-workshop.github.io/cfp/)
 - [Draft submission guidelines](https://rbd-workshop.github.io/cfp/#guidelines)
-- [Important dates](https://rbd-workshop.github.io/#dates)
+- [Important dates](https://rbd-workshop.github.io/cfp/#dates)
 - [Invited speakers](https://rbd-workshop.github.io/speakers/)
 - [Planned program](https://rbd-workshop.github.io/program/)
 - [Organizers and program committee](https://rbd-workshop.github.io/organizers/)

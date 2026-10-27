@@ -59,7 +59,7 @@ export function searchAssets(data, page = pages[0]) {
   const robots = `User-agent: *\nAllow: /\n\nSitemap: ${absolute('sitemap.xml')}\n`;
   const links = [
     ['Overview', ''], ['Call for papers and topics', 'cfp/'],
-    ['Draft submission guidelines', 'cfp/#guidelines'], ['Important dates', '#dates'],
+    ['Draft submission guidelines', 'cfp/#guidelines'], ['Important dates', 'cfp/#dates'],
     ['Invited speakers', 'speakers/'], ['Planned program', 'program/'],
     ['Organizers and program committee', 'organizers/']
   ];

@@ -39,21 +39,21 @@ export async function build() {
       ? `<p><a href="${safeUrl(data.submissionUrl)}" target="_blank" rel="noopener noreferrer">Submit your paper</a></p>`
       : '<p>The submission portal and paper deadlines will be announced here.</p>'
   };
-  variables.dateSidebar = interpolate(await readFile(path.join(root, 'src/partials/dates.html'), 'utf8'), variables);
+  const dateTemplate = await readFile(path.join(root, 'src/partials/dates.html'), 'utf8');
   const layout = await readFile(path.join(root, 'src/layout.html'), 'utf8');
   const routes = legacyRoutes(data);
   for (const page of pages) {
     const pageSeo = searchAssets(data, page);
-    const nav = [...pages];
-    nav.splice(2, 0, { id: 'dates', path: '#dates', label: 'Dates' });
+    const nav = pages;
     const pageVariables = {
-      ...variables, pageId: page.id, pageUrl: escape(pageSeo.pageUrl), seoTitle: escape(pageSeo.seoTitle),
+      ...variables, datesId: page.id === 'home' ? 'date-summary' : 'dates', datesTitleId: page.id === 'home' ? 'date-summary-title' : 'dates-title', pageId: page.id, pageUrl: escape(pageSeo.pageUrl), seoTitle: escape(pageSeo.seoTitle),
       description: escape(pageSeo.description), structuredData: pageSeo.structuredData,
       navigation: nav.map(item => `<a href="${escape(siteRoot + item.path)}"${item.id === page.id ? ' aria-current="page"' : ''}>${item.label}</a>`).join(''),
       heroPreload: page.id === 'home' ? `<link rel="preload" as="image" href="${escape(siteRoot)}assets/san-francisco.webp" fetchpriority="high">` : '',
       legacyLinks: page.id === 'home' ? `<div class="legacy-links container">${Object.entries(routes).map(([id, target]) => `<p id="${escape(id)}">This section has its own page. <a href="${escape(siteRoot + target)}">Continue to ${target.startsWith('cfp') ? 'the call for papers' : target.startsWith('organizers') ? 'the organizers and program committee' : target.startsWith('speakers') ? 'the invited speakers' : 'the program'}</a>.</p>`).join('')}</div>` : '',
       legacyRoutes: page.id === 'home' ? `<script type="application/json" id="legacy-routes">${JSON.stringify(routes).replace(/</g, '\\u003c')}</script>` : ''
     };
+    pageVariables.dateSidebar = interpolate(dateTemplate, pageVariables);
     pageVariables.content = interpolate(await readFile(path.join(root, 'src/pages', page.template), 'utf8'), pageVariables);
     const output = path.join(root, 'docs', page.path);
     await mkdir(output, { recursive: true });

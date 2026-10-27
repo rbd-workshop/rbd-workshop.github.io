@@ -13,6 +13,7 @@ export const pages = [
 export function legacyRoutes(data) {
   return Object.fromEntries([
     ['cfp', 'cfp/'], ['cfp-title', 'cfp/'],
+    ['dates', 'cfp/#dates'], ['dates-title', 'cfp/#dates'],
     ['guidelines', 'cfp/#guidelines'], ['submission-guidelines', 'cfp/#submission-guidelines'],
     ['speakers', 'speakers/'], ['speakers-title', 'speakers/'],
     ['program', 'program/'], ['program-title', 'program/'],
