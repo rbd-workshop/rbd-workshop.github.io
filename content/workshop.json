@@ -4,7 +4,7 @@
   "conference": "NAACL 2027",
   "siteUrl": "https://rbd-workshop.github.io/",
   "seoTitle": "Retrieval Beyond Documents (RBD) Workshop | NAACL 2027",
-  "lastUpdated": "2026-10-26",
+  "lastUpdated": "2026-10-27",
   "edition": "The inaugural workshop",
   "date": "To be announced",
   "location": "San Francisco, California",
@@ -33,24 +33,24 @@
   ],
   "topics": [
     {
-      "title": "Representing and indexing capabilities",
-      "description": "Methods for describing and indexing tools, APIs, skills, workflows, memories, models, and agents using natural language, schemas, code, demonstrations, execution traces, graphs, ontologies, or embeddings. This includes indexes that change as capabilities are added or updated."
+      "title": "Representation and indexing",
+      "description": "Language, schemas, code, demonstrations, traces, graphs, ontologies, embeddings, and dynamic indexes for tools, APIs, skills, workflows, memories, models, and agents."
     },
     {
       "title": "Retrieval, routing, and composition",
-      "description": "Selecting individual capabilities or compatible combinations for a task. Topics include joint retrieval, dependencies between resources, and selection that accounts for permissions, reliability, and cost."
+      "description": "Selection of tools and APIs, skills, workflows, memories, models, and agents; joint retrieval; and selection that accounts for dependencies, compatibility, permissions, reliability, and cost."
     },
     {
-      "title": "Retrieval during agent execution",
-      "description": "Adapting retrieval to an agent’s state, plan, and observations. Topics include query reformulation, clarification, task decomposition, incorporating and invoking capabilities, delegation, replanning, recovery, and deciding when to abstain."
+      "title": "Retrieval in the agent loop",
+      "description": "Retrieval conditioned on state, plans, and observations; reformulation, clarification, decomposition, incorporation, invocation, delegation, replanning, recovery, and abstention."
     },
     {
-      "title": "Evaluating capability use",
-      "description": "Benchmarks and methods that distinguish errors in retrieval, incorporation, invocation, composition, and execution. Topics include whether a retrieved set contains all required capabilities, respects dependencies, and supports reliable task completion within resource constraints, as well as confidence calibration."
+      "title": "Action grounded evaluation",
+      "description": "Evaluation of retrieval, incorporation, invocation, composition, and execution; metrics for complete sets and dependencies; calibration and resource constraints."
     },
     {
-      "title": "Capability registries and deployment",
-      "description": "Dynamic and federated registries, access control, and Model Context Protocol ecosystems. Topics include provenance, permissions, keeping capability information current, monitoring system behavior, caching, reliability, and recovery."
+      "title": "Ecosystems and deployment",
+      "description": "Dynamic, federated, and access controlled registries; Model Context Protocol ecosystems; provenance, permissions, freshness, observability, reliability, caching, and recovery."
     }
   ],
   "speakers": [

@@ -2,7 +2,7 @@
 export const pages = [
   { id: 'home', path: '', label: 'Home', template: 'home.html' },
   { id: 'cfp', path: 'cfp/', label: 'Call for Papers', template: 'cfp.html',
-    description: 'Topics and draft submission guidelines for Retrieval Beyond Documents at NAACL 2027, including paper preparation, review routes, and publication options.' },
+    description: 'Research topics, scope, and planned submission and review routes for Retrieval Beyond Documents at NAACL 2027. Page limits and submission dates are forthcoming.' },
   { id: 'speakers', path: 'speakers/', label: 'Speakers', template: 'speakers.html',
     description: 'Meet the invited speakers at RBD, the Retrieval Beyond Documents workshop at NAACL 2027: Iryna Gurevych, Graham Neubig, Scott Wen-tau Yih, and Jimmy Lin.' },
   { id: 'program', path: 'program/', label: 'Program', template: 'program.html',

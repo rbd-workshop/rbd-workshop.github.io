@@ -59,10 +59,10 @@ export function searchAssets(data, page = pages[0]) {
   const robots = `User-agent: *\nAllow: /\n\nSitemap: ${absolute('sitemap.xml')}\n`;
   const links = [
     ['Overview', ''], ['Call for papers and topics', 'cfp/'],
-    ['Draft submission guidelines', 'cfp/#guidelines'], ['Important dates', '#dates'],
+    ['Submission guidelines', 'cfp/#guidelines'], ['Important dates', '#dates'],
     ['Invited speakers', 'speakers/'], ['Planned program', 'program/'],
     ['Organizers and program committee', 'organizers/']
   ];
-  const llms = `# ${data.title} (RBD) Workshop\n\n> ${data.subtitle}. Workshop at ${data.conference} in ${data.location}.\n\n${data.description}\n\nThe workshop day, submission deadlines, and submission portal are to be announced. Author guidelines are a draft; proposed limits and submission arrangements await the final call. Parent conference dates are not workshop dates.\n\n## Website pages\n\n${links.map(([label, anchor]) => `- [${label}](${absolute(anchor)})`).join('\n')}\n\n## Contact\n\n${data.contactEmail}\n`;
+  const llms = `# ${data.title} (RBD) Workshop\n\n> ${data.subtitle}. Workshop at ${data.conference} in ${data.location}.\n\n${data.description}\n\nThe workshop day, submission deadlines, submission portal, page limits, and formatting requirements are to be announced. Direct submissions through OpenReview and ARR commitments are planned subject to venue policy. Parent conference dates are not workshop dates.\n\n## Website pages\n\n${links.map(([label, anchor]) => `- [${label}](${absolute(anchor)})`).join('\n')}\n\n## Contact\n\n${data.contactEmail}\n`;
   return { siteUrl: canonical, pageUrl, seoTitle, description, siteRoot: site.pathname, socialImageUrl, structuredData, sitemap, robots, llms };
 }
