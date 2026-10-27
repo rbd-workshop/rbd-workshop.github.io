@@ -4,13 +4,13 @@
 
 RBD at NAACL 2027 explores capability retrieval for language agents: tools, skills, workflows, memory, models, and agents. Topics, submissions, and speakers.
 
-The workshop day, submission deadlines, submission portal, page limits, and formatting requirements are to be announced. Direct submissions through OpenReview and ARR commitments are planned subject to venue policy. Parent conference dates are not workshop dates.
+The workshop day, submission deadlines, and submission portal are to be announced. Author guidelines are a draft; proposed limits and submission arrangements await the final call. Parent conference dates are not workshop dates.
 
 ## Website pages
 
 - [Overview](https://rbd-workshop.github.io/)
 - [Call for papers and topics](https://rbd-workshop.github.io/cfp/)
-- [Submission guidelines](https://rbd-workshop.github.io/cfp/#guidelines)
+- [Draft submission guidelines](https://rbd-workshop.github.io/cfp/#guidelines)
 - [Important dates](https://rbd-workshop.github.io/#dates)
 - [Invited speakers](https://rbd-workshop.github.io/speakers/)
 - [Planned program](https://rbd-workshop.github.io/program/)

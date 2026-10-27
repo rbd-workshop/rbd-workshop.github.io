@@ -39,7 +39,7 @@ export async function build() {
     dates: data.dates.map(d => `<div class="date-row"><dt>${escape(d.label)}</dt><dd>${escape(d.value)}</dd></div>`).join('\n'),
     submission: data.submissionUrl
       ? `<p><a href="${safeUrl(data.submissionUrl)}" target="_blank" rel="noopener noreferrer">Submit your paper</a></p>`
-      : '<p>The submission portal will be announced.</p>'
+      : '<p>The submission portal and paper deadlines will be announced here.</p>'
   };
   const dateTemplate = await readFile(path.join(root, 'src/partials/dates.html'), 'utf8');
   const layout = await readFile(path.join(root, 'src/layout.html'), 'utf8');

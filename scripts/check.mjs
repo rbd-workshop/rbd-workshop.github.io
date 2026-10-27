@@ -106,7 +106,7 @@ assert(notFound.includes('noindex, follow') && notFound.includes('Return to the 
 for (const [, url] of notFound.matchAll(/(?:href|src)="([^"]+)"/g)) await checkLocalLink(url, data.siteUrl + 'missing/nested/');
 const llms = await readFile(path.join(root, 'docs/llms.txt'), 'utf8');
 for (const [, url] of llms.matchAll(/\]\(([^)]+)\)/g)) await checkLocalLink(url, data.siteUrl);
-assert(llms.includes('page limits, and formatting requirements are to be announced'));
+assert(llms.includes('Author guidelines are a draft'));
 const shareImage = await readFile(path.join(root, 'docs/assets/rbd-social.png'));
 assert.equal(shareImage.subarray(0, 8).toString('hex'), '89504e470d0a1a0a');
 assert.equal(shareImage.readUInt32BE(16), 1200);
