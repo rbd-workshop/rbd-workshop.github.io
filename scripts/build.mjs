@@ -34,7 +34,6 @@ export async function build() {
     organizers: data.organizers.map(p => person(p, siteRoot)).join('\n'),
     committee: data.committee.map(([name, affiliation]) => `<li><span>${escape(name)}</span><span>${escape(affiliation)}</span></li>`).join('\n'),
     dates: data.dates.map(d => `<div class="date-row"><dt>${escape(d.label)}</dt><dd>${escape(d.value)}</dd></div>`).join('\n'),
-    speakerHighlights: data.speakers.map(p => `<li><a href="${escape(siteRoot)}speakers/#${escape(p.id)}">${escape(p.name)}</a><span>${escape(p.affiliation)}</span></li>`).join('\n'),
     submission: data.submissionUrl
       ? `<p><a href="${safeUrl(data.submissionUrl)}" target="_blank" rel="noopener noreferrer">Submit your paper</a></p>`
       : '<p>The submission portal and paper deadlines will be announced here.</p>'
@@ -46,7 +45,7 @@ export async function build() {
     const pageSeo = searchAssets(data, page);
     const nav = pages;
     const pageVariables = {
-      ...variables, datesId: page.id === 'home' ? 'date-summary' : 'dates', datesTitleId: page.id === 'home' ? 'date-summary-title' : 'dates-title', pageId: page.id, pageUrl: escape(pageSeo.pageUrl), seoTitle: escape(pageSeo.seoTitle),
+      ...variables, datesId: 'dates', datesTitleId: 'dates-title', pageId: page.id, pageUrl: escape(pageSeo.pageUrl), seoTitle: escape(pageSeo.seoTitle),
       description: escape(pageSeo.description), structuredData: pageSeo.structuredData,
       navigation: nav.map(item => `<a href="${escape(siteRoot + item.path)}"${item.id === page.id ? ' aria-current="page"' : ''}>${item.label}</a>`).join(''),
       heroPreload: page.id === 'home' ? `<link rel="preload" as="image" href="${escape(siteRoot)}assets/san-francisco.webp" fetchpriority="high">` : '',

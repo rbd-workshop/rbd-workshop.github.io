@@ -44,10 +44,12 @@ h1 { font-size: clamp(34px,3.6vw,47px); line-height: 1.22; letter-spacing: -1.2p
 .event-location span { padding-inline: 8px; }
 h2 { font-size: 29px; line-height: 1.3; font-weight: 600; color: var(--ink); letter-spacing: -.45px; margin-bottom: 24px; }
 h3 { font-size: 20px; line-height: 1.4; font-weight: 600; color: var(--ink); }
-.introduction-layout { display: grid; grid-template-columns: minmax(0,1fr) 290px; grid-template-areas: 'overview dates'; gap: 32px 65px; padding-block: 48px; align-items: start; }
+.introduction-layout { display: grid; grid-template-columns: minmax(0,1fr) 290px; grid-template-areas: 'overview conference'; gap: 32px 65px; padding-block: 48px; align-items: start; }
 .introduction-layout > * { min-width: 0; }
 #about { grid-area: overview; }
 #about p { max-width: 76ch; }
+.conference-summary { grid-area: conference; border-left: 1px solid var(--line); padding-left: 28px; }
+.conference-summary.conference-details { margin-top: 0; }
 .dates { grid-area: dates; border-left: 1px solid var(--line); padding-left: 28px; }
 .dates h2 { font-size: 22px; margin-bottom: 18px; }
 .dates dl { margin: 0; }
@@ -120,8 +122,8 @@ h3 { font-size: 20px; line-height: 1.4; font-weight: 600; color: var(--ink); }
   #main-nav a { padding: 13px 0 16px; }
   .masthead .container { padding-block: 36px 38px; }
   .subtitle { font-size: 22px; }
-  .introduction-layout { grid-template-columns: minmax(0,1fr); grid-template-areas: 'overview' 'dates'; gap: 30px; padding-block: 38px; }
-  .dates { border-left: 0; border-top: 1px solid var(--line); padding: 28px 0 0; }
+  .introduction-layout { grid-template-columns: minmax(0,1fr); grid-template-areas: 'overview' 'conference'; gap: 30px; padding-block: 38px; }
+  .dates, .conference-summary { border-left: 0; border-top: 1px solid var(--line); padding: 28px 0 0; }
   .dates dl { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 28px; }
   .date-row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 15px; }
   .date-row dd { margin: 0; }
@@ -192,10 +194,6 @@ h3 { font-size: 20px; line-height: 1.4; font-weight: 600; color: var(--ink); }
 .content-layout .dates { grid-area: auto; }
 .prose h2 { margin: 30px 0 15px; font-size: 24px; }
 .prose h3 { font-size: 18px; margin: 24px 0 12px; }
-.speaker-highlights { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 22px 40px; list-style: none; padding: 0; margin: 0 0 22px; }
-.speaker-highlights li { display: flex; flex-direction: column; }
-.speaker-highlights a { display: inline-flex; align-items: center; min-height: 44px; align-self: start; font-size: 18px; font-weight: 600; }
-.speaker-highlights span { font-size: 14px; color: var(--muted); }
 .legacy-links > p { display: none; }
 .legacy-links > p:target { display: block; padding-block: 24px; }
 @media (max-width:1050px) {
@@ -207,5 +205,4 @@ h3 { font-size: 20px; line-height: 1.4; font-weight: 600; color: var(--ink); }
 }
 @media (max-width:500px) {
   .page-content, .content-layout { padding-block: 32px; }
-  .speaker-highlights { grid-template-columns: 1fr; gap: 16px; }
 }
