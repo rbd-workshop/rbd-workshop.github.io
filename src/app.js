@@ -11,7 +11,7 @@ addEventListener('resize', updateAnchorOffset);
 if ('ResizeObserver' in window) new ResizeObserver(updateAnchorOffset).observe(header);
 updateAnchorOffset();
 
-// Fragments are not sent to the server. Forward old homepage bookmarks here;
+// Fragments are not sent to the server. Forward old section bookmarks here;
 // matching visible fallback links support visitors with JavaScript disabled.
 const routeData = document.querySelector('#legacy-routes');
 if (routeData) {

@@ -81,13 +81,17 @@ for (const { page, html, ids } of records.values()) {
 }
 assert.equal(titles.size, pages.length, 'Page titles must be distinct');
 assert.equal(descriptions.size, pages.length, 'Descriptions must be distinct');
-const home = records.get(site.pathname);
-const routes = legacyRoutes(data);
-const embeddedRoutes = JSON.parse(home.html.match(/id="legacy-routes">([\s\S]*?)<\/script>/)[1]);
-assert.deepEqual(embeddedRoutes, routes);
-for (const [oldId, target] of Object.entries(routes)) {
-  assert(home.ids.includes(oldId), `Missing no-JavaScript fallback for #${oldId}`);
-  await checkLocalLink(target, data.siteUrl);
+let legacyCount = 0;
+for (const { page, html, ids } of records.values()) {
+  const routes = legacyRoutes(data, page);
+  legacyCount += Object.keys(routes).length;
+  if (!Object.keys(routes).length) continue;
+  const embeddedRoutes = JSON.parse(html.match(/id="legacy-routes">([\s\S]*?)<\/script>/)[1]);
+  assert.deepEqual(embeddedRoutes, routes);
+  for (const [oldId, target] of Object.entries(routes)) {
+    assert(ids.includes(oldId), `Missing no-JavaScript fallback for ${page.path}#${oldId}`);
+    await checkLocalLink(target, new URL(page.path, data.siteUrl));
+  }
 }
 const css = await readFile(path.join(root, 'docs/assets/style.css'), 'utf8');
 for (const [, url] of css.matchAll(/url\(['"]?([^)'"\s]+)['"]?\)/g)) await checkLocalLink(url, data.siteUrl + 'assets/style.css');
@@ -115,4 +119,4 @@ assert.throws(() => searchAssets({ ...data, lastUpdated: '2026-02-30' }), /real 
 const escaped = searchAssets({ ...data, title: '</script><script>alert(1)</script>' }).structuredData;
 assert(!escaped.includes('</script>'));
 JSON.parse(escaped);
-console.log(`Passed: ${pages.length} pages, ${checked} internal links/assets, ${Object.keys(routes).length} legacy routes, page metadata, visible people, sitemap and safety checks.`);
+console.log(`Passed: ${pages.length} pages, ${checked} internal links/assets, ${legacyCount} legacy routes, page metadata, visible people, sitemap and safety checks.`);

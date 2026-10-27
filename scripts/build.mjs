@@ -40,17 +40,19 @@ export async function build() {
   };
   const dateTemplate = await readFile(path.join(root, 'src/partials/dates.html'), 'utf8');
   const layout = await readFile(path.join(root, 'src/layout.html'), 'utf8');
-  const routes = legacyRoutes(data);
   for (const page of pages) {
     const pageSeo = searchAssets(data, page);
+    const routes = legacyRoutes(data, page);
+    const hasLegacyRoutes = Object.keys(routes).length > 0;
+    const localTarget = target => { const url = new URL(target, pageSeo.pageUrl); return url.pathname + url.hash; };
     const nav = pages;
     const pageVariables = {
       ...variables, datesId: 'dates', datesTitleId: 'dates-title', pageId: page.id, pageUrl: escape(pageSeo.pageUrl), seoTitle: escape(pageSeo.seoTitle),
       description: escape(pageSeo.description), structuredData: pageSeo.structuredData,
       navigation: nav.map(item => `<a href="${escape(siteRoot + item.path)}"${item.id === page.id ? ' aria-current="page"' : ''}>${item.label}</a>`).join(''),
       heroPreload: page.id === 'home' ? `<link rel="preload" as="image" href="${escape(siteRoot)}assets/san-francisco.webp" fetchpriority="high">` : '',
-      legacyLinks: page.id === 'home' ? `<div class="legacy-links container">${Object.entries(routes).map(([id, target]) => `<p id="${escape(id)}">This section has its own page. <a href="${escape(siteRoot + target)}">Continue to ${target.startsWith('cfp') ? 'the call for papers' : target.startsWith('organizers') ? 'the organizers and program committee' : target.startsWith('speakers') ? 'the invited speakers' : 'the program'}</a>.</p>`).join('')}</div>` : '',
-      legacyRoutes: page.id === 'home' ? `<script type="application/json" id="legacy-routes">${JSON.stringify(routes).replace(/</g, '\\u003c')}</script>` : ''
+      legacyLinks: hasLegacyRoutes ? `<div class="legacy-links container">${Object.entries(routes).map(([id, target]) => `<p id="${escape(id)}">This section has its own page. <a href="${escape(localTarget(target))}">Continue to ${target.endsWith('#dates') ? 'the important dates on Home' : target.startsWith('cfp') ? 'the call for papers' : target.startsWith('organizers') ? 'the organizers and program committee' : target.startsWith('speakers') ? 'the invited speakers' : 'the program'}</a>.</p>`).join('')}</div>` : '',
+      legacyRoutes: hasLegacyRoutes ? `<script type="application/json" id="legacy-routes">${JSON.stringify(routes).replace(/</g, '\\u003c')}</script>` : ''
     };
     pageVariables.dateSidebar = interpolate(dateTemplate, pageVariables);
     pageVariables.content = interpolate(await readFile(path.join(root, 'src/pages', page.template), 'utf8'), pageVariables);

@@ -10,10 +10,11 @@ export const pages = [
   { id: 'organizers', path: 'organizers/', label: 'Organizers', template: 'organizers.html',
     description: 'Meet the organizers and program committee of Retrieval Beyond Documents, the NAACL 2027 workshop on capability retrieval for language agents.' }
 ];
-export function legacyRoutes(data) {
+export function legacyRoutes(data, page = pages[0]) {
+  if (page.id === 'cfp') return { dates: '../#dates', 'dates-title': '../#dates' };
+  if (page.id !== 'home') return {};
   return Object.fromEntries([
     ['cfp', 'cfp/'], ['cfp-title', 'cfp/'],
-    ['dates', 'cfp/#dates'], ['dates-title', 'cfp/#dates'],
     ['guidelines', 'cfp/#guidelines'], ['submission-guidelines', 'cfp/#submission-guidelines'],
     ['speakers', 'speakers/'], ['speakers-title', 'speakers/'],
     ['program', 'program/'], ['program-title', 'program/'],
