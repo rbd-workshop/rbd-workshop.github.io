@@ -1,0 +1,802 @@
+{
+  "checked_on": "2026-10-26",
+  "scope": "Five-page migration",
+  "responsive": [
+    {
+      "columns": [
+        {
+          "id": "about",
+          "width": 765
+        },
+        {
+          "id": "dates",
+          "width": 290
+        }
+      ],
+      "current": [
+        "Home"
+      ],
+      "h1": 1,
+      "navTargets": true,
+      "overflow": false,
+      "path": "/",
+      "visibleImageFailures": [],
+      "width": 1440
+    },
+    {
+      "columns": [
+        {
+          "id": "cfp",
+          "width": 765
+        },
+        {
+          "id": "dates",
+          "width": 290
+        }
+      ],
+      "current": [
+        "Call for Papers"
+      ],
+      "h1": 1,
+      "navTargets": true,
+      "overflow": false,
+      "path": "/cfp/",
+      "visibleImageFailures": [],
+      "width": 1440
+    },
+    {
+      "columns": [],
+      "current": [
+        "Speakers"
+      ],
+      "h1": 1,
+      "navTargets": true,
+      "overflow": false,
+      "path": "/speakers/",
+      "visibleImageFailures": [],
+      "width": 1440
+    },
+    {
+      "columns": [],
+      "current": [
+        "Program"
+      ],
+      "h1": 1,
+      "navTargets": true,
+      "overflow": false,
+      "path": "/program/",
+      "visibleImageFailures": [],
+      "width": 1440
+    },
+    {
+      "columns": [],
+      "current": [
+        "Organizers"
+      ],
+      "h1": 1,
+      "navTargets": true,
+      "overflow": false,
+      "path": "/organizers/",
+      "visibleImageFailures": [],
+      "width": 1440
+    },
+    {
+      "columns": [
+        {
+          "id": "about",
+          "width": 712
+        },
+        {
+          "id": "dates",
+          "width": 712
+        }
+      ],
+      "current": [
+        "Home"
+      ],
+      "h1": 1,
+      "navTargets": true,
+      "overflow": false,
+      "path": "/",
+      "visibleImageFailures": [],
+      "width": 768
+    },
+    {
+      "columns": [
+        {
+          "id": "cfp",
+          "width": 712
+        },
+        {
+          "id": "dates",
+          "width": 712
+        }
+      ],
+      "current": [
+        "Call for Papers"
+      ],
+      "h1": 1,
+      "navTargets": true,
+      "overflow": false,
+      "path": "/cfp/",
+      "visibleImageFailures": [],
+      "width": 768
+    },
+    {
+      "columns": [],
+      "current": [
+        "Speakers"
+      ],
+      "h1": 1,
+      "navTargets": true,
+      "overflow": false,
+      "path": "/speakers/",
+      "visibleImageFailures": [],
+      "width": 768
+    },
+    {
+      "columns": [],
+      "current": [
+        "Program"
+      ],
+      "h1": 1,
+      "navTargets": true,
+      "overflow": false,
+      "path": "/program/",
+      "visibleImageFailures": [],
+      "width": 768
+    },
+    {
+      "columns": [],
+      "current": [
+        "Organizers"
+      ],
+      "h1": 1,
+      "navTargets": true,
+      "overflow": false,
+      "path": "/organizers/",
+      "visibleImageFailures": [],
+      "width": 768
+    },
+    {
+      "columns": [
+        {
+          "id": "about",
+          "width": 284
+        },
+        {
+          "id": "dates",
+          "width": 284
+        }
+      ],
+      "current": [
+        "Home"
+      ],
+      "h1": 1,
+      "navTargets": true,
+      "overflow": false,
+      "path": "/",
+      "visibleImageFailures": [],
+      "width": 320
+    },
+    {
+      "columns": [
+        {
+          "id": "cfp",
+          "width": 284
+        },
+        {
+          "id": "dates",
+          "width": 284
+        }
+      ],
+      "current": [
+        "Call for Papers"
+      ],
+      "h1": 1,
+      "navTargets": true,
+      "overflow": false,
+      "path": "/cfp/",
+      "visibleImageFailures": [],
+      "width": 320
+    },
+    {
+      "columns": [],
+      "current": [
+        "Speakers"
+      ],
+      "h1": 1,
+      "navTargets": true,
+      "overflow": false,
+      "path": "/speakers/",
+      "visibleImageFailures": [],
+      "width": 320
+    },
+    {
+      "columns": [],
+      "current": [
+        "Program"
+      ],
+      "h1": 1,
+      "navTargets": true,
+      "overflow": false,
+      "path": "/program/",
+      "visibleImageFailures": [],
+      "width": 320
+    },
+    {
+      "columns": [],
+      "current": [
+        "Organizers"
+      ],
+      "h1": 1,
+      "navTargets": true,
+      "overflow": false,
+      "path": "/organizers/",
+      "visibleImageFailures": [],
+      "width": 320
+    },
+    {
+      "columns": [
+        {
+          "id": "about",
+          "width": 354
+        },
+        {
+          "id": "dates",
+          "width": 354
+        }
+      ],
+      "current": [
+        "Home"
+      ],
+      "h1": 1,
+      "navTargets": true,
+      "overflow": false,
+      "path": "/",
+      "visibleImageFailures": [],
+      "width": 390
+    },
+    {
+      "columns": [
+        {
+          "id": "cfp",
+          "width": 354
+        },
+        {
+          "id": "dates",
+          "width": 354
+        }
+      ],
+      "current": [
+        "Call for Papers"
+      ],
+      "h1": 1,
+      "navTargets": true,
+      "overflow": false,
+      "path": "/cfp/",
+      "visibleImageFailures": [],
+      "width": 390
+    },
+    {
+      "columns": [],
+      "current": [
+        "Speakers"
+      ],
+      "h1": 1,
+      "navTargets": true,
+      "overflow": false,
+      "path": "/speakers/",
+      "visibleImageFailures": [],
+      "width": 390
+    },
+    {
+      "columns": [],
+      "current": [
+        "Program"
+      ],
+      "h1": 1,
+      "navTargets": true,
+      "overflow": false,
+      "path": "/program/",
+      "visibleImageFailures": [],
+      "width": 390
+    },
+    {
+      "columns": [],
+      "current": [
+        "Organizers"
+      ],
+      "h1": 1,
+      "navTargets": true,
+      "overflow": false,
+      "path": "/organizers/",
+      "visibleImageFailures": [],
+      "width": 390
+    },
+    {
+      "columns": [
+        {
+          "id": "about",
+          "width": 666
+        },
+        {
+          "id": "dates",
+          "width": 290
+        }
+      ],
+      "current": [
+        "Home"
+      ],
+      "h1": 1,
+      "navTargets": true,
+      "overflow": false,
+      "path": "/",
+      "visibleImageFailures": [],
+      "width": 1101
+    },
+    {
+      "columns": [
+        {
+          "id": "cfp",
+          "width": 666
+        },
+        {
+          "id": "dates",
+          "width": 290
+        }
+      ],
+      "current": [
+        "Call for Papers"
+      ],
+      "h1": 1,
+      "navTargets": true,
+      "overflow": false,
+      "path": "/cfp/",
+      "visibleImageFailures": [],
+      "width": 1101
+    },
+    {
+      "columns": [],
+      "current": [
+        "Speakers"
+      ],
+      "h1": 1,
+      "navTargets": true,
+      "overflow": false,
+      "path": "/speakers/",
+      "visibleImageFailures": [],
+      "width": 1101
+    },
+    {
+      "columns": [],
+      "current": [
+        "Program"
+      ],
+      "h1": 1,
+      "navTargets": true,
+      "overflow": false,
+      "path": "/program/",
+      "visibleImageFailures": [],
+      "width": 1101
+    },
+    {
+      "columns": [],
+      "current": [
+        "Organizers"
+      ],
+      "h1": 1,
+      "navTargets": true,
+      "overflow": false,
+      "path": "/organizers/",
+      "visibleImageFailures": [],
+      "width": 1101
+    }
+  ],
+  "legacyExamples": [
+    {
+      "hash": "",
+      "heading": "Call for papers",
+      "top": null,
+      "url": "http://127.0.0.1:4173/cfp/"
+    },
+    {
+      "hash": "#guidelines",
+      "heading": "Call for papers",
+      "top": 20.09375,
+      "url": "http://127.0.0.1:4173/cfp/#guidelines"
+    },
+    {
+      "hash": "",
+      "heading": "Invited speakers",
+      "top": null,
+      "url": "http://127.0.0.1:4173/speakers/"
+    },
+    {
+      "hash": "#graham-neubig",
+      "heading": "Invited speakers",
+      "top": 20.1484375,
+      "url": "http://127.0.0.1:4173/speakers/#graham-neubig"
+    },
+    {
+      "hash": "",
+      "heading": "Program",
+      "top": null,
+      "url": "http://127.0.0.1:4173/program/"
+    },
+    {
+      "hash": "",
+      "heading": "Organizers",
+      "top": null,
+      "url": "http://127.0.0.1:4173/organizers/"
+    },
+    {
+      "hash": "#hitesh-patel",
+      "heading": "Organizers",
+      "top": 19.8984375,
+      "url": "http://127.0.0.1:4173/organizers/#hitesh-patel"
+    },
+    {
+      "hash": "#committee",
+      "heading": "Organizers",
+      "top": 19.8984375,
+      "url": "http://127.0.0.1:4173/organizers/#committee"
+    }
+  ],
+  "keyboard": [
+    {
+      "outline": "solid",
+      "stage": "first tab",
+      "text": "Skip to content",
+      "top": 10,
+      "width": 390
+    },
+    {
+      "focus": "main",
+      "stage": "skip activated",
+      "width": 390
+    },
+    {
+      "headerBottom": 0,
+      "stage": "cross-page dates",
+      "top": 19.890625,
+      "url": "http://127.0.0.1:4173/#dates",
+      "width": 390
+    },
+    {
+      "outline": "solid",
+      "stage": "first tab",
+      "text": "Skip to content",
+      "top": 10,
+      "width": 1440
+    },
+    {
+      "focus": "main",
+      "stage": "skip activated",
+      "width": 1440
+    },
+    {
+      "headerBottom": 73,
+      "stage": "cross-page dates",
+      "top": 101.0859375,
+      "url": "http://127.0.0.1:4173/#dates",
+      "width": 1440
+    }
+  ],
+  "scriptRemovedFallback": {
+    "display": "block",
+    "href": "/cfp/#guidelines",
+    "scriptRemoved": true,
+    "text": "This section has its own page. Continue to the call for papers.",
+    "url": "http://127.0.0.1:4174/?profile=nojs#guidelines"
+  },
+  "accessibility": [
+    {
+      "route": "",
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.3"
+      },
+      "profile": "baseline",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".conference-label"
+            ],
+            [
+              "#hero-title"
+            ],
+            [
+              ".subtitle"
+            ],
+            [
+              ".event-location"
+            ],
+            [
+              "span[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ],
+      "passedRules": 41,
+      "overflow": false,
+      "overflowingElements": [],
+      "errors": []
+    },
+    {
+      "route": "cfp/",
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.3"
+      },
+      "profile": "baseline",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 40,
+      "overflow": false,
+      "overflowingElements": [],
+      "errors": []
+    },
+    {
+      "route": "speakers/",
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.3"
+      },
+      "profile": "baseline",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 35,
+      "overflow": false,
+      "overflowingElements": [],
+      "errors": []
+    },
+    {
+      "route": "program/",
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.3"
+      },
+      "profile": "baseline",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 40,
+      "overflow": false,
+      "overflowingElements": [],
+      "errors": []
+    },
+    {
+      "route": "organizers/",
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.3"
+      },
+      "profile": "baseline",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 37,
+      "overflow": false,
+      "overflowingElements": [],
+      "errors": []
+    },
+    {
+      "route": "",
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.3"
+      },
+      "profile": "baseline",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".conference-label"
+            ],
+            [
+              "#hero-title"
+            ],
+            [
+              ".subtitle"
+            ],
+            [
+              ".event-location"
+            ],
+            [
+              "span[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ],
+      "passedRules": 41,
+      "overflow": false,
+      "overflowingElements": [],
+      "errors": []
+    },
+    {
+      "route": "cfp/",
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.3"
+      },
+      "profile": "baseline",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 40,
+      "overflow": false,
+      "overflowingElements": [],
+      "errors": []
+    },
+    {
+      "route": "speakers/",
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.3"
+      },
+      "profile": "baseline",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 35,
+      "overflow": false,
+      "overflowingElements": [],
+      "errors": []
+    },
+    {
+      "route": "program/",
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.3"
+      },
+      "profile": "baseline",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 40,
+      "overflow": false,
+      "overflowingElements": [],
+      "errors": []
+    },
+    {
+      "route": "organizers/",
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.3"
+      },
+      "profile": "baseline",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 37,
+      "overflow": false,
+      "overflowingElements": [],
+      "errors": []
+    },
+    {
+      "route": "",
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.3"
+      },
+      "profile": "text200",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".conference-label"
+            ],
+            [
+              "#hero-title"
+            ],
+            [
+              ".subtitle"
+            ],
+            [
+              ".event-location"
+            ],
+            [
+              "span[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ],
+      "passedRules": 41,
+      "overflow": false,
+      "overflowingElements": [],
+      "errors": []
+    },
+    {
+      "route": "cfp/",
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.3"
+      },
+      "profile": "text200",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 40,
+      "overflow": false,
+      "overflowingElements": [],
+      "errors": []
+    },
+    {
+      "route": "organizers/",
+      "engine": {
+        "name": "axe-core",
+        "version": "4.10.3"
+      },
+      "profile": "text200",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 37,
+      "overflow": false,
+      "overflowingElements": [],
+      "errors": []
+    }
+  ],
+  "staticChecks": {
+    "pages": 5,
+    "internalLinksAndAssets": 159,
+    "legacyRoutes": 24
+  },
+  "limitations": [
+    "Browser testing used the available in-app browser, not physical devices or a screen-reader session.",
+    "The earlier PageSpeed scores apply to the previous single-page release; no new Lighthouse score is claimed.",
+    "The script-removed fixture tests site behavior without app.js; the accessibility audit script still runs."
+  ]
+}

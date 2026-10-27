@@ -2,7 +2,29 @@
 
 The NAACL 2027 workshop on **Capability Retrieval for Language Agents**.
 
-A static conference website using HTML, CSS, vanilla JavaScript, and a dependency-free Node.js generator. The layout uses a white background, Redwood-inspired red and dark neutral accents, visible top navigation, a Golden Gate Bridge banner, and photographs with organizer biographies and substantive speaker profiles covering research areas, leadership, and recognition. On desktop, the overview and call for papers flow in one column alongside important dates, so sidebar height cannot create a blank gap between sections. At tablet and phone widths, the sections stack.
+A static conference website using HTML, CSS, vanilla JavaScript, and a dependency-free Node.js generator. It has five pages with shared navigation, footer, styles, and event data. The white background, red and charcoal identity, Golden Gate Bridge homepage banner, official NAACL logo, and reviewed biographies are preserved.
+
+## Page structure
+
+| Page | Editable content | Published route |
+| --- | --- | --- |
+| Home | `src/pages/home.html` | `/` |
+| Call for Papers | `src/pages/cfp.html` | `/cfp/` |
+| Speakers | `src/pages/speakers.html` and speaker data | `/speakers/` |
+| Program | `src/pages/program.html` | `/program/` |
+| Organizers and program committee | `src/pages/organizers.html` and people data | `/organizers/` |
+
+`src/layout.html` supplies the shared header, navigation, contact section, and footer. `src/partials/dates.html` displays the same date data on Home and Call for Papers. Edit dates, topics, names, affiliations, and biographies once in `content/workshop.json`. `scripts/pages.mjs` defines routes, navigation labels, and page descriptions.
+
+The homepage keeps the overview, dates, and short highlights. Full biographies and author instructions have dedicated pages. Guidelines remain inside the CFP. All five pages have distinct titles, descriptions, self-referencing canonical URLs, and page-specific structured data. The sitemap lists the five canonical URLs. No framework, client-side router, or external script is required to read the content or navigate between pages.
+
+Old homepage bookmarks such as `/#cfp`, `/#guidelines`, `/#speakers`, `/#organizers`, `/#committee`, and individual person anchors forward to the appropriate page. Because URL fragments never reach GitHub Pages, forwarding uses the small local site script. Without that script, the targeted section displays a direct link to its new location. Existing overview, dates, contact, and home anchors remain on the homepage.
+
+### Multipage verification
+
+The October 26, 2026 [migration review](research/multipage-review.json) covers all five pages at 320, 390, 768, 1101, and 1440 CSS pixels: no horizontal overflow, one H1 and one active navigation item per page, and navigation targets at least 44 × 44px. Ten baseline axe-core runs and three enlarged-text runs returned zero automated violations. Manual browser checks verified keyboard skip links, visible focus, dates across pages, migrated profile links, and the script-removed fallback. Build checks validate 159 internal links/assets and all 24 legacy routes, as well as page metadata, the sitemap, and preserved biographies.
+
+The earlier single-page design and performance reports below are retained as historical baselines. Their Lighthouse scores and file sizes do not certify this later release. Physical-device and screen-reader testing remain outside the completed checks.
 
 ## Local preview
 
@@ -27,15 +49,15 @@ The scripts also work with `node scripts/serve.mjs`, `node scripts/build.mjs`, a
 
 The site is live at **https://rbd-workshop.github.io/**. The [launch readiness review](research/launch-readiness.csv) records the remaining content and search tasks. On October 26, 2026, the [public deployment review](research/public-deployment-review.json) verified 30 public responses against the local build, including the homepage, assets, crawler files, and branded 404. The homepage returns HTTP 200 without a noindex header. The review applied the installed `seo-audit`, `schema`, and `ai-seo` skills alongside Google Search Central guidance; UI work separately used `frontend-design` and `web-design-guidelines`. These provide review methods, not a guarantee of search rankings or a certification of design quality.
 
-The October 26, 2026 [SEO audit](research/seo-audit.csv) records implemented fixes and the remaining launch work. The site now generates a canonical URL, descriptive search and social metadata, a 1200 × 630 sharing image, `robots.txt`, a one-page XML sitemap, a custom 404 page, and JSON-LD for the website, workshop organization, page, and the twelve speakers and organizers. These describe the same content visitors can read. The Schema.org validator reported **0 errors and 0 warnings** for the generated graph. This validates the vocabulary; it does not establish Google rich-result eligibility or guarantee rankings.
+The October 26, 2026 [SEO audit](research/seo-audit.csv) records implemented fixes and the remaining launch work. The site now generates a canonical URL, descriptive search and social metadata, a 1200 × 630 sharing image, `robots.txt`, an XML sitemap, a custom 404 page, and JSON-LD for the website, workshop organization, page, and people visible on the relevant biography page. These describe the same content visitors can read. The Schema.org validator reported **0 errors and 0 warnings** for the generated graph. This validates the vocabulary; it does not establish Google rich-result eligibility or guarantee rankings.
 
-The full page is delivered as static HTML. Its text and navigation do not depend on JavaScript. Existing local WebP portraits are lazy loaded; the bridge banner is preloaded. The generated HTML is about 41 KB, CSS 11 KB, JavaScript 1.8 KB, and the banner 258 KB before transfer compression. These are file sizes, not measured Core Web Vitals. No analytics or third-party JavaScript was added.
+All pages are delivered as static HTML. Its text and navigation do not depend on JavaScript. Existing local WebP portraits are lazy loaded; the bridge banner is preloaded. The original single-page release measured about 41 KB of HTML, 11 KB of CSS, 1.8 KB of JavaScript, and a 258 KB banner before transfer compression. These are file sizes, not measured Core Web Vitals. No analytics or third-party JavaScript was added.
 
 The natural search focus is the workshop's full name, **RBD at NAACL 2027**, and **capability retrieval for language agents**. The overview and topics also cover tools, skills, workflows, memory, models, and agents. These are descriptive query themes, not claims about measured search demand. Preserve readable academic prose and avoid repeating keywords or creating thin pages for each phrase.
 
 ### Public performance and analytics report
 
-The October 26, 2026 Google PageSpeed Insights reports scored **99 performance on mobile** and **100 on desktop**, with **100 accessibility, best practices, and SEO on both**. Mobile LCP was 2.1 seconds; desktop LCP was 0.5 seconds. Both lab runs reported zero total blocking time and zero layout shift. [Mobile report](https://pagespeed.web.dev/analysis/https-rbd-workshop-github-io/6kg52giufz?form_factor=mobile) · [Desktop report](https://pagespeed.web.dev/analysis/https-rbd-workshop-github-io/2kf0t0izjs?form_factor=desktop) · [Saved measurements](research/search-performance-report.json) · [Prioritized findings](research/search-performance-findings.csv).
+The October 26, 2026 Google PageSpeed Insights reports for the single-page release scored **99 performance on mobile** and **100 on desktop**, with **100 accessibility, best practices, and SEO on both**. Mobile LCP was 2.1 seconds; desktop LCP was 0.5 seconds. Both lab runs reported zero total blocking time and zero layout shift. [Mobile report](https://pagespeed.web.dev/analysis/https-rbd-workshop-github-io/6kg52giufz?form_factor=mobile) · [Desktop report](https://pagespeed.web.dev/analysis/https-rbd-workshop-github-io/2kf0t0izjs?form_factor=desktop) · [Saved measurements](research/search-performance-report.json) · [Prioritized findings](research/search-performance-findings.csv).
 
 These are lab results, not traffic analytics or a ranking guarantee. PageSpeed had no real-user data, so field Core Web Vitals and INP remain unassessed. No visitor analytics script is installed; visitor counts, sessions, referrals, search impressions, and clicks are unknown. The user deferred account reports, and no tracking or account configuration was added. Main next steps are search-property verification, analytics setup when desired, and confirmed submission information. Image delivery and cache lifetime are optional performance opportunities rather than failed SEO checks.
 
@@ -62,9 +84,12 @@ Further references: [Google sitemap guidance](https://developers.google.com/sear
 ## Editing
 
 - `content/workshop.json`: event information, dates, contact address, submission URL, research themes, speakers, organizers, and committee.
-- `src/index.html`: page structure and workshop text.
+- `src/pages/`: independently editable page content.
+- `src/layout.html`: shared page structure and navigation.
+- `src/partials/dates.html`: shared date sidebar.
+- `scripts/pages.mjs`: route definitions and page search descriptions.
 - `src/style.css`: styling and responsive layouts.
-- `src/app.js`: current-section navigation highlighting. Navigation and content also work without JavaScript.
+- `src/app.js`: legacy bookmark forwarding and header anchor offsets. Active page highlighting is generated in HTML. Navigation and content also work without JavaScript.
 - `src/assets/`: original RBD identity and locally hosted photographs.
 - `docs/`: generated static website, tracked for GitHub Pages. Its `assets/` directory is regenerated at build time.
 
@@ -80,7 +105,7 @@ Speaker and organizer portraits and the San Francisco banner are hosted locally 
 
 The official NAACL 2027 San Francisco logo is displayed in the parent-conference details and the social sharing card, using the original asset from the conference website. Its proportions and colors are preserved; the workshop's own RBD wordmark remains the primary identity.
 
-## UI review
+## UI review of the single-page baseline
 
 The October 26, 2026 UI pass applied [Anthropic's Frontend Design skill](https://github.com/anthropics/claude-code/tree/main/plugins/frontend-design/skills/frontend-design) and [Vercel's Web Design Guidelines skill](https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines), with the current [interface rules](https://github.com/vercel-labs/web-interface-guidelines/blob/main/command.md). Both skills were installed in the user's local Codex skill library. Findings and resolutions are recorded in [research/ui-review.csv](research/ui-review.csv).
 
@@ -137,7 +162,7 @@ Additional references reviewed for the current design include [DialDoc at ACL 20
 
 The user requested a palette inspired by [Oracle Redwood](https://static.oracle.com/cdn/apex/22.1.0/themes/theme_42/22.1/docs/Redwood.html). RBD’s artwork is original and uses no Oracle wordmark.
 
-Submission guidelines are a subsection of Call for Papers, with paper preparation, submission and review, and publication options underneath. The six top navigation links cover Overview, Call for Papers, Dates, Speakers, Program, and Organizers. Existing `#guidelines` and `#submission-guidelines` links still work. The footer reads “© Retrieval Beyond Documents (RBD) Workshop @ NAACL 2027”, displaying only the workshop year to avoid confusion with the website's creation year.
+Submission guidelines are a subsection of Call for Papers, with paper preparation, submission and review, and publication options underneath. The current six navigation links cover Home, Call for Papers, Dates, Speakers, Program, and Organizers; Dates links to the homepage date section. Existing `#guidelines` and `#submission-guidelines` links still work. The footer reads “© Retrieval Beyond Documents (RBD) Workshop @ NAACL 2027”, displaying only the workshop year to avoid confusion with the website's creation year.
 
 A [30-workshop review](research/workshop-guidelines-review.csv), conducted October 26, 2026, records the source URL and placement observed for each site. The sample covers ACL 2026, EMNLP 2026, and NAACL 2025: 22 place author instructions in their CFP, two on the main workshop page, and three expose separate author navigation (BEA and ClimateNLP as pages; WaC-13 as a same-page section). Three are inconclusive because the fetched current page did not expose author instructions or its linked CFP could not be fetched. These are excluded from placement conclusions. This is a convenience sample, not an exhaustive or random survey. It supports keeping RBD's instructions inside the CFP while recognizing that separate author pages are also used.
 

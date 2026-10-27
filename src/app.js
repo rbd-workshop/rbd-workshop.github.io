@@ -1,36 +1,29 @@
-// Navigation stays visible at every screen size, including without JavaScript.
-const navLinks = [...document.querySelectorAll('#main-nav a')];
-const sections = navLinks.map(link => document.querySelector(link.hash)).filter(Boolean);
+// Every page and navigation link works without JavaScript.
 const header = document.querySelector('.site-header');
-let scheduled = false;
-
-function updateActiveSection() {
+function updateAnchorOffset() {
   const sticky = getComputedStyle(header).position === 'sticky';
-  const headerHeight = sticky ? header.offsetHeight : 0;
-  const marker = headerHeight + 90;
-  const candidates = sections
-    .map(section => ({ id: section.id, top: section.getBoundingClientRect().top }))
-    .filter(section => section.top <= marker)
-    .sort((a, b) => b.top - a.top);
-  let active = candidates[0]?.id || 'about';
-  if (document.querySelector('#contact').getBoundingClientRect().top <= marker) active = null;
-  // The dates sidebar shares a row with the overview; an explicit anchor takes precedence.
-  if (location.hash === '#dates' && Math.abs(document.querySelector('#dates').getBoundingClientRect().top - marker) < 130) active = 'dates';
-  document.documentElement.style.setProperty('--anchor-offset', `${sticky ? headerHeight + 28 : 20}px`);
-  navLinks.forEach(link => {
-    if (link.hash === `#${active}`) link.setAttribute('aria-current', 'location');
-    else link.removeAttribute('aria-current');
-  });
-  scheduled = false;
+  const offset = `${sticky ? header.offsetHeight + 28 : 20}px`;
+  if (document.documentElement.style.getPropertyValue('--anchor-offset') !== offset) {
+    document.documentElement.style.setProperty('--anchor-offset', offset);
+  }
 }
-function scheduleUpdate() {
-  if (scheduled) return;
-  scheduled = true;
-  requestAnimationFrame(updateActiveSection);
+addEventListener('resize', updateAnchorOffset);
+if ('ResizeObserver' in window) new ResizeObserver(updateAnchorOffset).observe(header);
+updateAnchorOffset();
+
+// Fragments are not sent to the server. Forward old homepage bookmarks here;
+// matching visible fallback links support visitors with JavaScript disabled.
+const routeData = document.querySelector('#legacy-routes');
+if (routeData) {
+  const routes = JSON.parse(routeData.textContent);
+  function forwardLegacyLink() {
+    const fragment = location.hash.slice(1);
+    if (!Object.hasOwn(routes, fragment)) return;
+    const route = routes[fragment];
+    const destination = new URL(route, new URL('.', location.href));
+    destination.search = location.search;
+    location.replace(destination.href);
+  }
+  addEventListener('hashchange', forwardLegacyLink);
+  forwardLegacyLink();
 }
-addEventListener('scroll', scheduleUpdate, { passive: true });
-addEventListener('resize', scheduleUpdate);
-addEventListener('hashchange', scheduleUpdate);
-// Text enlargement can change the header height without resizing the viewport.
-if ('ResizeObserver' in window) new ResizeObserver(scheduleUpdate).observe(header);
-updateActiveSection();
