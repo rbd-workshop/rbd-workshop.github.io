@@ -54,8 +54,9 @@ for (const { page, html, ids } of records.values()) {
   titles.add(html.match(/<title>(.*?)<\/title>/)[1]);
   descriptions.add(html.match(/name="description" content="([^"]+)"/)[1]);
   const current = [...html.matchAll(/<a href="([^"]+)" aria-current="page">/g)];
-  assert.equal(current.length, 1, 'Exactly one active page in navigation');
-  assert.equal(current[0][1], site.pathname + page.path);
+  assert.equal(current.length, page.navigation === false ? 0 : 1, 'Only pages in the main navigation should be marked current');
+  if (current.length) assert.equal(current[0][1], site.pathname + page.path);
+  assert.equal((html.match(/id="main-nav"[^>]*>([\s\S]*?)<\/nav>/)?.[1].match(/<a\b/g) || []).length, 5, 'Keep five main navigation links');
   const blocks = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)];
   assert.equal(blocks.length, 1);
   const graph = JSON.parse(blocks[0][1]);

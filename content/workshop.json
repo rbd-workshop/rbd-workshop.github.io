@@ -11,6 +11,7 @@
   "format": "Full-day workshop planned",
   "contactEmail": "hitesh.laxmichand.patel@oracle.com",
   "submissionUrl": null,
+  "reviewerSignupUrl": "https://docs.google.com/forms/d/e/1FAIpQLScOR7S2jhamV6fGbukGMzYAawvA8RXAGODGo10xcfhrW-B6iQ/viewform",
   "submissionStatus": "Submission portal forthcoming",
   "deadlineNote": "All deadlines are at 11:59 p.m. Anywhere on Earth (AoE, UTC-12).",
   "description": "RBD at NAACL 2027 explores capability retrieval for language agents: tools, skills, workflows, memory, models, and agents. Topics, submissions, and speakers.",

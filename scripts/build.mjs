@@ -37,6 +37,9 @@ export async function build() {
     organizers: data.organizers.map(p => person(p, siteRoot)).join('\n'),
     committee: data.committee.map(([name, affiliation]) => `<li><span>${escape(name)}</span><span>${escape(affiliation)}</span></li>`).join('\n'),
     dates: data.dates.map(d => `<div class="date-row"><dt>${escape(d.label)}</dt><dd>${escape(d.value)}</dd></div>`).join('\n'),
+    reviewerSignup: data.reviewerSignupUrl
+      ? `<p><a href="${safeUrl(data.reviewerSignupUrl)}" target="_blank" rel="noopener noreferrer">Open the Program Committee Signup form</a> (Google Forms).</p>`
+      : `<p>The signup form is being prepared. In the meantime, <a href="mailto:${escape(data.contactEmail)}?subject=RBD%202027%20reviewer%20interest">email the organizers</a> to express your interest.</p>`,
     submission: data.submissionUrl
       ? `<p><a href="${safeUrl(data.submissionUrl)}" target="_blank" rel="noopener noreferrer">Submit your paper</a></p>`
       : '<p>The submission portal will be announced here.</p>'
@@ -48,7 +51,7 @@ export async function build() {
     const routes = legacyRoutes(data, page);
     const hasLegacyRoutes = Object.keys(routes).length > 0;
     const localTarget = target => { const url = new URL(target, pageSeo.pageUrl); return url.pathname + url.hash; };
-    const nav = pages;
+    const nav = pages.filter(item => item.navigation !== false);
     const pageVariables = {
       ...variables, datesId: 'dates', datesTitleId: 'dates-title', pageId: page.id, pageUrl: escape(pageSeo.pageUrl), seoTitle: escape(pageSeo.seoTitle),
       description: escape(pageSeo.description), structuredData: pageSeo.structuredData,
@@ -62,7 +65,7 @@ export async function build() {
     pageVariables.content = interpolate(await readFile(path.join(root, 'src/pages', page.template), 'utf8'), pageVariables);
     const output = path.join(root, 'docs', page.path);
     await mkdir(output, { recursive: true });
-    await writeFile(path.join(output, 'index.html'), interpolate(layout, pageVariables));
+    await writeFile(path.join(output, 'index.html'), interpolate(layout, pageVariables).replace(/[ \t]+$/gm, ''));
   }
   // assets/ is generated exclusively from src/assets plus the stylesheet and script.
   await rm(path.join(root, 'docs/assets'), { recursive: true, force: true });

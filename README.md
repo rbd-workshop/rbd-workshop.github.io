@@ -2,7 +2,7 @@
 
 The NAACL 2027 workshop on **Capability Retrieval for Language Agents**.
 
-A static conference website using HTML, CSS, vanilla JavaScript, and a dependency-free Node.js generator. It has five pages with shared navigation, footer, styles, and event data. The white background, red and charcoal identity, Golden Gate Bridge homepage banner, official NAACL logo, and reviewed biographies are preserved.
+A static conference website using HTML, CSS, vanilla JavaScript, and a dependency-free Node.js generator. It has five primary pages and an auxiliary Program Committee Signup page, with shared navigation, footer, styles, and event data. The white background, red and charcoal identity, Golden Gate Bridge homepage banner, official NAACL logo, and reviewed biographies are preserved.
 
 ## Page structure
 
@@ -13,10 +13,13 @@ A static conference website using HTML, CSS, vanilla JavaScript, and a dependenc
 | Speakers | `src/pages/speakers.html` and speaker data | `/speakers/` |
 | Program | `src/pages/program.html` | `/program/` |
 | Organizers and program committee | `src/pages/organizers.html` and people data | `/organizers/` |
+| Program Committee Signup | `src/pages/reviewers.html` | `/reviewers/` |
 
 `src/layout.html` supplies the shared header, navigation, and footer. The full Contact section lives on Home; other pages link to it from the footer. `src/partials/dates.html` displays the Important dates and NAACL sidebar on Home. Edit dates, topics, names, affiliations, and biographies once in `content/workshop.json`. `scripts/pages.mjs` defines routes, navigation labels, and page descriptions.
 
-The homepage contains the workshop overview, important dates, and parent-conference information. It does not repeat CFP, speaker, or program sections. Full biographies and author instructions have dedicated pages. Guidelines remain inside the CFP. All five pages have distinct titles, descriptions, self-referencing canonical URLs, and page-specific structured data. The sitemap lists the five canonical URLs. No framework, client-side router, or external script is required to read the content or navigate between pages.
+The homepage contains the workshop overview, important dates, and parent-conference information. It does not repeat CFP, speaker, or program sections. Full biographies and author instructions have dedicated pages. Guidelines remain inside the CFP. The Program Committee Signup page at `/reviewers/` is linked from Home and the CFP, while the main navigation retains five items. All six pages have distinct titles, descriptions, self-referencing canonical URLs, and page-specific structured data. The sitemap lists the six canonical URLs. No framework, client-side router, or external script is required to read the content or navigate between pages.
+
+The program committee form is owned by the workshop Google account. Set `reviewerSignupUrl` in `content/workshop.json` to the published responder link after form approval; while it is null, the signup page offers the organizers' email. The form asks for first and last names, email, affiliation, current role, expertise, a required OpenReview ID, optional other profile, and preferred reviewing load. Response editing is enabled, sign-in is not required by the form settings, and response summaries remain private.
 
 Old homepage bookmarks such as `/#cfp`, `/#guidelines`, `/#speakers`, `/#organizers`, `/#committee`, and individual person anchors forward to the appropriate page. Because URL fragments never reach GitHub Pages, forwarding uses the small local site script. Without that script, the targeted section displays a direct link to its new location. Existing overview, contact, and home anchors remain on the homepage. The dates section lives at `/#dates`. Earlier `/cfp/#dates` and `/cfp/#dates-title` bookmarks forward to Home; the CFP contains only a short link to dates.
 

@@ -25,6 +25,7 @@ All deadlines are at 11:59 p.m. Anywhere on Earth (AoE, UTC-12).
 - [Invited speakers](https://rbd-workshop.github.io/speakers/)
 - [Planned program](https://rbd-workshop.github.io/program/)
 - [Organizers and program committee](https://rbd-workshop.github.io/organizers/)
+- [Program Committee Signup](https://rbd-workshop.github.io/reviewers/)
 
 ## Contact
 

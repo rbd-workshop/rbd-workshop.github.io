@@ -8,7 +8,9 @@ export const pages = [
   { id: 'program', path: 'program/', label: 'Program', template: 'program.html',
     description: 'Planned talks, contributed presentations, and panel at the RBD workshop at NAACL 2027. The final schedule and workshop day will be announced.' },
   { id: 'organizers', path: 'organizers/', label: 'Organizers', template: 'organizers.html',
-    description: 'Meet the organizers and program committee of Retrieval Beyond Documents, the NAACL 2027 workshop on capability retrieval for language agents.' }
+    description: 'Meet the organizers and program committee of Retrieval Beyond Documents, the NAACL 2027 workshop on capability retrieval for language agents.' },
+  { id: 'reviewers', path: 'reviewers/', label: 'Program Committee Signup', template: 'reviewers.html', navigation: false,
+    description: 'Volunteer to review for Retrieval Beyond Documents at NAACL 2027. We welcome expertise in retrieval, tools, skills, workflows, memory, and language agents.' }
 ];
 export function legacyRoutes(data, page = pages[0]) {
   if (page.id === 'cfp') return { dates: '../#dates', 'dates-title': '../#dates' };

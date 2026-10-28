@@ -61,7 +61,7 @@ export function searchAssets(data, page = pages[0]) {
     ['Overview', ''], ['Call for papers and topics', 'cfp/'],
     ['Draft submission guidelines', 'cfp/#guidelines'], ['Important dates', '#dates'],
     ['Invited speakers', 'speakers/'], ['Planned program', 'program/'],
-    ['Organizers and program committee', 'organizers/']
+    ['Organizers and program committee', 'organizers/'], ['Program Committee Signup', 'reviewers/']
   ];
   const llms = `# ${data.title} (RBD) Workshop\n\n> ${data.subtitle}. Workshop at ${data.conference} in ${data.location}.\n\n${data.description}\n\nThe workshop day and submission portal are to be announced. Author guidelines are a draft; paper limits, eligible ARR cycles, and publication arrangements await the final call. Parent conference dates are not workshop dates.\n\n## Important dates\n\n${data.dates.map(date => `- ${date.label}: ${date.value}`).join('\n')}\n\n${data.deadlineNote}\n\n## Website pages\n\n${links.map(([label, anchor]) => `- [${label}](${absolute(anchor)})`).join('\n')}\n\n## Contact\n\n${data.contactEmail}\n`;
   const machineLinks = `\n## Machine-readable content\n\n- [Workshop data](${absolute('workshop.json')}): Topics, organizer roles, biographies, and source-page links.\n- [Full workshop text](${absolute('llms-full.txt')}): The overview, research topics, and people from the public website.\n`;
