@@ -4,27 +4,32 @@
   "conference": "NAACL 2027",
   "siteUrl": "https://rbd-workshop.github.io/",
   "seoTitle": "Retrieval Beyond Documents (RBD) Workshop | NAACL 2027",
-  "lastUpdated": "2026-10-27",
+  "lastUpdated": "2026-10-28",
   "edition": "The inaugural workshop",
   "date": "To be announced",
   "location": "San Francisco, California",
   "format": "Full-day workshop planned",
   "contactEmail": "hitesh.laxmichand.patel@oracle.com",
   "submissionUrl": null,
-  "submissionStatus": "Submission details forthcoming",
+  "submissionStatus": "Submission portal forthcoming",
+  "deadlineNote": "All deadlines are at 11:59 p.m. Anywhere on Earth (AoE, UTC-12).",
   "description": "RBD at NAACL 2027 explores capability retrieval for language agents: tools, skills, workflows, memory, models, and agents. Topics, submissions, and speakers.",
   "dates": [
     {
-      "label": "Paper submission",
-      "value": "To be announced"
+      "label": "Direct paper submission",
+      "value": "February 5, 2027"
+    },
+    {
+      "label": "ARR commitment",
+      "value": "March 12, 2027"
     },
     {
       "label": "Author notification",
-      "value": "To be announced"
+      "value": "March 26, 2027"
     },
     {
       "label": "Camera ready papers",
-      "value": "To be announced"
+      "value": "April 16, 2027"
     },
     {
       "label": "Workshop day",
