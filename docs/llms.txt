@@ -4,7 +4,7 @@
 
 RBD at NAACL 2027 explores capability retrieval for language agents: tools, skills, workflows, memory, models, and agents. Topics, submissions, and speakers.
 
-The workshop day and submission portal are to be announced. Author guidelines are a draft; paper limits, eligible ARR cycles, and publication arrangements await the final call. Parent conference dates are not workshop dates.
+The workshop day is to be announced. Direct submission and ARR commitment portals available. Author guidelines are a draft; paper limits, eligible ARR cycles, and publication arrangements await the final call. Parent conference dates are not workshop dates.
 
 ## Important dates
 
@@ -15,6 +15,11 @@ The workshop day and submission portal are to be announced. Author guidelines ar
 - Workshop day: To be announced
 
 All deadlines are at 11:59 p.m. Anywhere on Earth (AoE, UTC-12).
+
+## Submission portals
+
+- [Direct paper submission](https://openreview.net/group?id=aclweb.org/NAACL/2027/Workshop/RBD)
+- [ARR commitment](https://openreview.net/group?id=aclweb.org/NAACL/2027/Workshop/RBD_ARR_Commitment)
 
 ## Website pages
 

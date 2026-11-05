@@ -27,6 +27,10 @@ export async function build() {
   const seo = searchAssets(data);
   if (!/^[^\s<>@]+@[^\s<>@]+\.[^\s<>@]+$/.test(data.contactEmail)) throw new Error('Invalid contact email');
   const siteRoot = seo.siteRoot;
+  const submissionRoutes = [
+    { url: data.submissionUrl, label: 'Direct paper submission', deadline: 'Direct paper submission' },
+    { url: data.arrCommitmentUrl, label: 'ARR commitment', deadline: 'ARR commitment' }
+  ].filter(route => route.url);
   const assetVersion = async filename => createHash('sha256').update(await readFile(path.join(root, 'src', filename))).digest('hex').slice(0, 12);
   const variables = {
     ...Object.fromEntries(Object.entries(data).filter(([,v]) => typeof v === 'string').map(([k,v]) => [k,escape(v)])),
@@ -40,9 +44,13 @@ export async function build() {
     reviewerSignup: data.reviewerSignupUrl
       ? `<p><a href="${safeUrl(data.reviewerSignupUrl)}" target="_blank" rel="noopener noreferrer">Open the Program Committee Signup form</a> (Google Forms).</p>`
       : `<p>The signup form is being prepared. In the meantime, <a href="mailto:${escape(data.contactEmail)}?subject=RBD%202027%20reviewer%20interest">email the organizers</a> to express your interest.</p>`,
-    submission: data.submissionUrl
-      ? `<p><a href="${safeUrl(data.submissionUrl)}" target="_blank" rel="noopener noreferrer">Submit your paper</a></p>`
-      : '<p>The submission portal will be announced here.</p>'
+    submission: submissionRoutes.length
+      ? `<div class="submission-links"><p><strong>Submit through OpenReview</strong></p><ul>${submissionRoutes.map(route => {
+        const deadline = data.dates.find(date => date.label === route.deadline);
+        if (!deadline) throw new Error(`Missing deadline for ${route.label}`);
+        return `<li><a href="${safeUrl(route.url)}" target="_blank" rel="noopener noreferrer">${escape(route.label)}</a> · ${escape(deadline.value)} (AoE)</li>`;
+      }).join('')}</ul></div>`
+      : '<p>The submission portals will be announced here.</p>'
   };
   const dateTemplate = await readFile(path.join(root, 'src/partials/dates.html'), 'utf8');
   const layout = await readFile(path.join(root, 'src/layout.html'), 'utf8');

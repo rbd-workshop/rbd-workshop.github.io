@@ -96,7 +96,7 @@ Further references: [Google sitemap guidance](https://developers.google.com/sear
 - `src/assets/`: original RBD identity and locally hosted photographs.
 - `docs/`: generated static website, tracked for GitHub Pages. Its `assets/` directory is regenerated at build time.
 
-Set `submissionUrl` to the confirmed HTTPS portal to show a working submit button. Update the workshop-specific deadlines in `dates` and the workshop day in `date`. `conferenceDates` describes the parent conference and should not be used as a workshop deadline.
+`submissionUrl` and `arrCommitmentUrl` hold the separate public OpenReview venue links for direct papers and ARR commitments. Home and the CFP show both routes with their deadlines from `dates`; `submissionStatus` also feeds the machine-readable summary. Use public venue home pages, never support-request forums or Program Chairs consoles. Update the workshop-specific deadlines in `dates` and the workshop day in `date`. `conferenceDates` describes the parent conference and should not be used as a workshop deadline.
 
 ## Identity and assets
 

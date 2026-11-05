@@ -72,6 +72,10 @@ h3 { font-size: 20px; line-height: 1.4; font-weight: 600; color: var(--ink); }
 .submission-guidelines { padding-left: 22px; margin: 18px 0 22px; }
 .submission-guidelines li { padding-left: 5px; margin-bottom: 14px; }
 .submission-guidelines a { text-decoration: underline; text-underline-offset: 3px; }
+.submission-links { margin-block: 24px; }
+.submission-links ul { margin: 8px 0 0; padding-left: 22px; }
+.submission-links li { overflow-wrap: anywhere; }
+.submission-links a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: underline; }
 .section-note { color: var(--muted); font-size: 14px; }
 .people { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 44px 50px; margin-top: 28px; }
 .person { display: grid; grid-template-columns: 136px minmax(0,1fr); gap: 23px; align-items: start; min-width: 0; }
