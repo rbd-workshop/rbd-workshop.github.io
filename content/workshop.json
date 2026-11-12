@@ -1,10 +1,10 @@
 {
   "title": "Retrieval Beyond Documents",
-  "subtitle": "Capability Retrieval for Language Agents",
+  "subtitle": "Capability Retrieval for Agents",
   "conference": "NAACL 2027",
   "siteUrl": "https://rbd-workshop.github.io/",
   "seoTitle": "Retrieval Beyond Documents (RBD) Workshop | NAACL 2027",
-  "lastUpdated": "2026-11-05",
+  "lastUpdated": "2026-11-12",
   "edition": "The inaugural workshop",
   "date": "To be announced",
   "location": "San Francisco, California",
@@ -15,7 +15,7 @@
   "reviewerSignupUrl": "https://docs.google.com/forms/d/e/1FAIpQLScOR7S2jhamV6fGbukGMzYAawvA8RXAGODGo10xcfhrW-B6iQ/viewform",
   "submissionStatus": "Direct submission and ARR commitment portals available",
   "deadlineNote": "All deadlines are at 11:59 p.m. Anywhere on Earth (AoE, UTC-12).",
-  "description": "RBD at NAACL 2027 explores capability retrieval for language agents: tools, skills, workflows, memory, models, and agents. Topics, submissions, and speakers.",
+  "description": "RBD at NAACL 2027 explores capability retrieval for agents: tools, skills, workflows, memory, models, and agents. Topics, submissions, and speakers.",
   "dates": [
     {
       "label": "Direct paper submission",
@@ -73,7 +73,7 @@
     {
       "name": "Graham Neubig",
       "affiliation": "Carnegie Mellon University",
-      "area": "Language agents, code & reusable abstractions",
+      "area": "Agents, code & reusable abstractions",
       "url": "https://www.phontron.com/",
       "image": "assets/people/graham-neubig.webp",
       "id": "graham-neubig",

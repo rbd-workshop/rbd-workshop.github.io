@@ -1,8 +1,8 @@
 # Retrieval Beyond Documents (RBD) Workshop
 
-> Capability Retrieval for Language Agents. Workshop at NAACL 2027 in San Francisco, California.
+> Capability Retrieval for Agents. Workshop at NAACL 2027 in San Francisco, California.
 
-RBD at NAACL 2027 explores capability retrieval for language agents: tools, skills, workflows, memory, models, and agents. Topics, submissions, and speakers.
+RBD at NAACL 2027 explores capability retrieval for agents: tools, skills, workflows, memory, models, and agents. Topics, submissions, and speakers.
 
 The workshop day is to be announced. Direct submission and ARR commitment portals available. Author guidelines are a draft; paper limits, eligible ARR cycles, and publication arrangements await the final call. Parent conference dates are not workshop dates.
 
